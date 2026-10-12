@@ -1389,17 +1389,15 @@ T(A_i)&lt;\infty
 <p class="note">Select any node or equilibrium. The decision tree sits at V, where the loop returns to I′.</p>
 <div class="figscroll"><svg id="tva-svg" viewBox="0 0 760 700" role="group" aria-label="Pentadic agentic loop with human-in-the-loop decision tree" xmlns="http://www.w3.org/2000/svg" style="display:block;min-width:620px;width:100%;max-width:760px;margin:0 auto">
 <defs><marker id="tva-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
-<g class="tva-fan" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity=".7">
-<path d="M465,265 L545,205"/><path d="M465,265 L545,235"/><path d="M465,265 L545,265"/><path d="M465,265 L545,295"/><path d="M465,265 L545,325"/>
-</g>
 <g class="tva-edges" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#tva-ar)">
-<path d="M300,52 V78"/><path d="M300,122 V148"/><path d="M300,192 V228"/><path d="M300,302 V340"/><path d="M300,400 V432"/>
+<path d="M300,52 V78"/><path d="M300,122 V148"/><path d="M300,192 V228"/><path d="M300,408 V432"/>
 <path d="M185,470 H120 V544"/><path d="M300,508 V544"/><path d="M415,470 H480 V544"/>
 <path d="M120,600 V620 H300 V640"/><path d="M300,600 V640"/><path d="M480,600 V620 H300"/>
 <path d="M215,660 H20 V30 H135"/>
 </g>
-<g class="tva-lab"><text x="620" y="180">Equilibria</text><text x="28" y="350" style="text-anchor:start">V → I′</text></g>
+<g class="tva-lab"><text x="28" y="350" style="text-anchor:start">V → I′</text></g>
 <g id="tva-nodes"></g>
+<g class="tva-lab"><text x="590" y="251">Equilibria</text></g>
 </svg></div>
 <div class="tva-card" id="tva-card" aria-live="polite"></div>
 
@@ -1435,18 +1433,17 @@ T(A_i)&lt;\infty
    ["I","box",300,30,330,44,["I. Engine","Principal"],"I. Engine · Principal","The person. Supplies identity, authority and interests, and generates the events that demand attention. I do not control the engine; the loop only samples it."],
    ["II","box",300,100,330,44,["II. Sample / Attention / Jigsaw","Broker builds the digital representation"],"II. Sample / Attention / Jigsaw · Broker","The pieces: your email, your to-dos, every other part of your life. You can no longer track them. The broker samples them and builds the digital representation of the engine. Palantir and Ukubona LLC are examples of this role. Whoever builds the representation holds the sampling window, so it has to stay auditable."],
    ["III","box",300,170,330,44,["III. Recombination / Assembly","Agent (e.g. Muse), sandboxed API access"],"III. Recombination / Assembly · Agent","The agent is granted sandboxed API access to the digital representation, not to the principal directly. Inside that sandbox it puts the pieces together, recombining what it can read into candidate actions."],
-   ["IV","box",300,265,330,74,["IV. Distribution / Collisions","Principals, brokers, agents collide","Dynamic equilibria emerge"],"IV. Distribution / Collisions","Muse, other principals, other agents: engines, brokers and agents interact, and game-theoretic dynamic equilibria emerge. Select an equilibrium to the right."],
-   ["OUT","box",300,370,330,60,["Output of IV: the picture","Rank order of the connected pieces","Timelines, notifications by time scale"],"Output of IV · The picture","The connected pieces, as a rank-ordered list of next actions with timelines. Jobs said the dots only connect looking backward; here the agent connects them, and the rank order is the result. Notifications are paced by time scale, so the list updates quietly and interrupts only when the time scale warrants it."],
+   ["IV","box",380,318,640,180,["IV. Distribution / Collisions","Principals, brokers, agents collide","Dynamic equilibria emerge","Output: the picture","Rank order of the connected pieces","Timelines, notifications by time scale"],"IV. Distribution / Collisions","Muse, other principals, other agents: engines, brokers and agents interact, and game-theoretic dynamic equilibria emerge (select one on the right). The output is the picture: the connected pieces, as a rank-ordered list of next actions with timelines. Notifications are paced by time scale, so the list updates quietly and interrupts only when the time scale warrants it. Jobs said the dots only connect looking backward; here the agent connects them.",280],
    ["V","diamond",300,470,230,76,["V. Life","Human ArgMax"],"V. Life · Principal","ArgMax by the human in the loop. The principal commits: consequential actions, permissions, and the objectives that govern the ranking itself. Approve, defer or reject, then V becomes I′."],
    ["AP","box",120,572,160,56,["Approve","Execute authorized","action"],"V. Life · Approve","The system acts only within the authority the principal granted."],
    ["DF","box",300,572,160,56,["Defer","Update timing","and priority"],"V. Life · Defer","Deferral is data: the principal saw it and chose later, which differs from never having seen it."],
    ["RJ","box",480,572,160,56,["Reject","Record correction","or preference"],"V. Life · Reject","Rejection teaches the objective function. It is a correction, not noise."],
    ["L","box",300,660,170,40,["Append attributable event"],"Ledger","The decision is an event: what was proposed, what the principal authorized, what executed, what followed. Agency is delegated; responsibility stays traceable. The ledger feeds I′."],
-   ["E1","chip",620,205,150,24,["Adversarial"],"IV · Equilibrium","Interests conflict, and one party’s gain is another’s loss."],
-   ["E2","chip",620,235,150,24,["Transactional"],"IV · Equilibrium","Exchange at a price. The agent or broker acts as a toll booth on the transaction."],
-   ["E3","chip",620,265,150,24,["Cooperative"],"IV · Equilibrium","Aligned interests and shared gains."],
-   ["E4","chip",620,295,150,24,["Regulatory"],"IV · Equilibrium","A rule-setter constrains what the others may do."],
-   ["E5","chip",620,325,150,24,["Symbiotic*"],"IV · Equilibrium","Placeholder for other equilibria."]
+   ["E1","chip",590,270,150,22,["Adversarial"],"IV · Equilibrium","Interests conflict, and one party’s gain is another’s loss."],
+   ["E2","chip",590,297,150,22,["Transactional"],"IV · Equilibrium","Exchange at a price. The agent or broker acts as a toll booth on the transaction."],
+   ["E3","chip",590,324,150,22,["Cooperative"],"IV · Equilibrium","Aligned interests and shared gains."],
+   ["E4","chip",590,351,150,22,["Regulatory"],"IV · Equilibrium","A rule-setter constrains what the others may do."],
+   ["E5","chip",590,378,150,22,["Symbiotic*"],"IV · Equilibrium","Placeholder for other equilibria."]
   ];
   var NS="http://www.w3.org/2000/svg",g=document.getElementById('tva-nodes'),card=document.getElementById('tva-card');
   function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e}
@@ -1466,7 +1463,7 @@ T(A_i)&lt;\infty
     if(n[1]==='diamond'){gr.appendChild(el('polygon',{points:cx+','+(cy-h/2)+' '+(cx+w/2)+','+cy+' '+cx+','+(cy+h/2)+' '+(cx-w/2)+','+cy}))}
     else{gr.appendChild(el('rect',{x:cx-w/2,y:cy-h/2,width:w,height:h,rx:n[1]==='chip'?12:10}))}
     L.forEach(function(s,i){
-      var t=el('text',{x:cx,y:cy-(L.length-1)*7+4+i*14,'class':i===0?'l0':'l1'});
+      var t=el('text',{x:n[9]||cx,y:cy-(L.length-1)*7+4+i*14,'class':i===0?'l0':'l1'});
       t.textContent=s;gr.appendChild(t);
     });
     gr.addEventListener('click',function(){pick(n[0])});
