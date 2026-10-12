@@ -1372,53 +1372,44 @@ T(A_i)&lt;\infty
 <!--BEGIN TRUST-ATTENTION-->
 <section class="panel doc" id="trust" hidden>
 <h2 class="ptitle">Trust vs Attention</h2>
-<p class="lede">I am betting that the binding constraint on an agentic system is attention, not trust. Trust is a prerequisite; it does not decide what matters. The digital world has outgrown what any person can sample and rank, so the agent that does the sampling, <a href="#ex1" data-tab="ex1">Stage II</a>, is the decisive layer. The question I keep returning to is who writes the objective function that decides what gets surfaced.</p>
-<p class="note">The product I am describing maintains the queue without taking ownership of the life being lived: automate the maintenance of attention; preserve human authority over consequential commitment.</p>
+<p class="lede">I am betting that the binding constraint on an agentic system is attention, not trust. Trust is a prerequisite; it does not decide what matters. A person is an engine, and the digital world has outgrown what that engine can sample. So a broker builds a digital representation of the principal, an agent works on that representation, and the collisions with every other principal, broker and agent produce a rank order of next actions. The principal takes the ArgMax.</p>
+<p class="note">Automate the maintenance of attention; preserve human authority over consequential commitment.</p>
 
-<h3 class="subsec">The video</h3>
-<p class="note">BBC AI Decoded: Meta’s Muse, cute AI agent or “AI Trojan Horse”? The panel argues trust, control and data. I read the same footage as an attention problem.</p>
-<div class="tva-video"><iframe src="https://www.youtube.com/embed/9VTuKGI54vQ" title="Meta’s Muse: Cute AI Agent Or ‘AI Trojan Horse’?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-<p class="note"><a href="https://www.youtube.com/watch?v=9VTuKGI54vQ" target="_blank" rel="noopener">Open on YouTube</a></p>
+<h3 class="subsec">The pentad, as an agentic loop</h3>
+<div class="tw pent"><table><thead><tr><th scope="col"><span class="t">Stage</span></th><th scope="col"><span class="t">Entity</span></th><th scope="col"><span class="t">In this loop</span></th></tr></thead><tbody>
+<tr><th scope="row"><span class="t"><strong>I. Engine</strong></span></th><td><span class="t">Principal</span></td><td><span class="t">The person. Supplies identity, authority and interests, and generates the events that demand attention.</span></td></tr>
+<tr><th scope="row"><span class="t"><strong>II. Sample / Attention</strong></span></th><td><span class="t">Broker</span></td><td><span class="t">Builds the digital representation of the engine. Palantir and Ukubona LLC are examples of this role. Attention is a sampling problem, and this is where it is solved.</span></td></tr>
+<tr><th scope="row"><span class="t"><strong>III. Recombination</strong></span></th><td><span class="t">Agent</span></td><td><span class="t">An agent such as Muse, granted sandboxed API access to the representation. It recombines what it can read into candidate actions.</span></td></tr>
+<tr><th scope="row"><span class="t"><strong>IV. Distribution / Collisions</strong></span></th><td><span class="t">Principals, brokers, agents</span></td><td><span class="t">Muse, other principals and other agents collide. Game-theoretic dynamic equilibria emerge: adversarial, transactional, cooperative, regulatory, symbiotic. The output is the agent’s rank order of next actions, with timelines and notifications paced by time scale.</span></td></tr>
+<tr><th scope="row"><span class="t"><strong>V. Life</strong></span></th><td><span class="t">Principal</span></td><td><span class="t">ArgMax by the human in the loop. The decision is an event, and V becomes I′.</span></td></tr>
+</tbody></table></div>
 
-<h3 class="subsec">Human in the loop</h3>
-<p class="note">Select any node. The agent samples, recombines and ranks continuously and quietly. I step in only at the gate where judgment or authorization matters.</p>
-<div class="figscroll"><svg id="tva-svg" viewBox="0 0 760 620" role="group" aria-label="Human-in-the-loop flowchart" xmlns="http://www.w3.org/2000/svg" style="display:block;min-width:620px;width:100%;max-width:760px;margin:0 auto">
+<h3 class="subsec">The loop</h3>
+<p class="note">Select any node or equilibrium. The decision tree sits at V, where the loop returns to I′.</p>
+<div class="figscroll"><svg id="tva-svg" viewBox="0 0 760 700" role="group" aria-label="Pentadic agentic loop with human-in-the-loop decision tree" xmlns="http://www.w3.org/2000/svg" style="display:block;min-width:620px;width:100%;max-width:760px;margin:0 auto">
 <defs><marker id="tva-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
-<g class="tva-edges" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#tva-ar)">
-<path d="M300,50 V80"/><path d="M300,120 V150"/><path d="M300,190 V220"/><path d="M300,260 V288"/>
-<path d="M225,320 H175"/><path d="M110,300 V100 H215"/><path d="M375,320 H445"/><path d="M520,340 V368"/>
-<path d="M450,400 H380 V470"/><path d="M520,432 V470"/><path d="M590,400 H660 V470"/>
-<path d="M380,510 V545 H520 V560"/><path d="M520,510 V560"/><path d="M660,510 V545 H520"/><path d="M435,580 H20 V100 H215"/>
+<g class="tva-fan" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity=".7">
+<path d="M465,265 L545,205"/><path d="M465,265 L545,235"/><path d="M465,265 L545,265"/><path d="M465,265 L545,295"/><path d="M465,265 L545,325"/>
 </g>
-<g class="tva-lab"><text x="200" y="312">No</text><text x="410" y="312">Yes</text><text x="400" y="392">Approve</text><text x="540" y="456">Defer</text><text x="630" y="392">Reject</text></g>
+<g class="tva-edges" fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#tva-ar)">
+<path d="M300,52 V78"/><path d="M300,122 V148"/><path d="M300,192 V228"/><path d="M300,302 V345"/><path d="M300,395 V432"/>
+<path d="M185,470 H120 V544"/><path d="M300,508 V544"/><path d="M415,470 H480 V544"/>
+<path d="M120,600 V620 H300 V640"/><path d="M300,600 V640"/><path d="M480,600 V620 H300"/>
+<path d="M215,660 H20 V30 H135"/>
+</g>
+<g class="tva-lab"><text x="620" y="180">Equilibria</text><text x="28" y="350" style="text-anchor:start">V → I′</text></g>
 <g id="tva-nodes"></g>
 </svg></div>
 <div class="tva-card" id="tva-card" aria-live="polite"></div>
 
-<h3 class="subsec">Two ArgMaxes, two optimizations</h3>
-<p class="t">Machine ArgMax selects the top candidate under the current objective. It repeats, and it is provisional. Human ArgMax commits to a consequential action, and I hold it.</p>
-<p class="t">Ranking: \(\arg\max_i Q_i(t)\). Alerting: \(\arg\max_{a\in\{0,1\}} \mathbb{E}[\text{net benefit of interrupting}]\). Without the second, an attention agent collapses into a better notification engine. A decision is an event, so it goes to the ledger: what was proposed, what I authorized, what executed, what followed.</p>
-<p class="t">I separate “ignored because unimportant” from “never saw it because overwhelmed.” Conflating them corrupts the learning signal.</p>
+<h3 class="subsec">The video</h3>
+<p class="note">BBC AI Decoded: Meta’s Muse, cute AI agent or “AI Trojan Horse”? Muse is the kind of agent that works at III. The panel argues trust, control and data; I read the same footage as an attention problem.</p>
+<div class="tva-video"><iframe src="https://www.youtube.com/embed/9VTuKGI54vQ" title="Meta’s Muse: Cute AI Agent Or ‘AI Trojan Horse’?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="note"><a href="https://www.youtube.com/watch?v=9VTuKGI54vQ" target="_blank" rel="noopener">Open on YouTube</a></p>
 
-<h3 class="subsec">Flowchart source</h3>
-<p class="note">The Mermaid source, verbatim, for any renderer.</p>
-<pre class="ascii t" id="tva-src">flowchart TD
-    A["World generates events"] --> B["Agent samples context"]
-    B --> C["Recombine into candidate actions"]
-    C --> D["Update dynamic ranking"]
-    D --> E{"Interrupt now?"}
-    E -->|No| F["Quietly maintain shortlist"]
-    F --> B
-    E -->|Yes| G["Present concise alert"]
-    G --> H{"Human decision"}
-    H -->|Approve| I["Execute authorized action"]
-    H -->|Defer| J["Update timing and priority"]
-    H -->|Reject| K["Record correction or preference"]
-    I --> L["Append attributable event"]
-    J --> L
-    K --> L
-    L --> B</pre>
-<p><button class="btn" id="tva-copy" type="button">Copy mermaid</button> <span id="tva-msg" class="note" role="status"></span></p>
+<h3 class="subsec">Two ArgMaxes</h3>
+<p class="t">The agent’s rank order at IV is provisional and repeats: \(\arg\max_i Q_i(t)\) over the candidate actions, updated as events arrive. Alerting is a second, separate optimization: the expected benefit of interrupting against its cognitive cost, paced by time scale. The top-ranked action may still not warrant a notification. The principal’s ArgMax at V is the commitment, and I hold it.</p>
+<p class="t">The decision is an event: what was proposed, what I authorized, what executed, what followed. I separate “ignored because unimportant” from “never saw it because overwhelmed.” Conflating them corrupts the learning signal.</p>
 <style>
 #trust .tva-video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border:1px solid var(--rule);border-radius:14px;background:var(--card)}
 #trust .tva-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
@@ -1427,7 +1418,8 @@ T(A_i)&lt;\infty
 #trust .tva-n{cursor:pointer}
 #trust .tva-n rect,#trust .tva-n polygon{fill:var(--soft);stroke:var(--rule);stroke-width:1.5}
 #trust .tva-n polygon{stroke-dasharray:4 3}
-#trust .tva-n text{fill:var(--ink);font:600 11px var(--sans);text-anchor:middle;pointer-events:none}
+#trust .tva-n text{fill:var(--muted);font:400 10.5px var(--sans);text-anchor:middle;pointer-events:none}
+#trust .tva-n text.l0{fill:var(--ink);font-weight:700;font-size:11.5px}
 #trust .tva-n:hover rect,#trust .tva-n:hover polygon,#trust .tva-n:focus rect,#trust .tva-n:focus polygon{stroke:var(--blue)}
 #trust .tva-n[aria-pressed="true"] rect,#trust .tva-n[aria-pressed="true"] polygon{stroke:var(--amber);stroke-width:2.5}
 #trust .tva-card{margin-top:12px;padding:14px 16px;border:1px solid var(--rule);border-radius:12px;background:var(--card)}
@@ -1437,19 +1429,23 @@ T(A_i)&lt;\infty
 </style>
 <script>
 (function(){
+  // [id, shape, cx, cy, w, h, lines, tag, note]
   var N=[
-   ["A",300,30,170,40,"World generates events","I. Engine","The generative substrate: emails, obligations, opportunities, bodily needs, other agents. I do not control it; I only sample it."],
-   ["B",300,100,170,40,"Agent samples context","II. Sample / Attention","The bottleneck. The agent compresses an already-sampled engine into a tractable representation. Whoever holds this window holds the pipeline, so it has to stay auditable."],
-   ["C",300,170,190,40,"Recombine into candidate actions","III. Recombination","Related events are assembled into candidate tasks, plans, reminders and opportunities."],
-   ["D",300,240,170,40,"Update dynamic ranking","IV. Distribution / SoftMax","Candidates are held in proportion to their alternatives. Ranking is not deciding: the order can move continuously without demanding that I look at it."],
-   ["E",300,320,150,64,"Interrupt now?","Machine ArgMax (alerting)","A separate optimization: the expected benefit of interrupting against its cognitive cost. The top-ranked task may still not warrant an alert.",1],
-   ["F",110,320,130,40,"Quietly maintain shortlist","Background ledger","Everything noticed or inferred persists without interrupting me. The living shortlist waits until I inspect it."],
-   ["G",520,320,150,40,"Present concise alert","Interruption","Only what cannot reasonably wait, or what a rule I wrote warrants, breaks the current activity."],
-   ["H",520,400,140,64,"Human decision","V. Life / Human ArgMax","Commitment stays with me: consequential actions, permissions, and the objectives that govern the ranking itself.",1],
-   ["I",380,490,150,40,"Execute authorized action","V. Life (approved)","The system acts only within the authority I granted."],
-   ["J",520,490,150,40,"Update timing and priority","V. Life (deferred)","Deferral is data: I saw it and chose later, which differs from never having seen it."],
-   ["K",660,490,150,40,"Record correction or preference","V. Life (rejected)","Rejection teaches the objective function. It is a correction, not noise."],
-   ["L",520,580,170,40,"Append attributable event","Ledger","A decision is an event: what was proposed, what I authorized, what executed, what followed. Agency is delegated; responsibility stays traceable."]
+   ["I","box",300,30,330,44,["I. Engine","Principal"],"I. Engine · Principal","The person. Supplies identity, authority and interests, and generates the events that demand attention. I do not control the engine; the loop only samples it."],
+   ["II","box",300,100,330,44,["II. Sample / Attention","Broker builds the digital representation"],"II. Sample / Attention · Broker","The broker samples the engine and builds its digital representation. Palantir and Ukubona LLC are examples of this role. Whoever builds the representation holds the sampling window, so it has to stay auditable."],
+   ["III","box",300,170,330,44,["III. Recombination","Agent (e.g. Muse), sandboxed API access"],"III. Recombination · Agent","The agent is granted sandboxed API access to the digital representation, not to the principal directly. Inside that sandbox it recombines what it can read into candidate actions."],
+   ["IV","box",300,265,330,74,["IV. Distribution / Collisions","Principals, brokers, agents collide","Dynamic equilibria emerge"],"IV. Distribution / Collisions","Muse, other principals, other agents: engines, brokers and agents interact, and game-theoretic dynamic equilibria emerge. Select an equilibrium to the right."],
+   ["OUT","box",300,370,330,50,["Output of IV: the agent’s rank order","Next actions, timelines, notifications by time scale"],"Output of IV","A rank-ordered list of next actions with timelines. Notifications are paced by time scale, so the list updates quietly and interrupts only when the time scale warrants it."],
+   ["V","diamond",300,470,230,76,["V. Life","Human ArgMax"],"V. Life · Principal","ArgMax by the human in the loop. The principal commits: consequential actions, permissions, and the objectives that govern the ranking itself. Approve, defer or reject, then V becomes I′."],
+   ["AP","box",120,572,160,56,["Approve","Execute authorized","action"],"V. Life · Approve","The system acts only within the authority the principal granted."],
+   ["DF","box",300,572,160,56,["Defer","Update timing","and priority"],"V. Life · Defer","Deferral is data: the principal saw it and chose later, which differs from never having seen it."],
+   ["RJ","box",480,572,160,56,["Reject","Record correction","or preference"],"V. Life · Reject","Rejection teaches the objective function. It is a correction, not noise."],
+   ["L","box",300,660,170,40,["Append attributable event"],"Ledger","The decision is an event: what was proposed, what the principal authorized, what executed, what followed. Agency is delegated; responsibility stays traceable. The ledger feeds I′."],
+   ["E1","chip",620,205,150,24,["Adversarial"],"IV · Equilibrium","Interests conflict, and one party’s gain is another’s loss."],
+   ["E2","chip",620,235,150,24,["Transactional"],"IV · Equilibrium","Exchange at a price. The agent or broker acts as a toll booth on the transaction."],
+   ["E3","chip",620,265,150,24,["Cooperative"],"IV · Equilibrium","Aligned interests and shared gains."],
+   ["E4","chip",620,295,150,24,["Regulatory"],"IV · Equilibrium","A rule-setter constrains what the others may do."],
+   ["E5","chip",620,325,150,24,["Symbiotic*"],"IV · Equilibrium","Placeholder for other equilibria."]
   ];
   var NS="http://www.w3.org/2000/svg",g=document.getElementById('tva-nodes'),card=document.getElementById('tva-card');
   function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e}
@@ -1458,30 +1454,25 @@ T(A_i)&lt;\infty
     N.forEach(function(n){els[n[0]].setAttribute('aria-pressed',n[0]===id?'true':'false')});
     var n=N.filter(function(x){return x[0]===id})[0];
     card.innerHTML='';
-    var k=document.createElement('div');k.className='k';k.textContent=n[6];
-    var h=document.createElement('div');h.className='h';h.textContent=n[5];
-    var p=document.createElement('p');p.textContent=n[7];
+    var k=document.createElement('div');k.className='k';k.textContent=n[7];
+    var h=document.createElement('div');h.className='h';h.textContent=n[6][0];
+    var p=document.createElement('p');p.textContent=n[8];
     card.appendChild(k);card.appendChild(h);card.appendChild(p);
   }
   N.forEach(function(n){
-    var gr=el('g',{'class':'tva-n',tabindex:0,role:'button','aria-pressed':'false','aria-label':n[6]+': '+n[5]});
-    if(n[8]){gr.appendChild(el('polygon',{points:n[1]+','+(n[2]-n[4]/2)+' '+(n[1]+n[3]/2)+','+n[2]+' '+n[1]+','+(n[2]+n[4]/2)+' '+(n[1]-n[3]/2)+','+n[2]}))}
-    else{gr.appendChild(el('rect',{x:n[1]-n[3]/2,y:n[2]-n[4]/2,width:n[3],height:n[4],rx:10}))}
-    var t=el('text',{x:n[1],y:n[2]+4}),w=n[5].split(' ');
-    if(n[5].length>22&&!n[8]){var m=Math.ceil(w.length/2),a=el('tspan',{x:n[1],dy:-5}),b=el('tspan',{x:n[1],dy:13});a.textContent=w.slice(0,m).join(' ');b.textContent=w.slice(m).join(' ');t.appendChild(a);t.appendChild(b)}
-    else{t.textContent=n[5]}
-    gr.appendChild(t);
+    var cx=n[2],cy=n[3],w=n[4],h=n[5],L=n[6];
+    var gr=el('g',{'class':'tva-n',tabindex:0,role:'button','aria-pressed':'false','aria-label':n[7]+': '+L[0]});
+    if(n[1]==='diamond'){gr.appendChild(el('polygon',{points:cx+','+(cy-h/2)+' '+(cx+w/2)+','+cy+' '+cx+','+(cy+h/2)+' '+(cx-w/2)+','+cy}))}
+    else{gr.appendChild(el('rect',{x:cx-w/2,y:cy-h/2,width:w,height:h,rx:n[1]==='chip'?12:10}))}
+    L.forEach(function(s,i){
+      var t=el('text',{x:cx,y:cy-(L.length-1)*7+4+i*14,'class':i===0?'l0':'l1'});
+      t.textContent=s;gr.appendChild(t);
+    });
     gr.addEventListener('click',function(){pick(n[0])});
     gr.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(n[0])}});
     els[n[0]]=gr;g.appendChild(gr);
   });
-  pick('B');
-  var cb=document.getElementById('tva-copy'),msg=document.getElementById('tva-msg');
-  cb.addEventListener('click',function(){
-    var raw=document.getElementById('tva-src').textContent;
-    try{navigator.clipboard.writeText(raw).then(function(){msg.textContent='Copied.'},function(){msg.textContent='Select the source above and copy.'})}
-    catch(e){msg.textContent='Select the source above and copy.'}
-  });
+  pick('II');
 })();
 </script>
 </section>
