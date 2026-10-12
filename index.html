@@ -134,6 +134,74 @@ figcaption{color:var(--muted);font-size:.9rem;margin-top:8px;max-width:70ch}
 .chip{font:400 .75rem var(--mono);color:var(--violet);border:1px dashed var(--violet);border-radius:999px;padding:1px 9px;align-self:flex-start}
 .ascii{font:400 .85rem/1.55 var(--mono);background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px;overflow-x:auto;white-space:pre;margin:0}
 
+/* interpretive architectures */
+.pstrip{list-style:none;margin:2px 0 18px;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.pstrip li{position:relative;display:flex;flex-direction:column;gap:3px;background:var(--bg);border:1px solid var(--rule);border-top:3px solid var(--violet);border-radius:12px;padding:11px 12px 13px;min-width:0}
+.pstrip li:last-child{border-top-color:var(--amber)}
+.pstrip li:not(:last-child)::after{content:"\2192";position:absolute;right:-15px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1.05rem}
+.pn{font:500 .78rem var(--mono);color:var(--violet)}.pstrip li:last-child .pn{color:var(--amber)}
+.pw{font:400 1.3rem/1.15 var(--serif)}
+.pp{font:400 .82rem/1.3 var(--sans);color:var(--muted)}
+.plinks{display:grid;gap:8px;margin:0 0 14px}
+.prow{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:8px 0;border-top:1px solid var(--rule)}
+.pk{font:400 .88rem var(--sans);color:var(--muted);flex:0 1 17rem}
+.pv{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.lnk{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:999px;padding:3px 12px;font:500 .82rem var(--mono);text-decoration:none;background:var(--soft);color:var(--blue)}
+.lnk:hover{border-color:var(--blue)}
+.vs{font:400 .85rem var(--serif);color:var(--amber);font-style:italic}
+.gpt{font:400 1.05rem/1.4 var(--serif)}
+.pull{margin:1.1em 0 1.3em;padding:2px 0 2px 18px;border-left:3px solid var(--amber);font:400 1.35rem/1.35 var(--serif);max-width:46ch}
+.archcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15.5rem,1fr));gap:14px;margin:6px 0 22px}
+.acard{--ac:var(--violet);background:var(--bg);border:1px solid var(--rule);border-top:3px solid var(--ac);border-radius:12px;padding:14px 16px 6px;min-width:0;display:flex;flex-direction:column}
+.acard.c-u{--ac:var(--amber)}.acard.c-n{--ac:var(--blue)}.acard.c-p{--ac:var(--green)}
+.ah{display:flex;align-items:baseline;gap:10px}
+.an{font:500 .8rem var(--mono);color:var(--ac)}
+.at{font:400 1.3rem/1.2 var(--serif)}
+.ak{align-self:flex-start;margin:6px 0 4px;font:500 .72rem var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--ac);border:1px solid var(--ac);border-radius:999px;padding:1px 9px}
+.mini{list-style:none;margin:10px 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:6px 20px}
+.mini li{position:relative;border:1px solid var(--ac);border-radius:8px;padding:1px 9px;font:500 .78rem var(--mono)}
+.mini li:not(:last-child)::after{content:"\2192";position:absolute;right:-16px;top:50%;transform:translateY(-52%);color:var(--ac);font-size:.95rem}
+.acard p{font-size:.92rem;line-height:1.55}
+.acard .go{margin-top:auto;padding-top:4px}
+.cmp thead th:nth-child(2){color:var(--amber)}.cmp thead th:nth-child(3){color:var(--blue)}.cmp thead th:nth-child(4){color:var(--green)}
+.cmp tbody th{font:400 1.05rem var(--serif);white-space:nowrap}
+.cmp td{font-size:.9rem}
+.cmp tbody tr:nth-child(even) td,.cmp tbody tr:nth-child(even) th{background:color-mix(in srgb,var(--soft) 55%,transparent)}
+.steps{list-style:none;margin:6px 0 1.1em;padding:0 0 0 4px;max-width:72ch}
+.steps li{position:relative;padding:5px 0 9px 22px;border-left:2px solid var(--violet)}
+.steps li::before{content:"";position:absolute;left:-6px;top:13px;width:10px;height:10px;border-radius:50%;background:var(--violet);border:2px solid var(--card)}
+.steps li:last-child{border-left-color:transparent}
+.steps strong{display:block;font:700 .95rem var(--sans)}
+.steps strong+span{display:block;color:var(--muted)}
+.steps li:has(> strong:only-child){padding-bottom:5px}
+.stages{list-style:none;margin:6px 0 1.2em;padding:0;display:grid;gap:10px}
+.stages li{display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:4px 12px;background:var(--bg);border:1px solid var(--rule);border-left:3px solid var(--violet);border-radius:10px;padding:12px 16px 4px}
+.stages li:last-child{border-left-color:var(--amber)}
+.sn{font:400 1.7rem/1 var(--serif);color:var(--violet);text-align:right;padding-top:2px}.stages li:last-child .sn{color:var(--amber)}
+.sb strong{font:400 1.2rem/1.2 var(--serif);display:block;margin-bottom:4px}
+.sb p{max-width:62ch}
+.sb .q{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.ql{font:400 .8rem var(--mono);color:var(--muted)}
+.qa{font:500 .85rem var(--sans);color:var(--violet);border:1px solid var(--violet);border-radius:999px;padding:1px 12px}
+.voice .chainwrap{margin:6px 0 14px}
+.voice figure.fig{margin:10px 0 20px}
+@media (max-width:760px){
+ .pstrip{grid-template-columns:1fr;gap:22px}
+ .pstrip li:not(:last-child)::after{content:"\2193";right:auto;left:50%;top:auto;bottom:-20px;transform:translateX(-50%)}
+ .stages li{grid-template-columns:2.4rem minmax(0,1fr)}
+ .pull{font-size:1.2rem}
+}
+.voice .pstrip,.voice .mini,.voice .stages,.voice .chain{max-width:none;padding-left:0}
+.voice .steps{max-width:72ch;padding-left:4px}
+.voice .pstrip li,.voice .mini li,.voice .stages li,.voice .steps li{margin:0}
+.voice .steps li{padding:5px 0 9px 22px}
+.voice .stages li{padding:12px 16px 4px}
+.voice .pstrip li{padding:11px 12px 13px}
+.voice .mini li{padding:1px 8px}
+.voice .mini{gap:6px 18px}
+.voice blockquote.pull{border-left:3px solid var(--amber);color:var(--ink);max-width:56ch;padding:2px 0 2px 18px;margin:1.1em 0 1.3em}
+.voice .mini{margin:12px 0 14px}
+.voice .qa,.voice .ql{margin:0}
 /* references */
 .refcard{background:var(--card);border:1px solid var(--amber);border-radius:14px;padding:18px 20px;margin-bottom:12px}
 .rlabel{font:700 .85rem var(--sans);color:var(--amber)}
@@ -1785,30 +1853,16 @@ This maps directly onto the transition from Stage IV (Distribution / SoftMax) to
 </section>
 <section class="panel doc" id="arch" hidden>
 <h2 class="ptitle">Interpretive Architectures</h2>
-<article class="voice prompt"><div class="vlabel">Prompt</div><p class="t">I. How Something (World) II. Becomes Visible (Perception) III. Acquire Significance (Agentic) IV. Rise in Priority (Interactive) V. Change Actions (Selective). Originally artifuclated here <a href="https://ukubona-llc.github.io/who-reviews/" target="_blank" rel="noopener">https://ukubona-llc.github.io/who-reviews/</a> , maturing here after close to 1000 iterations <a href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">https://ukubona-llc.github.io/hermeneutics/</a> I said this to ChatGPT: This feels wicked:  <a href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">https://ukubona-llc.github.io/hermeneutics/</a> vs <a href="https://nat.org/" target="_blank" rel="noopener">https://nat.org/</a> <a href="https://www.plasticlist.org/" target="_blank" rel="noopener">https://www.plasticlist.org/</a> thus spake GPT: Lets create a tab for this -- call it "Interpretive Architectures" -- I</p></article>
+<article class="voice prompt"><div class="vlabel">Prompt</div><ol class="pstrip"><li><span class="pn">I</span><span class="pw">World</span><span class="pp">How Something</span></li><li><span class="pn">II</span><span class="pw">Perception</span><span class="pp">Becomes Visible</span></li><li><span class="pn">III</span><span class="pw">Agentic</span><span class="pp">Acquire Significance</span></li><li><span class="pn">IV</span><span class="pw">Interactive</span><span class="pp">Rise in Priority</span></li><li><span class="pn">V</span><span class="pw">Selective</span><span class="pp">Change Actions</span></li></ol><div class="plinks"><div class="prow"><span class="pk t">Originally artifuclated here</span><span class="pv"><a class="lnk" href="https://ukubona-llc.github.io/who-reviews/" target="_blank" rel="noopener">ukubona-llc.github.io/who-reviews<span aria-hidden="true"> ↗</span></a></span></div><div class="prow"><span class="pk t">maturing here after close to 1000 iterations</span><span class="pv"><a class="lnk" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">ukubona-llc.github.io/hermeneutics<span aria-hidden="true"> ↗</span></a></span></div><div class="prow"><span class="pk t">I said this to ChatGPT: This feels wicked:</span><span class="pv"><a class="lnk" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">hermeneutics<span aria-hidden="true"> ↗</span></a><span class="vs">vs</span><a class="lnk" href="https://nat.org/" target="_blank" rel="noopener">nat.org<span aria-hidden="true"> ↗</span></a><a class="lnk" href="https://www.plasticlist.org/" target="_blank" rel="noopener">plasticlist.org<span aria-hidden="true"> ↗</span></a></span></div><div class="prow"><span class="pk t">thus spake GPT:</span><span class="pv"><span class="gpt t">Lets create a tab for this -- call it "Interpretive Architectures" -- I</span></span></div></div><details class="mx"><summary>Prompt as typed</summary><div class="mxb"><p class="t">I. How Something (World) II. Becomes Visible (Perception) III. Acquire Significance (Agentic) IV. Rise in Priority (Interactive) V. Change Actions (Selective). Originally artifuclated here <a href="https://ukubona-llc.github.io/who-reviews/" target="_blank" rel="noopener">https://ukubona-llc.github.io/who-reviews/</a> , maturing here after close to 1000 iterations <a href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">https://ukubona-llc.github.io/hermeneutics/</a> I said this to ChatGPT: This feels wicked:  <a href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">https://ukubona-llc.github.io/hermeneutics/</a> vs <a href="https://nat.org/" target="_blank" rel="noopener">https://nat.org/</a> <a href="https://www.plasticlist.org/" target="_blank" rel="noopener">https://www.plasticlist.org/</a> thus spake GPT: Lets create a tab for this -- call it "Interpretive Architectures" -- I</p></div></details></article>
 <article class="voice resp"><div class="vlabel">Response</div>
 <p class="t">Yes. And I think the wickedness is in the comparison itself: three very different ways of turning attention into consequential action.</p>
 <p class="t">Your hermeneutics site is not merely competing with two other websites. It is asking a question that sits upstream of what people like Nat Friedman and PlasticList are doing:</p>
-<p class="t">How does something become visible, acquire significance, rise in priority, and ultimately change what someone does?</p>
+<blockquote class="pull"><span class="t">How does something become visible, acquire significance, rise in priority, and ultimately change what someone does?</span></blockquote>
 <p class="t">Your own formulation — Art is SoftMax, Life is ArgMax — gives us a surprisingly sharp way to compare them.</p>
 <h3 class="t l2">The three architectures</h3>
-<h3 class="subsec">1. Ukubona Hermeneutics — interpretive architecture</h3>
-<p class="t">I → II → III → IV → V</p>
-<p class="t">Reality generates experience; experience becomes representation; attention interprets; interpretation creates possibilities; action selects and commits.</p>
-<p class="t">The distinctive move is to make the allocation of attention itself an object of analysis. Your site explicitly separates the distribution of possibilities (SoftMax) from the selection that makes history (ArgMax).</p>
-<p class="t"><a href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">Explore Hermeneutics</a></p>
-<h3 class="subsec">2. Nat Friedman — entrepreneurial architecture</h3>
-<p class="t">Knowledge → technology → experimentation → action</p>
-<p class="t">Friedman articulates an explicit philosophy of agency: reshape the world, move quickly, learn by contact with reality, empower exceptional individuals, and question received wisdom. His site also identifies his work testing Bay Area foods for plastic chemicals.</p>
-<p class="t">His emphasis is not merely understanding the world. It is increasing the capacity to change it.</p>
-<p class="t"><a href="https://nat.org/" target="_blank" rel="noopener">Explore Nat Friedman</a></p>
-<h3 class="subsec">3. PlasticList — empirical investigation</h3>
-<p class="t">Question → sample → measurement → publication → possible intervention</p>
-<p class="t">PlasticList took an everyday, poorly characterized exposure problem and made it investigable by testing food for chemicals associated with plastics. Crucially, its published disclaimer warns that the results are preliminary snapshots, not sufficient by themselves for firm safety conclusions or policy recommendations.</p>
-<p class="t">Its distinctive move is turning diffuse concern into inspectable evidence.</p>
-<p class="t"><a href="https://www.plasticlist.org/" target="_blank" rel="noopener">Explore PlasticList</a></p>
+<div class="archcards"><article class="acard c-u"><div class="ah"><span class="an">1</span><span class="at t">Ukubona Hermeneutics</span></div><span class="ak t">interpretive architecture</span><ol class="mini"><li><span class="t">I</span></li><li><span class="t">II</span></li><li><span class="t">III</span></li><li><span class="t">IV</span></li><li><span class="t">V</span></li></ol><p class="t">Reality generates experience; experience becomes representation; attention interprets; interpretation creates possibilities; action selects and commits.</p><p class="t">The distinctive move is to make the allocation of attention itself an object of analysis. Your site explicitly separates the distribution of possibilities (SoftMax) from the selection that makes history (ArgMax).</p><p class="go"><a class="lnk" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">Explore Hermeneutics<span aria-hidden="true"> ↗</span></a></p></article><article class="acard c-n"><div class="ah"><span class="an">2</span><span class="at t">Nat Friedman</span></div><span class="ak t">entrepreneurial architecture</span><ol class="mini"><li><span class="t">Knowledge</span></li><li><span class="t">technology</span></li><li><span class="t">experimentation</span></li><li><span class="t">action</span></li></ol><p class="t">Friedman articulates an explicit philosophy of agency: reshape the world, move quickly, learn by contact with reality, empower exceptional individuals, and question received wisdom. His site also identifies his work testing Bay Area foods for plastic chemicals.</p><p class="t">His emphasis is not merely understanding the world. It is increasing the capacity to change it.</p><p class="go"><a class="lnk" href="https://nat.org/" target="_blank" rel="noopener">Explore Nat Friedman<span aria-hidden="true"> ↗</span></a></p></article><article class="acard c-p"><div class="ah"><span class="an">3</span><span class="at t">PlasticList</span></div><span class="ak t">empirical investigation</span><ol class="mini"><li><span class="t">Question</span></li><li><span class="t">sample</span></li><li><span class="t">measurement</span></li><li><span class="t">publication</span></li><li><span class="t">possible intervention</span></li></ol><p class="t">PlasticList took an everyday, poorly characterized exposure problem and made it investigable by testing food for chemicals associated with plastics. Crucially, its published disclaimer warns that the results are preliminary snapshots, not sufficient by themselves for firm safety conclusions or policy recommendations.</p><p class="t">Its distinctive move is turning diffuse concern into inspectable evidence.</p><p class="go"><a class="lnk" href="https://www.plasticlist.org/" target="_blank" rel="noopener">Explore PlasticList<span aria-hidden="true"> ↗</span></a></p></article></div>
 <h3 class="t l2">Now put all three inside your pentad</h3>
-<div class="tw pent" id="tbl-arch"><table><thead><tr><th scope="col"><span class="t">Stage</span></th><th scope="col"><span class="t">Ukubona</span></th><th scope="col"><span class="t">Nat Friedman</span></th><th scope="col"><span class="t">PlasticList</span></th></tr></thead><tbody><tr><th scope="row"><span class="t"><strong>I. Engine</strong></span></th><td><span class="t">Reality, history</span></td><td><span class="t">World to be reshaped</span></td><td><span class="t">Everyday food and supply chains</span></td></tr><tr><th scope="row"><span class="t"><strong>II. Sample</strong></span></th><td><span class="t">Text, records, representation</span></td><td><span class="t">Knowledge, observations</span></td><td><span class="t">Food samples and chemical assays</span></td></tr><tr><th scope="row"><span class="t"><strong>III. Vector</strong></span></th><td><span class="t">Attention and interpretation</span></td><td><span class="t">Entrepreneurial judgment</span></td><td><span class="t">Research question and experimental design</span></td></tr><tr><th scope="row"><span class="t"><strong>IV. Distribution</strong></span></th><td><span class="t">Art, competing interpretations</span></td><td><span class="t">Possibilities, experiments, opportunities</span></td><td><span class="t">Measurements, variation, uncertainty</span></td></tr><tr><th scope="row"><span class="t"><strong>V. Scalar</strong></span></th><td><span class="t">Action that changes history</span></td><td><span class="t">Commitment and execution</span></td><td><span class="t">Publication, consumer or institutional response</span></td></tr></tbody></table></div>
+<div class="tw pent cmp" id="tbl-arch"><table><thead><tr><th scope="col"><span class="t">Stage</span></th><th scope="col"><span class="t">Ukubona</span></th><th scope="col"><span class="t">Nat Friedman</span></th><th scope="col"><span class="t">PlasticList</span></th></tr></thead><tbody><tr><th scope="row"><span class="t"><strong>I. Engine</strong></span></th><td><span class="t">Reality, history</span></td><td><span class="t">World to be reshaped</span></td><td><span class="t">Everyday food and supply chains</span></td></tr><tr><th scope="row"><span class="t"><strong>II. Sample</strong></span></th><td><span class="t">Text, records, representation</span></td><td><span class="t">Knowledge, observations</span></td><td><span class="t">Food samples and chemical assays</span></td></tr><tr><th scope="row"><span class="t"><strong>III. Vector</strong></span></th><td><span class="t">Attention and interpretation</span></td><td><span class="t">Entrepreneurial judgment</span></td><td><span class="t">Research question and experimental design</span></td></tr><tr><th scope="row"><span class="t"><strong>IV. Distribution</strong></span></th><td><span class="t">Art, competing interpretations</span></td><td><span class="t">Possibilities, experiments, opportunities</span></td><td><span class="t">Measurements, variation, uncertainty</span></td></tr><tr><th scope="row"><span class="t"><strong>V. Scalar</strong></span></th><td><span class="t">Action that changes history</span></td><td><span class="t">Commitment and execution</span></td><td><span class="t">Publication, consumer or institutional response</span></td></tr></tbody></table></div>
 <p class="t">This is a structural comparison, not a claim that the three projects have identical methods or goals.</p>
 <p class="t">But look at what it reveals.</p>
 <p class="t">PlasticList is a concrete demonstration of the transition from III to IV: a question about the world becomes a research program, and the research program produces evidence. Its own disclaimer carefully limits what can be inferred from that evidence.</p>
@@ -1819,13 +1873,10 @@ This maps directly onto the transition from Stage IV (Distribution / SoftMax) to
 <p class="t">Friedman explicitly argues that speed increases learning by bringing you into contact with reality more frequently. He also warns that people often ask the wrong questions.</p>
 <p class="t">PlasticList demonstrates the practical consequence of that insight: you can have a concern, a hypothesis, or even a large body of literature without having the measurements needed to answer a particular question.</p>
 <p class="t">Your framework adds the missing question:</p>
-<p class="t">Why did this particular uncertainty receive attention, rather than the thousands of others competing for it?</p>
+<blockquote class="pull"><span class="t">Why did this particular uncertainty receive attention, rather than the thousands of others competing for it?</span></blockquote>
 <p class="t">That is where hermeneutics becomes relevant to your attention-ranking system.</p>
 <h3 class="subsec">The Ukubona loop</h3>
-<p class="t"><strong>I. Reality / history</strong><br>What exists, what has happened, what generates the problem?</p>
-<p class="t"><strong>II. Sampling → III. Attention</strong><br>What is observed, interpreted, and ranked as worth pursuing?</p>
-<p class="t"><strong>IV. Possibility distribution</strong><br>What experiments, explanations, or actions are available?</p>
-<p class="t"><strong>V. Human commitment</strong><br>What do we actually do, and what event enters the ledger?</p>
+<ol class="steps"><li><strong class="t">I. Reality / history</strong><span class="t">What exists, what has happened, what generates the problem?</span></li><li><strong class="t">II. Sampling → III. Attention</strong><span class="t">What is observed, interpreted, and ranked as worth pursuing?</span></li><li><strong class="t">IV. Possibility distribution</strong><span class="t">What experiments, explanations, or actions are available?</span></li><li><strong class="t">V. Human commitment</strong><span class="t">What do we actually do, and what event enters the ledger?</span></li></ol>
 <p class="t">Action changes reality; the next cycle inherits that changed reality.</p>
 <p class="t">The product implication is significant: the system should not simply tell people what to do. It should help them understand why a task outranks another, what evidence supports that ranking, how uncertain the ranking is, and what new event would change it.</p>
 <p class="t">And the human remains in the loop at the point of commitment.</p>
@@ -1834,24 +1885,20 @@ This maps directly onto the transition from Stage IV (Distribution / SoftMax) to
 <p class="t">The crucial caveat is that a general architecture does not automatically outperform a focused empirical project. PlasticList can test a sample; your framework must demonstrate that it can make better prioritization or decisions than a simpler alternative.</p>
 <p class="t">That suggests a very Ukubona-like experiment: take a real queue of competing tasks, record the information available at each decision, rank the tasks, observe which ones a human actually selects, and measure the consequences. Then compare the system’s rankings with a baseline.</p>
 <p class="t">If the framework improves those decisions without overwhelming the person with alerts, it moves from an elegant interpretation of agency to an empirically defensible decision system.</p>
-<p class="t">The deepest distinction is this: PlasticList asks what is in the food. Friedman asks what we can do. Ukubona asks how we decide what is worth knowing and doing in the first place.</p>
+<blockquote class="pull"><span class="t">The deepest distinction is this: PlasticList asks what is in the food. Friedman asks what we can do. Ukubona asks how we decide what is worth knowing and doing in the first place.</span></blockquote>
 </article>
 <article class="voice prompt"><div class="vlabel">Prompt</div><p class="t">not good enough. here are additional notes to improve that tab:</p></article>
 <article class="voice resp"><div class="vlabel">Response</div>
 <p class="t">Yes. I collapsed your architecture into a generic decision loop and, in doing so, missed the more radical structure of your comparison.</p>
 <p class="t">Your sequence is not simply five steps in a workflow. It is a theory of how reality becomes agency, agency encounters resistance, and interaction produces selection.</p>
-<p class="t">World → Perception → Agentic → Interactive → Selective.</p>
+<div class="chainwrap"><ol class="chain"><li><span class="t">World</span></li><li><span class="t">Perception</span></li><li><span class="t">Agentic</span></li><li><span class="t">Interactive</span></li><li><span class="t">Selective</span></li></ol></div>
 <p class="t">The order matters. Especially the distinction between agentic, interactive, and selective.</p>
 <h3 class="t l2">The pentad you are actually proposing</h3>
-<p class="t"><strong>I. World</strong></p><p class="t">Reality exists before our interpretation of it. The world contains structures, constraints, latent possibilities, and consequences we do not yet understand.</p><p class="t">The question: What is there?</p>
-<p class="t"><strong>II. Perception</strong></p><p class="t">An agent does not receive the whole world. It samples, senses, represents, and attends to some features rather than others. Perception is already selective, but it has not yet committed to an action.</p><p class="t">The question: What becomes visible?</p>
-<p class="t"><strong>III. Agentic</strong></p><p class="t">Perception becomes an orientation toward possibility. An agent has objectives, beliefs, intentions, and a capacity to generate candidate actions. This is not merely interpreting the world; it is preparing to intervene in it.</p><p class="t">The question: What can I pursue?</p>
-<p class="t"><strong>IV. Interactive</strong></p><p class="t">Agency encounters the world. Experiments, conversations, transactions, collisions, feedback, and other agents expose the gap between what was anticipated and what actually happens. Possibilities are tested under constraints.</p><p class="t">The question: What happens when I engage?</p>
-<p class="t"><strong>V. Selective</strong></p><p class="t">A particular outcome is realized. One possibility is chosen, accepted, rejected, funded, published, or otherwise made consequential. The selection changes the state of the world and constrains what happens next.</p><p class="t">The question: What becomes actual?</p>
+<ol class="stages"><li><span class="sn t">I</span><div class="sb"><strong class="t">World</strong><p class="t">Reality exists before our interpretation of it. The world contains structures, constraints, latent possibilities, and consequences we do not yet understand.</p><p class="q"><span class="ql t">The question:</span> <span class="qa t">What is there?</span></p></div></li><li><span class="sn t">II</span><div class="sb"><strong class="t">Perception</strong><p class="t">An agent does not receive the whole world. It samples, senses, represents, and attends to some features rather than others. Perception is already selective, but it has not yet committed to an action.</p><p class="q"><span class="ql t">The question:</span> <span class="qa t">What becomes visible?</span></p></div></li><li><span class="sn t">III</span><div class="sb"><strong class="t">Agentic</strong><p class="t">Perception becomes an orientation toward possibility. An agent has objectives, beliefs, intentions, and a capacity to generate candidate actions. This is not merely interpreting the world; it is preparing to intervene in it.</p><p class="q"><span class="ql t">The question:</span> <span class="qa t">What can I pursue?</span></p></div></li><li><span class="sn t">IV</span><div class="sb"><strong class="t">Interactive</strong><p class="t">Agency encounters the world. Experiments, conversations, transactions, collisions, feedback, and other agents expose the gap between what was anticipated and what actually happens. Possibilities are tested under constraints.</p><p class="q"><span class="ql t">The question:</span> <span class="qa t">What happens when I engage?</span></p></div></li><li><span class="sn t">V</span><div class="sb"><strong class="t">Selective</strong><p class="t">A particular outcome is realized. One possibility is chosen, accepted, rejected, funded, published, or otherwise made consequential. The selection changes the state of the world and constrains what happens next.</p><p class="q"><span class="ql t">The question:</span> <span class="qa t">What becomes actual?</span></p></div></li></ol>
 <p class="t">Notice the crucial distinction: agentic is not selective. Generating or pursuing possibilities is different from committing to one. And interactive is not merely another kind of perception: interaction is where the agent’s model meets resistance from reality.</p>
 <h3 class="t l2">Now reconsider your three websites</h3>
 <p class="t">The interesting comparison is not which website occupies which stage. It is how each project embodies, traverses, or makes visible the entire pentad.</p>
-<div class="tw pent" id="tbl-arch2"><table><thead><tr><th scope="col"><span class="t">Pentad</span></th><th scope="col"><span class="t">Hermeneutics</span></th><th scope="col"><span class="t">Nat Friedman</span></th><th scope="col"><span class="t">PlasticList</span></th></tr></thead><tbody><tr><th scope="row"><span class="t"><strong>World</strong></span></th><td><span class="t">The world to be interpreted</span></td><td><span class="t">The world to be changed</span></td><td><span class="t">The material world of food and chemical exposure</span></td></tr><tr><th scope="row"><span class="t"><strong>Perception</strong></span></th><td><span class="t">What becomes salient through interpretation</span></td><td><span class="t">What the entrepreneur notices</span></td><td><span class="t">What researchers can measure</span></td></tr><tr><th scope="row"><span class="t"><strong>Agentic</strong></span></th><td><span class="t">The emergence of an interpretive direction</span></td><td><span class="t">The capacity to initiate and pursue projects</span></td><td><span class="t">The decision to investigate a specific uncertainty</span></td></tr><tr><th scope="row"><span class="t"><strong>Interactive</strong></span></th><td><span class="t">Interpretations tested against other interpretations and reality</span></td><td><span class="t">Experiments, ventures, and contact with reality</span></td><td><span class="t">Sampling, laboratory analysis, and empirical testing</span></td></tr><tr><th scope="row"><span class="t"><strong>Selective</strong></span></th><td><span class="t">The interpretation or decision that becomes consequential</span></td><td><span class="t">The commitment that changes the world</span></td><td><span class="t">The published finding and any subsequent decisions it informs</span></td></tr></tbody></table></div>
+<div class="tw pent cmp" id="tbl-arch2"><table><thead><tr><th scope="col"><span class="t">Pentad</span></th><th scope="col"><span class="t">Hermeneutics</span></th><th scope="col"><span class="t">Nat Friedman</span></th><th scope="col"><span class="t">PlasticList</span></th></tr></thead><tbody><tr><th scope="row"><span class="t"><strong>World</strong></span></th><td><span class="t">The world to be interpreted</span></td><td><span class="t">The world to be changed</span></td><td><span class="t">The material world of food and chemical exposure</span></td></tr><tr><th scope="row"><span class="t"><strong>Perception</strong></span></th><td><span class="t">What becomes salient through interpretation</span></td><td><span class="t">What the entrepreneur notices</span></td><td><span class="t">What researchers can measure</span></td></tr><tr><th scope="row"><span class="t"><strong>Agentic</strong></span></th><td><span class="t">The emergence of an interpretive direction</span></td><td><span class="t">The capacity to initiate and pursue projects</span></td><td><span class="t">The decision to investigate a specific uncertainty</span></td></tr><tr><th scope="row"><span class="t"><strong>Interactive</strong></span></th><td><span class="t">Interpretations tested against other interpretations and reality</span></td><td><span class="t">Experiments, ventures, and contact with reality</span></td><td><span class="t">Sampling, laboratory analysis, and empirical testing</span></td></tr><tr><th scope="row"><span class="t"><strong>Selective</strong></span></th><td><span class="t">The interpretation or decision that becomes consequential</span></td><td><span class="t">The commitment that changes the world</span></td><td><span class="t">The published finding and any subsequent decisions it informs</span></td></tr></tbody></table></div>
 <p class="t">These are analytical mappings, not claims that the sites explicitly implement your five stages.</p>
 <p class="t">But the symmetry is powerful: your pentad can describe the ontology of a person, the operating logic of an entrepreneur, and the epistemic structure of a scientific investigation.</p>
 <h3 class="t l2">What makes the comparison wicked</h3>
@@ -1860,10 +1907,49 @@ This maps directly onto the transition from Stage IV (Distribution / SoftMax) to
 <p class="t">Friedman’s entrepreneurial orientation directs agency toward opportunities to build, test, and change things.</p>
 <p class="t">Hermeneutics asks how the world, the perceiver, the agent’s intentions, the ensuing interactions, and the final selection constitute a single process.</p>
 <p class="t">And then the architecture can be applied to itself:</p>
-<ul><li><span class="t">World: the competing tasks, opportunities, obligations, and uncertainties.</span></li><li><span class="t">Perception: what the system brings into view.</span></li><li><span class="t">Agentic: what it proposes pursuing.</span></li><li><span class="t">Interactive: what happens when a human investigates, challenges, or acts on those proposals.</span></li><li><span class="t">Selective: what the human actually commits to, with the resulting event entering the historical ledger.</span></li></ul>
+<ol class="steps"><li><strong class="t">World:</strong> <span class="t">the competing tasks, opportunities, obligations, and uncertainties.</span></li><li><strong class="t">Perception:</strong> <span class="t">what the system brings into view.</span></li><li><strong class="t">Agentic:</strong> <span class="t">what it proposes pursuing.</span></li><li><strong class="t">Interactive:</strong> <span class="t">what happens when a human investigates, challenges, or acts on those proposals.</span></li><li><strong class="t">Selective:</strong> <span class="t">what the human actually commits to, with the resulting event entering the historical ledger.</span></li></ol>
+<figure class="fig"><div class="figscroll"><svg class="loopsvg" viewBox="0 0 760 700" role="img" aria-labelledby="archt archd" xmlns="http://www.w3.org/2000/svg">
+<title id="archt">The pentad applied to itself</title><desc id="archd">Five stages in a ring, I World to V Selective, with diagonal edges between non-adjacent stages and a return edge from V to I prime.</desc>
+<defs><marker id="archah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" class="ahp"/></marker><marker id="archah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" class="ahp2"/></marker></defs>
+<line class="diag" x1="380.0" y1="100.0" x2="526.9" y2="552.3"/>
+<line class="diag" x1="526.9" y1="552.3" x2="142.2" y2="272.7"/>
+<line class="diag" x1="142.2" y1="272.7" x2="617.8" y2="272.7"/>
+<line class="diag" x1="617.8" y1="272.7" x2="233.1" y2="552.3"/>
+<line class="diag" x1="233.1" y1="552.3" x2="380.0" y2="100.0"/>
+<line class="edge" x1="448.8" y1="150.0" x2="548.9" y2="222.7" marker-end="url(#archah)"/>
+<line class="edge" x1="601.5" y1="322.7" x2="543.2" y2="502.3" marker-end="url(#archah)"/>
+<line class="edge" x1="413.9" y1="552.3" x2="346.1" y2="552.3" marker-end="url(#archah)"/>
+<line class="edge" x1="216.8" y1="502.3" x2="158.5" y2="322.7" marker-end="url(#archah)"/>
+<line class="ret" x1="211.1" y1="222.7" x2="311.2" y2="150.0" marker-end="url(#archah2)"/>
+<g class="node"><rect x="273.0" y="56.0" width="214" height="88" rx="10"/>
+<text class="nt" x="380.0" y="82.0" text-anchor="middle">I. World</text>
+<text class="ns" x="380.0" y="106.0" text-anchor="middle">What is there?</text>
+</g>
+<g class="node"><rect x="510.8" y="228.7" width="214" height="88" rx="10"/>
+<text class="nt" x="617.8" y="254.7" text-anchor="middle">II. Perception</text>
+<text class="ns" x="617.8" y="278.7" text-anchor="middle">What becomes visible?</text>
+</g>
+<g class="node"><rect x="419.9" y="508.3" width="214" height="88" rx="10"/>
+<text class="nt" x="526.9" y="534.3" text-anchor="middle">III. Agentic</text>
+<text class="ns" x="526.9" y="558.3" text-anchor="middle">What can I pursue?</text>
+</g>
+<g class="node"><rect x="126.1" y="508.3" width="214" height="88" rx="10"/>
+<text class="nt" x="233.1" y="534.3" text-anchor="middle">IV. Interactive</text>
+<text class="ns" x="233.1" y="558.3" text-anchor="middle">What happens when I engage?</text>
+</g>
+<g class="node"><rect x="35.2" y="228.7" width="214" height="88" rx="10"/>
+<text class="nt" x="142.2" y="254.7" text-anchor="middle">V. Selective</text>
+<text class="ns" x="142.2" y="278.7" text-anchor="middle">What becomes actual?</text>
+</g>
+<text class="retlab" x="255.1" y="174.4" text-anchor="middle">I’</text>
+<text class="cap" x="380" y="342" text-anchor="middle">Action changes reality;</text>
+<text class="cap" x="380" y="360" text-anchor="middle">the next cycle inherits</text>
+<text class="cap" x="380" y="378" text-anchor="middle">that changed reality.</text>
+</svg></div>
+<figcaption>Stage names and questions as in the response. Dashed lines join stages that are not adjacent.</figcaption></figure>
 <p class="t">That last stage matters because selection is not simply a score or a prediction. It is a transition in the state of the world.</p>
 <p class="t">Your formulation, in other words, is not merely a framework for ranking attention. It is a proposed architecture for understanding how attention becomes agency, how agency becomes interaction, and how interaction becomes history.</p>
-<p class="t">And I suspect that is what I missed the first time: Hermeneutics is not just one website alongside two other projects. It may be the lens through which the other two become intelligible.</p>
+<blockquote class="pull"><span class="t">And I suspect that is what I missed the first time: Hermeneutics is not just one website alongside two other projects. It may be the lens through which the other two become intelligible.</span></blockquote>
 </article>
 </section>
 <section class="panel doc" id="refs" hidden>
