@@ -324,6 +324,28 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 /* war tab: video specimen (additive) */
 #war .vid{position:relative;aspect-ratio:16/9;max-width:760px;border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:var(--card);margin:8px 0 8px}
 #war .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ChatGPT top-10 ranking list */
+.toplist{list-style:none;margin:18px 0 28px;padding:0;display:flex;flex-direction:column;gap:22px;max-width:720px}
+.topitem{display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px 18px;align-items:start}
+.topthumb{width:88px;height:88px;border-radius:14px;overflow:hidden;border:1px solid var(--rule);background:var(--soft);flex:none}
+.topthumb img{display:block;width:100%;height:100%;object-fit:cover}
+.topbody{min-width:0}
+.toptitle{font:500 1.12rem/1.3 var(--sans);margin:0 0 4px;color:var(--ink)}
+.toptitle .n{font:500 1.12rem var(--mono);color:var(--muted);margin-right:.35em}
+.toptabs{font:400 .78rem/1.35 var(--mono);color:var(--muted);margin:0 0 8px}
+.toptabs a{color:var(--muted);text-decoration:none}
+.toptabs a:hover{color:var(--blue)}
+.toplead{font:400 1.02rem/1.4 var(--serif);margin:0 0 8px;color:var(--ink)}
+.topbody p{margin:0 0 .65em;font-size:.95rem;line-height:1.55;max-width:58ch;color:var(--ink)}
+.topbody p:last-child{margin-bottom:0}
+.topbody .tk{color:var(--ink)}
+.topbody .tk strong{font-weight:600;color:var(--amber)}
+@media (max-width:560px){
+  .topitem{grid-template-columns:64px minmax(0,1fr);gap:12px 14px}
+  .topthumb{width:64px;height:64px;border-radius:12px}
+  .toptitle{font-size:1.02rem}
+}
 </style>
 </head>
 <body>
@@ -3737,138 +3759,116 @@ How would you like to build on this framework next?
 </section>
 <section class="panel doc" id="chatgpt10" hidden>
 <h2 class="ptitle">ChatGPT’s Top 10</h2>
-<p class="lede">Ranked not by prettiness but by how much intellectual work each idea does, how well it connects the other tabs, and whether it can change something outside the website. Images from <span class="t">ukhona/</span>. The strongest ideas are the distinctions that make the elaborate ones operational.</p>
+<p class="lede">Ranked not by prettiness but by how much intellectual work each idea does, how well it connects the other tabs, and whether it can change something outside the website. The strongest ideas are the distinctions that make the elaborate ones operational.</p>
 
 <blockquote class="pull"><span class="t">The next question is not whether you can construct another elegant IV → V → I′ loop. It’s whether someone outside your own intellectual ecosystem can use one of these ideas to make a better decision.</span></blockquote>
-<p class="note">ChatGPT, machine-generated ranking of the Ukubona app-waffle grid. The greatest hit may be the one that stops being a tab and starts becoming a tool.</p>
+<p class="note">ChatGPT, machine-generated ranking of the Ukubona app-waffle grid.</p>
 
-<article class="voice resp"><div class="vlabel">Response (ChatGPT)</div>
-<p class="t">Having seen the architecture of <em>Art is SoftMax, Life is ArgMax</em> and sampled the underlying conversations, I wouldn’t rank these as the ten prettiest tabs. I’d rank them by how much intellectual work they do, how well they connect the other tabs, and whether they can change something outside the website.</p>
-<p class="t">The surprising thing is that your strongest ideas are not necessarily the most elaborate ones. They are the distinctions that make the elaborate ones operational.</p>
-</article>
-
-<!-- 1 -->
-<h3 class="subsec">1. SoftMax → ArgMax</h3>
-<p class="note">Tabs: <a href="#atlas" data-tab="atlas">Atlas</a> · <a href="#ex3" data-tab="ex3">SoftMax</a> · <a href="#ex2" data-tab="ex2">Wilde</a> · <a href="#ex18" data-tab="ex18">Ship</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/b-1.jpeg" alt="SoftMax → ArgMax" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">The master distinction: possibility versus commitment.</p>
-<p class="t">Art can sustain multiple interpretations; life eventually forces choices. SoftMax distributes probability across options; ArgMax selects a maximizer. Your analogy turns a machine-learning distinction into a philosophy of art, action, and history.</p>
-<p class="t"><strong>The killer line:</strong> “Art keeps the world of possibilities visible. Life makes history.”</p>
-<p class="t"><strong>Why it wins:</strong> it connects Wilde’s aesthetic autonomy, Hamlet’s hesitation, product development, and the irreversibility of action without requiring them to be the same thing.</p>
-
-<!-- 2 -->
-<h3 class="subsec">2. Agency may emerge; authority must remain attributable.</h3>
-<p class="note">Tabs: <a href="#ex4" data-tab="ex4">Architecture</a> · <a href="#trust" data-tab="trust">Trust vs Attention</a> · <a href="#stack" data-tab="stack">Civilization Stack Agents</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-2.jpeg" alt="Agency vs authority" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">The governance principle.</p>
-<p class="t">An AI agent may discover options, coordinate with other agents, and even generate behavior its creator didn’t explicitly anticipate. That does not automatically give it the authority to decide whose interests matter or which consequences are acceptable.</p>
-<p class="t">Your strongest formulation is the distinction between computing a recommendation and holding the authority to decide what counts as worth doing.</p>
-<p class="t"><strong>Why it matters:</strong> it makes sovereignty a design constraint rather than a marketing adjective.</p>
-
-<!-- 3 -->
-<h3 class="subsec">3. Theogony as recursive system evolution</h3>
-<p class="note">Tabs: <a href="#ex6" data-tab="ex6">Theogony</a> · <a href="#ex10" data-tab="ex10">Hermes</a> · <a href="#lineage" data-tab="lineage">Lineage</a> · <a href="#ex8" data-tab="ex8">Adaptation</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-3.jpeg" alt="Theogony recursive evolution" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">Creation does not end with the creator’s generation.</p>
-<p class="t">Principal → Broker → Agents and variation → Collisions → Graveyard and survivors → new principals.</p>
-<p class="t">This is your bridge between Greek divine generations, Darwinian selection, multi-agent systems, and Nietzschean questions about who gets to define values.</p>
-<p class="t">The intellectual leap is not simply that AI resembles the gods. It is that a creation can change the conditions under which its own successors are created.</p>
-<p class="t"><strong>The unresolved question is the best one:</strong> when agents interact across principals, who owns the offspring’s allegiance?</p>
-
-<!-- 4 -->
-<h3 class="subsec">4. Attention may be the binding constraint, not trust.</h3>
-<p class="note">Tabs: <a href="#trust" data-tab="trust">Trust vs Attention</a> · <a href="#muse" data-tab="muse">Muse</a> · <a href="#ex4" data-tab="ex4">Architecture</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-4.jpeg" alt="Attention as binding constraint" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">Automate the maintenance of attention; preserve human authority over consequential commitment.</p>
-<p class="t">This is a more actionable AI product thesis than the generic question of whether an agent is trustworthy.</p>
-<p class="t">A system can be technically reliable and still fail because it misses the relevant signal, samples the wrong context, or monopolizes the user’s attention. Conversely, a broker that keeps a useful representation current can make multiple agents more effective without surrendering the principal’s authority.</p>
-<p class="t"><strong>Why it matters:</strong> this gives Ukubona a plausible product boundary—manage attention and context on behalf of the client, while leaving consequential commitment attributable to the client.</p>
-
-<!-- 5 -->
-<h3 class="subsec">5. The tree as the architecture of civilization</h3>
-<p class="note">Tabs: Tree · Bejan · Dendron · <a href="#ex8" data-tab="ex8">Adaptation</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-5.jpeg" alt="Tree architecture of civilization" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">Source → Roots → Trunk → Branches → Canopy → Seeds → new source.</p>
-<p class="t">The tree is more than a metaphor for hierarchy. It gives you a way to think about resource acquisition, flow, branching, access, reproduction, and feedback in one structure.</p>
-<p class="t">Your connection to Adrian Bejan’s Constructal Law adds a physical question: how do flow systems evolve configurations that facilitate access?</p>
-<p class="t">The strongest extension is the return to soil. A canopy that produces fruit but never returns anything to the conditions of its own regeneration is not a complete cycle.</p>
-<p class="t"><strong>Why it matters:</strong> the same topology can help you reason about organizations, infrastructure, information networks, and digital twins—provided each mapping is tested rather than assumed.</p>
-
-<!-- 6 -->
-<h3 class="subsec">6. The clinical loop: the stakes of getting the scalar wrong</h3>
-<p class="note">Tabs: <a href="#donor" data-tab="donor">Donor</a> · <a href="#neuropathic" data-tab="neuropathic">Neuropathic Pain</a> · <a href="#evidence" data-tab="evidence">Evidence to Action</a> · <a href="#ledger" data-tab="ledger">Ledger</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-6.jpeg" alt="Clinical loop" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">The difference between a classification and a consequential decision.</p>
-<p class="t">A diagnosis code, an observed symptom, a risk estimate, and a clinical action are different objects. The system must preserve those distinctions while moving from evidence to a decision.</p>
-<p class="t">The living-kidney-donation decision makes the architecture concrete: there are competing pathways, incomplete information, consequences for more than one person, and no reason to assume the highest-ranked option is automatically the right choice.</p>
-<p class="t"><strong>Why it matters:</strong> this is where your philosophical framework meets a domain in which data provenance, uncertainty, and the cost of error genuinely matter. The test is clinical performance, not how neatly a case fits the pentad.</p>
-
-<!-- 7 -->
-<h3 class="subsec">7. Chigurh’s coin: the evasion of responsibility</h3>
-<p class="note">Tabs: <a href="#chigurh" data-tab="chigurh">Chigurh</a> · <a href="#ex5" data-tab="ex5">Mortality</a> · <a href="#tragedy" data-tab="tragedy">Tragedy</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-7.jpeg" alt="Chigurh coin" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">A distribution cannot take responsibility for the person who acts on it.</p>
-<p class="t">The coin toss in <em>No Country for Old Men</em> is an especially sharp test of your framework. A random draw is not SoftMax, and it is not ArgMax. It samples from a distribution.</p>
-<p class="t">The moral trick is to make an attributable decision appear to have been made by chance.</p>
-<p class="t">That connects directly to AI: “the model recommended it,” “the algorithm ranked it first,” and “the coin decided” can all become rhetorical devices for distancing a human decision-maker from an outcome.</p>
-<p class="t"><strong>Why it makes the list:</strong> it turns an abstract governance principle into a scene you can understand without knowing anything about machine learning.</p>
-
-<!-- 8 -->
-<h3 class="subsec">8. The poet versus the ledger-keeper</h3>
-<p class="note">Tabs: <a href="#ex1" data-tab="ex1">Hermeneutics</a> · <a href="#ex9" data-tab="ex9">Poet</a> · <a href="#ex12" data-tab="ex12">The Book</a> · <a href="#ex15" data-tab="ex15">Qualified</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-8.jpeg" alt="Poet vs ledger-keeper" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">Who gets to say what something means?</p>
-<p class="t">Your quarrel over interpretation—made vivid by the Homer-versus-Hesiod exchange with GG—opens into a larger question about rules, authority, and institutions.</p>
-<p class="t">The poet generates meaning; the ledger-keeper preserves records, applies rules, and adjudicates. Neither role can simply absorb the other without a loss.</p>
-<p class="t">This is one of the more personal intellectual contributions in the grid: an everyday disagreement becomes a way to ask how a community reproduces its standards while allowing interpretation to evolve.</p>
-<p class="t"><strong>Why it matters:</strong> it supplies the human problem underneath the technical architecture.</p>
-
-<!-- 9 -->
-<h3 class="subsec">9. The harmonic series → 12-tone equal temperament → recombination</h3>
-<p class="note">Tabs: <a href="#muse" data-tab="muse">Muse</a> · <a href="#ex8" data-tab="ex8">Adaptation</a> · <a href="#ex4" data-tab="ex4">Architecture</a> · <a href="#ex3" data-tab="ex3">SoftMax</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-9.jpeg" alt="Harmonic series and temperament" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">A generative source is not the same thing as the vocabulary sampled from it.</p>
-<p class="t">The harmonic series provides one physical basis for thinking about musical pitch. Twelve-tone equal temperament is a particular tuning system. Chord voicing and recombination explore a further space of possibilities.</p>
-<p class="t">This gives you a concrete analogy for the difference between a generative engine, a sampled representation, and the combinatorial space agents explore.</p>
-<p class="t"><strong>The important caveat:</strong> the musical analogy is a productive hypothesis, not proof that biological evolution, language, and AI share one mechanism.</p>
-<p class="t"><strong>Why it makes the list:</strong> music lets you hear the architecture instead of merely labeling its stages.</p>
-
-<!-- 10 -->
-<h3 class="subsec">10. Great artists ship.</h3>
-<p class="note">Tabs: <a href="#ex18" data-tab="ex18">Ship</a> · <a href="#ex17" data-tab="ex17">Zenith</a> · <a href="#enough" data-tab="enough">Enough!</a></p>
-<figure class="fig" style="margin:8px 0 14px">
-  <img src="ukhona/ukb-10.jpeg" alt="Great artists ship" style="display:block;width:100%;max-width:720px;border-radius:12px;border:1px solid var(--rule)" loading="lazy"/>
-</figure>
-<p class="t">The search space is too large to enumerate in advance.</p>
-<p class="t">You cannot reason your way through every possible product variant, agent interaction, or client preference before deployment. You need to expose a candidate to reality, observe the response, update your weights, and decide what survives.</p>
-<p class="t">Simulation can cheaply prune possibilities. It cannot fully substitute for evidence from actual clients.</p>
-<p class="t">This is where your pentad stops being a grand interpretive framework and becomes a working loop:</p>
-<div class="chainwrap"><ol class="chain">
-<li><span class="t">Build</span></li>
-<li><span class="t">Expose</span></li>
-<li><span class="t">Observe</span></li>
-<li><span class="t">Reweight</span></li>
-<li><span class="t">Ship again</span></li>
-</ol></div>
-<p class="t"><strong>Why it closes the list:</strong> the best culmination of all the other ideas may be a modest act of execution.</p>
+<ol class="toplist">
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-1.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">1.</span> SoftMax → ArgMax</h3>
+    <p class="toptabs">Tabs: <a href="#atlas" data-tab="atlas">Atlas</a> · <a href="#ex3" data-tab="ex3">SoftMax</a> · <a href="#ex2" data-tab="ex2">Wilde</a> · <a href="#ex18" data-tab="ex18">Ship</a></p>
+    <p class="toplead">The master distinction: possibility versus commitment.</p>
+    <p>Art can sustain multiple interpretations; life eventually forces choices. SoftMax distributes probability across options; ArgMax selects a maximizer. Your analogy turns a machine-learning distinction into a philosophy of art, action, and history.</p>
+    <p class="tk"><strong>The killer line:</strong> “Art keeps the world of possibilities visible. Life makes history.”</p>
+    <p class="tk"><strong>Why it wins:</strong> it connects Wilde’s aesthetic autonomy, Hamlet’s hesitation, product development, and the irreversibility of action without requiring them to be the same thing.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-2.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">2.</span> Agency may emerge; authority must remain attributable.</h3>
+    <p class="toptabs">Tabs: <a href="#ex4" data-tab="ex4">Architecture</a> · <a href="#trust" data-tab="trust">Trust vs Attention</a> · <a href="#stack" data-tab="stack">Civilization Stack Agents</a></p>
+    <p class="toplead">The governance principle.</p>
+    <p>An AI agent may discover options, coordinate with other agents, and even generate behavior its creator didn’t explicitly anticipate. That does not automatically give it the authority to decide whose interests matter or which consequences are acceptable.</p>
+    <p>Your strongest formulation is the distinction between computing a recommendation and holding the authority to decide what counts as worth doing.</p>
+    <p class="tk"><strong>Why it matters:</strong> it makes sovereignty a design constraint rather than a marketing adjective.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-3.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">3.</span> Theogony as recursive system evolution</h3>
+    <p class="toptabs">Tabs: <a href="#ex6" data-tab="ex6">Theogony</a> · <a href="#ex10" data-tab="ex10">Hermes</a> · <a href="#lineage" data-tab="lineage">Lineage</a> · <a href="#ex8" data-tab="ex8">Adaptation</a></p>
+    <p class="toplead">Creation does not end with the creator’s generation.</p>
+    <p>Principal → Broker → Agents and variation → Collisions → Graveyard and survivors → new principals.</p>
+    <p>This is your bridge between Greek divine generations, Darwinian selection, multi-agent systems, and Nietzschean questions about who gets to define values. The leap is not that AI resembles the gods—it is that a creation can change the conditions under which its own successors are created.</p>
+    <p class="tk"><strong>The unresolved question:</strong> when agents interact across principals, who owns the offspring’s allegiance?</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-4.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">4.</span> Attention may be the binding constraint, not trust.</h3>
+    <p class="toptabs">Tabs: <a href="#trust" data-tab="trust">Trust vs Attention</a> · <a href="#muse" data-tab="muse">Muse</a> · <a href="#ex4" data-tab="ex4">Architecture</a></p>
+    <p class="toplead">Automate the maintenance of attention; preserve human authority over consequential commitment.</p>
+    <p>A more actionable AI product thesis than the generic question of whether an agent is trustworthy. A system can be technically reliable and still fail because it misses the relevant signal, samples the wrong context, or monopolizes attention.</p>
+    <p class="tk"><strong>Why it matters:</strong> it gives Ukubona a product boundary—manage attention and context for the client, leave consequential commitment attributable to the client.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-5.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">5.</span> The tree as the architecture of civilization</h3>
+    <p class="toptabs">Tabs: Tree · Bejan · Dendron · <a href="#ex8" data-tab="ex8">Adaptation</a></p>
+    <p class="toplead">Source → Roots → Trunk → Branches → Canopy → Seeds → new source.</p>
+    <p>More than a hierarchy metaphor: resource acquisition, flow, branching, access, reproduction, and feedback in one structure. Bejan’s Constructal Law adds the physical question of how flow systems evolve configurations that facilitate access. A canopy that never returns anything to the soil is not a complete cycle.</p>
+    <p class="tk"><strong>Why it matters:</strong> the same topology can help reason about organizations, infrastructure, and digital twins—if each mapping is tested rather than assumed.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-6.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">6.</span> The clinical loop: the stakes of getting the scalar wrong</h3>
+    <p class="toptabs">Tabs: <a href="#donor" data-tab="donor">Donor</a> · <a href="#neuropathic" data-tab="neuropathic">Neuropathic Pain</a> · <a href="#evidence" data-tab="evidence">Evidence to Action</a> · <a href="#ledger" data-tab="ledger">Ledger</a></p>
+    <p class="toplead">The difference between a classification and a consequential decision.</p>
+    <p>A diagnosis code, an observed symptom, a risk estimate, and a clinical action are different objects. The living-kidney-donation decision makes the architecture concrete: competing pathways, incomplete information, multi-person consequences, and no reason to assume rank 1 is automatically right.</p>
+    <p class="tk"><strong>Why it matters:</strong> where the framework meets a domain in which provenance, uncertainty, and the cost of error genuinely matter. The test is clinical performance, not how neatly a case fits the pentad.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-7.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">7.</span> Chigurh’s coin: the evasion of responsibility</h3>
+    <p class="toptabs">Tabs: <a href="#chigurh" data-tab="chigurh">Chigurh</a> · <a href="#ex5" data-tab="ex5">Mortality</a> · <a href="#tragedy" data-tab="tragedy">Tragedy</a></p>
+    <p class="toplead">A distribution cannot take responsibility for the person who acts on it.</p>
+    <p>The coin toss in <em>No Country for Old Men</em> samples from a distribution; it is neither SoftMax nor ArgMax. The moral trick is to make an attributable decision appear to have been made by chance—“the model recommended it,” “the algorithm ranked it first.”</p>
+    <p class="tk"><strong>Why it makes the list:</strong> it turns an abstract governance principle into a scene you can understand without knowing machine learning.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-8.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">8.</span> The poet versus the ledger-keeper</h3>
+    <p class="toptabs">Tabs: <a href="#ex1" data-tab="ex1">Hermeneutics</a> · <a href="#ex9" data-tab="ex9">Poet</a> · <a href="#ex12" data-tab="ex12">The Book</a> · <a href="#ex15" data-tab="ex15">Qualified</a></p>
+    <p class="toplead">Who gets to say what something means?</p>
+    <p>The Homer-versus-Hesiod exchange with GG opens into rules, authority, and institutions. The poet generates meaning; the ledger-keeper preserves records and adjudicates. Neither role can absorb the other without a loss.</p>
+    <p class="tk"><strong>Why it matters:</strong> it supplies the human problem underneath the technical architecture.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-9.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">9.</span> Harmonic series → temperament → recombination</h3>
+    <p class="toptabs">Tabs: <a href="#muse" data-tab="muse">Muse</a> · <a href="#ex8" data-tab="ex8">Adaptation</a> · <a href="#ex4" data-tab="ex4">Architecture</a> · <a href="#ex3" data-tab="ex3">SoftMax</a></p>
+    <p class="toplead">A generative source is not the same thing as the vocabulary sampled from it.</p>
+    <p>The harmonic series, twelve-tone equal temperament, and chord recombination give a concrete analogy for engine, sample, and combinatorial space. A productive hypothesis—not proof that biology, language, and AI share one mechanism.</p>
+    <p class="tk"><strong>Why it makes the list:</strong> music lets you hear the architecture instead of merely labeling its stages.</p>
+  </div>
+</li>
+<li class="topitem">
+  <div class="topthumb"><img src="ukhona/ukb-10.jpeg" alt="" loading="lazy"/></div>
+  <div class="topbody">
+    <h3 class="toptitle"><span class="n">10.</span> Great artists ship.</h3>
+    <p class="toptabs">Tabs: <a href="#ex18" data-tab="ex18">Ship</a> · <a href="#ex17" data-tab="ex17">Zenith</a> · <a href="#enough" data-tab="enough">Enough!</a></p>
+    <p class="toplead">The search space is too large to enumerate in advance.</p>
+    <p>You cannot reason through every product variant or client preference before deployment. Expose a candidate, observe, reweight, decide what survives. Simulation prunes; it does not substitute for the street.</p>
+    <p class="tk"><strong>Why it closes the list:</strong> the best culmination of the other ideas may be a modest act of execution.</p>
+  </div>
+</li>
+</ol>
 
 <h2 class="sec">The three that could define Ukubona</h2>
 <p class="note">If reduced to three:</p>
