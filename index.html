@@ -2867,12 +2867,12 @@ How would you like to build on this framework next?
 <li><strong>V. Consequence.</strong> The draw is committed. Some paths survive. Others end in an absorbing state, one that no transition leaves.</li>
 <li><strong>I′. Hubris.</strong> A survivor reads its own survival as evidence of skill, with the base rate dropped, and treats the limits set by the Engine (I) as binding others, not itself.</li>
 <li><strong>II′. Error-Free.</strong> The next sample comes from survivors only, so the record shows no errors. The failures are not in the sample.</li>
-<li><strong>III′. Maladaptive.</strong> Agents optimize against the survivor sample: copy it, scale it, leverage it. The score rises, and so does exposure. Back to IV.</li>
+<li><strong>III′. Overfit.</strong> Agents fit themselves to the survivor sample: copy it, scale it, leverage it. The score on the sample rises, and so does exposure. Back to IV.</li>
 </ol>
 
 <h2 class="sec">Figure</h2>
 <figure class="fig"><div class="figscroll"><svg class="tragsvg" viewBox="0 0 980 215" role="img" aria-labelledby="tgt tgd" xmlns="http://www.w3.org/2000/svg">
-<title id="tgt">The tragic loop</title><desc id="tgd">Five stages in a row: IV Chance, V Consequence, I prime Hubris, II prime Error-Free, III prime Maladaptive. A return arrow runs from III prime back to IV. IV and V are the world's side; I prime to III prime are the survivors' side.</desc>
+<title id="tgt">The tragic loop</title><desc id="tgd">Five stages in a row: IV Chance, V Consequence, I prime Hubris, II prime Error-Free, III prime Overfit. A return arrow runs from III prime back to IV. IV and V are the world's side; I prime to III prime are the survivors' side.</desc>
 <defs><marker id="tgah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" class="tg-ah"/></marker><marker id="tgah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" class="tg-ah2"/></marker></defs>
 <path class="tg-back" d="M886 46 V26 H94 V44" marker-end="url(#tgah2)"/>
 <text class="cap" x="490" y="18" text-anchor="middle">back to IV: the next draw, with more exposure</text>
@@ -2897,8 +2897,8 @@ How would you like to build on this framework next?
 <text class="ns" x="688" y="97" text-anchor="middle">Failures are not in the</text><text class="ns" x="688" y="114" text-anchor="middle">sample, so none are seen</text>
 <text class="mt" x="688" y="138" text-anchor="middle">E[r | survived] ≈ 0</text></g>
 <g class="mk"><rect x="802" y="46" width="168" height="104" rx="10"/>
-<text class="nt" x="886" y="74" text-anchor="middle">III′. Maladaptive</text>
-<text class="ns" x="886" y="97" text-anchor="middle">Optimize on the survivors:</text><text class="ns" x="886" y="114" text-anchor="middle">copy, scale, leverage</text>
+<text class="nt" x="886" y="74" text-anchor="middle">III′. Overfit</text>
+<text class="ns" x="886" y="97" text-anchor="middle">Fit to the survivors:</text><text class="ns" x="886" y="114" text-anchor="middle">copy, scale, leverage</text>
 <text class="mt" x="886" y="138" text-anchor="middle">û ↑   u ↓   n ↑</text></g>
 <path class="tg-br" d="M10 166 V174 H376 V166"/>
 <text class="cap" x="193" y="196" text-anchor="middle">given: the world's side</text>
@@ -2914,7 +2914,7 @@ How would you like to build on this framework next?
 <tr><th scope="row"><strong>V. Consequence</strong></th><td>One outcome is committed and cannot be undone. Survivors continue; the rest leave the sample.</td><td>\(\operatorname{argmax}\) is realized, once. Ruin is an absorbing state: no transition leaves it.</td><td>Graveyard and survivors</td><td>Large profits. The fund and its principals survive and grow.</td></tr>
 <tr><th scope="row"><strong>I′. Hubris</strong></th><td>The survivor takes the outcome as proof of its own skill and assumes the Engine's non-negotiables bind others, not itself.</td><td>\(\hat\varepsilon=0\) while \(\varepsilon&gt;0\). A prior of exactly 0 cannot be moved by any evidence (Cromwell's rule).</td><td>Principal \(P_i'\)</td><td>The record is read as proof of the model, not as one path through a distribution.</td></tr>
 <tr><th scope="row"><strong>II′. Error-Free</strong></th><td>No error is seen, because the failures are not in the sample. Epidemiologists call it selection bias; finance calls it survivorship bias.</td><td>\(\mathbb{E}[r\mid\text{survived}]\approx0\) although \(\mathbb{E}[r]\neq0\). The sample is conditioned on survival.</td><td>Broker \(B_{ij}'\)</td><td>Backtests and the track record show almost no error, on a history that did not contain an event like 1998.</td></tr>
-<tr><th scope="row"><strong>III′. Maladaptive</strong></th><td>Agents optimize on what survived: copy it, scale it, leverage it. The proxy score improves while the real risk grows with it.</td><td>\(\hat u\uparrow\) while \(u\downarrow\). Exposure \(n\) grows, and \(1-(1-\varepsilon)^n\to1\).</td><td>Agent \(A_{ijk}'\) and gametes \(G_{ijk}'\)</td><td>Positions and leverage scale up, and the same kind of trade is repeated across more markets.</td></tr>
+<tr><th scope="row"><strong>III′. Overfit</strong></th><td>Agents fit themselves to what survived: copy it, scale it, leverage it. The score on the sample improves while the real risk grows with it.</td><td>\(\hat u\uparrow\) while \(u\downarrow\). Exposure \(n\) grows, and \(1-(1-\varepsilon)^n\to1\).</td><td>Agent \(A_{ijk}'\) and gametes \(G_{ijk}'\)</td><td>Positions and leverage scale up, and the same kind of trade is repeated across more markets.</td></tr>
 </tbody></table></div>
 <p class="note">Back at IV: in August 1998 Russia defaulted on its domestic debt, positions assumed to be nearly independent lost together, and in September the New York Fed convened the banks that organized a rescue. The case is the standard account in Roger Lowenstein, <em>When Genius Failed</em> (2000), from my recollection of it; I did not re-check it for this tab.</p>
 
@@ -2935,10 +2935,10 @@ How would you like to build on this framework next?
 <div class="tw matrix pent"><table><thead><tr><th scope="col" class="corner">Stage</th><th scope="col">Move</th><th scope="col">Why it works</th></tr></thead><tbody>
 <tr><th scope="row"><strong>II′. Error-Free</strong></th><td>Put the graveyard back in the sample.</td><td>Add the non-survivors, so outcomes are no longer conditioned on survival.</td></tr>
 <tr><th scope="row"><strong>I′. Hubris</strong></th><td>Never give a bad outcome probability exactly 0.</td><td>A prior of 0 cannot be updated. Keep \(\varepsilon&gt;0\) and the evidence can still move it.</td></tr>
-<tr><th scope="row"><strong>III′. Maladaptive</strong></th><td>Cap exposure, and keep a buffer.</td><td>Bound \(n\) so that one bad draw is not absorbing. Ruin stops being a place you cannot leave.</td></tr>
+<tr><th scope="row"><strong>III′. Overfit</strong></th><td>Cap exposure, and keep a buffer.</td><td>Bound \(n\) so that one bad draw is not absorbing. Ruin stops being a place you cannot leave.</td></tr>
 </tbody></table></div>
 
-<p class="note">Labels: nothing in this tab is quoted from the exchanges. The stage names IV Chance, V Consequence, I′ Hubris, II′ Error-Free and III′ Maladaptive are yours. The loop order, the mathematics, the worked case and the three breaks are my reading, offered as a hypothesis in the page's own sense. Whether III′ should be called Maladaptive or something like Overfit is open.</p>
+<p class="note">Labels: nothing in this tab is quoted from the exchanges. The stage names IV Chance, V Consequence, I′ Hubris, II′ Error-Free and III′ Overfit are yours. The loop order, the mathematics, the worked case and the three breaks are my reading, offered as a hypothesis in the page's own sense.</p>
 <script>
 (function(){
   function g(id){return document.getElementById(id)}
