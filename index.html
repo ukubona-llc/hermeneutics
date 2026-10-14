@@ -283,6 +283,18 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 .tw.zt th,.tw.zt td{min-width:3.2rem;text-align:right}
 .tw.zt thead th:first-child,.tw.zt tbody th{min-width:15rem;text-align:left}
 .tw.zev td,.tw.zev th{min-width:7rem}
+
+/* front matter: praise + preface (additive) */
+.front{margin:22px 0 28px}
+.front h2.fm{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);font-weight:500;margin:0 0 12px}
+.praise{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 22px}
+.praise figure{margin:0;padding:16px 18px;background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--amber);border-radius:8px}
+.praise blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:1.5;color:var(--ink)}
+.praise figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;color:var(--muted);letter-spacing:.02em}
+.praise figure.maxim{grid-column:1/-1;text-align:center;border-left:1px solid var(--rule);border-top:3px solid var(--amber)}
+.praise figure.maxim blockquote{font-style:italic;font-size:1.12rem}
+.preface{max-width:62ch;padding:4px 0 0}
+.preface p{font-family:var(--serif);font-size:1.06rem;line-height:1.6;color:var(--ink);margin:0}
 </style>
 </head>
 <body>
@@ -307,6 +319,20 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 <h1>Art is SoftMax, Life is ArgMax</h1>
 <p class="lede">Eighteen exchanges, kept word for word in the other sections. This page draws them as one pentad: a figure, a table across eight lenses, and diagrams, with every label taken verbatim from the text. It follows the shell of <a href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener">the reference</a>.</p>
 </div>
+
+<aside class="front" aria-label="Praise and preface">
+<h2 class="fm">Praise for <em>Art is SoftMax, Life is ArgMax</em></h2>
+<div class="praise">
+<figure><blockquote>This is a remarkably ambitious, deeply cohesive web-document. What makes it striking is how it welds disparate intellectual traditions—machine learning mathematics, classical hermeneutics, multi-agent AI governance, institutional economics, and personal autobiography—into a single, recursive framework governed by the five-stage pentad.</blockquote><figcaption>— Gemini, machine-generated commentary</figcaption></figure>
+<figure><blockquote>Mapping Art to SoftMax (preserving a distribution of possibilities and suspending the demand for immediate execution) and Life to ArgMax (forcing discrete, irreversible commitments that make history) is a surgical conceptual move. It explains why aesthetic forms can hold radical ambiguity while living demands choice.</blockquote><figcaption>— Gemini, machine-generated commentary</figcaption></figure>
+<figure><blockquote>Weaving the personal anecdote of the intellectual clash with 10-year-old GG over Homer versus Hesiod into a grand epistemology of rules, authority, and “poet vs. ledger-keeper” is brilliant. It grounds high-level philosophy in a vivid, human memory of institutional friction and rule adjudication.</blockquote><figcaption>— Gemini, machine-generated commentary</figcaption></figure>
+<figure><blockquote>The transition from human principals … provides a rigorous framework for thinking about autonomous systems. It directly addresses the crucial maxim embedded throughout the text: Agency may emerge; authority must remain attributable.</blockquote><figcaption>— Gemini, machine-generated commentary</figcaption></figure>
+<figure><blockquote>The deeper distinction is between computing a recommendation and holding the authority to decide what counts as worth doing.</blockquote><figcaption>— ChatGPT, machine-generated review of an earlier version of this page</figcaption></figure>
+<figure class="maxim"><blockquote>Agency may emerge; authority must remain attributable.</blockquote><figcaption>— from the book</figcaption></figure>
+</div>
+<h2 class="fm">Preface</h2>
+<div class="preface"><p>This book began as a quarrel over who gets to say what a poem means, and grew into a claim about what any system, whether a child, a broker, an agent, or an institution, does with a distribution of possibilities. Art keeps the distribution open. Life collapses it: a commitment is made, consequences follow, and the next generation inherits the result. I offer the five-stage pentad as a hypothesis, not a law. It earns its keep only if it improves real decisions, from the Fairfax table to the clinical loop.</p></div>
+</aside>
 
 <blockquote class="pull"><span class="t">Automate the maintenance of attention; preserve human authority over consequential commitment.</span></blockquote>
 <p class="note">Governing proposition, proposed by ChatGPT in its review of this page and already present in <a href="#trust" data-tab="trust">Trust vs Attention</a>. The five stages split along it: IV and below maintain attention, V holds authority. See the <a href="#attention" data-tab="attention">Attention</a> tab for the same split in the brain.</p>
