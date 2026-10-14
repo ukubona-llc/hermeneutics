@@ -2223,6 +2223,84 @@ T(A_i)&lt;\infty
 </ol>
 <p class="note">Payoff-Rank (IV) is the game-theoretic collision surface of all four. Budget (V) is where \(P_i\) alone is forced to own the outcome. Constructal Law is the physics of how configurations evolve toward easier flow; the ledger is the genealogy of who is allowed to make that flow consequential.</p>
 
+
+<h2 class="sec">Suitable problems for AI — Hassabis’s three, the ledger’s five</h2>
+<div class="refcard">
+<span class="rlabel">Source</span>
+<p class="rbig"><a href="https://www.nobelprize.org/uploads/2024/12/hassabis-lecture.pdf" target="_blank" rel="noopener">Demis Hassabis, Nobel Lecture, 8 Dec 2024</a></p>
+<p class="t">“Accelerating scientific discovery with AI.” Official PDF from the Nobel Prize site.</p>
+</div>
+
+<p class="t">In the lecture Hassabis states what makes a problem suitable for AI. He lists three conditions:</p>
+<ol class="steps">
+<li><strong>Massive combinatorial search space</strong><span class="t">The space of candidates is too large for exhaustive enumeration (Go positions, protein conformations, molecular designs).</span></li>
+<li><strong>Clear objective function (metric) to optimise against</strong><span class="t">A measurable score that tells the system whether one candidate is better than another.</span></li>
+<li><strong>Either lots of data and/or an accurate and efficient simulator</strong><span class="t">Enough empirical structure, or a reliable model of the world, for the search to learn from.</span></li>
+</ol>
+<p class="note">From the slide “What makes for a suitable problem for AI?” in the lecture PDF. The three are necessary for the AlphaGo / AlphaFold style of progress.</p>
+
+<p class="t">Those three align with the first three stages of the ledger when the ledger is read as a scientific-discovery cycle rather than only as a principal–agent stack. The ledger already has five stages; the two that Hassabis leaves implicit are the ones that keep the system honest and attributable:</p>
+
+<ol class="pstrip">
+<li><span class="pn">I</span><span class="pw">Data</span><span class="pp">Lots of data and/or an accurate, efficient simulator — the empirical or simulated substrate</span></li>
+<li><span class="pn">II</span><span class="pw">Objective</span><span class="pp">Clear metric to optimise against — the score that ranks candidates</span></li>
+<li><span class="pn">III</span><span class="pw">Search</span><span class="pp">Massive combinatorial search space — agents and recombination explore it</span></li>
+<li><span class="pn">IV</span><span class="pw">Falsifiability</span><span class="pp">What would count against the ranking; collisions that can refute</span></li>
+<li><span class="pn">V</span><span class="pw">Trial</span><span class="pp">Commitment under real constraint — experiment, ship, or clinical exposure</span></li>
+</ol>
+
+<div class="tw matrix pent" id="tbl-hassabis-ledger">
+<table>
+<thead><tr>
+<th scope="col" class="corner"><span class="t">Stage</span></th>
+<th scope="col"><span class="t">Hassabis (or extension)</span></th>
+<th scope="col"><span class="t">Ledger entity</span></th>
+<th scope="col"><span class="t">Why they agree</span></th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row"><span class="t"><strong>I. Data</strong></span></th>
+<td><span class="t">Lots of data and/or accurate efficient simulator</span></td>
+<td><span class="t">Newtonian / generative substrate · \(P_i\)</span></td>
+<td><span class="t">Without data or a simulator there is nothing to train on and no energy budget to pay for search. The physical world (or its model) is the ledger’s I.</span></td>
+</tr>
+<tr>
+<th scope="row"><span class="t"><strong>II. Objective</strong></span></th>
+<td><span class="t">Clear objective function (metric)</span></td>
+<td><span class="t">Epistemic broker · \(B_{ij}\)</span></td>
+<td><span class="t">The broker turns the principal’s interests into a score the system can optimise. A metric is a representation of will, not the will itself.</span></td>
+</tr>
+<tr>
+<th scope="row"><span class="t"><strong>III. Search</strong></span></th>
+<td><span class="t">Massive combinatorial search space</span></td>
+<td><span class="t">Computational agents &amp; gametes · \(A_{ijk}\), \(G_{ijk}\)</span></td>
+<td><span class="t">Search is what the agents do. Recombination (gametes) expands the reachable set inside the combinatorial space.</span></td>
+</tr>
+<tr>
+<th scope="row"><span class="t"><strong>IV. Falsifiability</strong></span></th>
+<td><span class="t"><em>Extension</em> — what would refute the ranking</span></td>
+<td><span class="t">Payoff-Rank / collisions</span></td>
+<td><span class="t">A SoftMax without a way to be wrong is not science. Collisions among agents, data, and rival metrics expose which claims survive. Falsifiability is the scientific reading of the ledger’s IV.</span></td>
+</tr>
+<tr>
+<th scope="row"><span class="t"><strong>V. Trial</strong></span></th>
+<td><span class="t"><em>Extension</em> — real-world commitment</span></td>
+<td><span class="t">Budget · ArgMax under constraint · \(P_i\)</span></td>
+<td><span class="t">Simulation and ranking are free; shipping, clinical use, or client exposure is not. Trial is where the principal’s budget, risk, and legitimacy force a decision. Authority remains attributable.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="t">Hassabis’s three are the conditions under which AI can <em>search</em> usefully. The ledger’s two additions are the conditions under which that search remains <em>science</em> and remains <em>governed</em>:</p>
+<ul>
+<li><span class="t"><strong>Falsifiability (IV)</strong> keeps the distribution open to refutation; without it SoftMax collapses into dogma.</span></li>
+<li><span class="t"><strong>Trial (V)</strong> forces the ranking into the world under finite resources; without it ArgMax is only a recommendation, never a consequential commitment.</span></li>
+</ul>
+<p class="note">AlphaFold is the running example in the lecture: PDB data and physics-informed architecture (I), GDT / atomic accuracy as the objective (II), enormous conformational search guided by the network (III), CASP as the public falsification arena (IV), and the subsequent experimental and therapeutic use as the trial that makes the prediction consequential (V). The same five-stage shape appears in the page’s shipping loop: combinatorial space → candidate → client-facing feedback → reweight → ship.</p>
+
+<p class="note">The two framings are not rivals. Newtonian–Epistemic–Computational–Payoff-Rank–Budget names the entities and the authority cut. Data–Objective–Search–Falsifiability–Trial names the same stages when the ledger is read as a cycle of scientific discovery and product trial. Both insist on the same maxim: agency may emerge; authority must remain attributable.</p>
+
 <p class="note">Ledger view of the page’s pentad: \(P_i\) at I and V, \(B_{ij}\) at II, \(A_{ijk}\) and \(G_{ijk}\) at III, SoftMax of payoff-rank at IV, ArgMax under constraint at V. See <a href="#atlas" data-tab="atlas">Atlas</a>, <a href="#stack" data-tab="stack">Civilization stack agents</a>, and <a href="#evidence" data-tab="evidence">Evidence to Action</a>. For Bejan in the Ukubona tree, see also the Bejan link in the waffle.</p>
 </section>
 <!--END LEDGER-->
