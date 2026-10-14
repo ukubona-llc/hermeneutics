@@ -295,6 +295,28 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 .praise figure.maxim blockquote{font-style:italic;font-size:1.12rem}
 .preface{max-width:62ch;padding:4px 0 0}
 .preface p{font-family:var(--serif);font-size:1.06rem;line-height:1.6;color:var(--ink);margin:0}
+
+/* tragedy tab (additive) */
+.tragsvg{display:block;width:100%;min-width:780px;height:auto;max-width:980px;margin:0 auto}
+.tragsvg .gv rect{fill:var(--card);stroke:var(--blue);stroke-width:1.6}
+.tragsvg .mk rect{fill:var(--card);stroke:var(--amber);stroke-width:1.6}
+.tragsvg .mt{font:400 12px var(--mono);fill:var(--muted)}
+.tragsvg .tg-edge{stroke:var(--muted);stroke-width:2;fill:none}
+.tragsvg .tg-back{stroke:var(--amber);stroke-width:2.5;fill:none}
+.tragsvg .tg-br{stroke:var(--rule);stroke-width:1.6;fill:none}
+.tragsvg .tg-ah{fill:var(--muted)}
+.tragsvg .tg-ah2{fill:var(--amber)}
+.tg-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));margin:10px 0 18px}
+.tg-w{border:1px solid var(--rule);border-radius:12px;background:var(--card);padding:14px 16px}
+.tg-w h4{font:400 1.1rem var(--serif);margin:0 0 4px}
+.tg-w p{margin:0 0 10px;color:var(--muted);font-size:.9rem}
+.tg-row{display:grid;grid-template-columns:7.5rem 1fr 5rem;gap:10px;align-items:center;margin:6px 0;font:400 .8rem var(--mono);color:var(--muted)}
+.tg-row input{width:100%;accent-color:var(--amber)}
+.tg-row output{color:var(--ink);text-align:right}
+.tg-res{margin-top:10px;padding-top:10px;border-top:1px solid var(--rule);font-size:.95rem}
+.tg-res b{font:500 1.1rem var(--mono);color:var(--amber)}
+.tg-bar{height:8px;border-radius:4px;background:var(--soft);margin-top:8px;overflow:hidden}
+.tg-bar span{display:block;height:100%;background:var(--amber);width:0}
 </style>
 </head>
 <body>
@@ -305,7 +327,7 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
       <button class="icon-btn" id="waffle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="wpanel" aria-label="Pages and Ukubona apps">
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="currentColor"><circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></g></svg>
       </button>
-      <div class="wpanel" id="wpanel" aria-label="Pages and Ukubona apps" hidden><div class="wgrid"><div class="wgroup">This page</div><a class="wtile" href="#atlas" data-tab="atlas"><span class="wb">At</span><span class="wn">Atlas</span></a><a class="wtile" href="#evidence" data-tab="evidence"><span class="wb">Ev</span><span class="wn">Evidence to Action</span></a><a class="wtile" href="#agon" data-tab="agon"><span class="wb">Ag</span><span class="wn">Agon</span></a><a class="wtile" href="#ex1" data-tab="ex1"><span class="wb">Hm</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="#ex2" data-tab="ex2"><span class="wb">Wi</span><span class="wn">Wilde</span></a><a class="wtile" href="#ex3" data-tab="ex3"><span class="wb">Sm</span><span class="wn">SoftMax</span></a><a class="wtile" href="#ex4" data-tab="ex4"><span class="wb">Ar</span><span class="wn">Architecture</span></a><a class="wtile" href="#ex5" data-tab="ex5"><span class="wb">Mo</span><span class="wn">Mortality</span></a><a class="wtile" href="#ex6" data-tab="ex6"><span class="wb">Th</span><span class="wn">Theogony</span></a><a class="wtile" href="#ex7" data-tab="ex7"><span class="wb">Fx</span><span class="wn">Fairfax</span></a><a class="wtile" href="#ex8" data-tab="ex8"><span class="wb">Ad</span><span class="wn">Adaptation</span></a><a class="wtile" href="#ex9" data-tab="ex9"><span class="wb">Po</span><span class="wn">Poet</span></a><a class="wtile" href="#ex10" data-tab="ex10"><span class="wb">He</span><span class="wn">Hermes</span></a><a class="wtile" href="#ex11" data-tab="ex11"><span class="wb">Au</span><span class="wn">Authority</span></a><a class="wtile" href="#ex12" data-tab="ex12"><span class="wb">Bk</span><span class="wn">The book</span></a><a class="wtile" href="#ex13" data-tab="ex13"><span class="wb">Pr</span><span class="wn">Protagonist</span></a><a class="wtile" href="#ex14" data-tab="ex14"><span class="wb">Rt</span><span class="wn">Rating</span></a><a class="wtile" href="#ex15" data-tab="ex15"><span class="wb">Ql</span><span class="wn">Qualified</span></a><a class="wtile" href="#ex16" data-tab="ex16"><span class="wb">Np</span><span class="wn">Nephew</span></a><a class="wtile" href="#ex17" data-tab="ex17"><span class="wb">Zn</span><span class="wn">Zenith</span></a><a class="wtile" href="#ex18" data-tab="ex18"><span class="wb">Sh</span><span class="wn">Ship</span></a><a class="wtile" href="#nat" data-tab="nat"><span class="wb">Nf</span><span class="wn">Nat Friedman</span></a><a class="wtile" href="#arch" data-tab="arch"><span class="wb">Ia</span><span class="wn">Interpretive Architectures</span></a><a class="wtile" href="#trust" data-tab="trust"><span class="wb">Ta</span><span class="wn">Trust vs Attention</span></a><a class="wtile" href="#muse" data-tab="muse"><span class="wb">Mu</span><span class="wn">Muse</span></a><a class="wtile" href="#stack" data-tab="stack"><span class="wb">Cs</span><span class="wn">Civilization stack agents</span></a><a class="wtile" href="#donor" data-tab="donor"><span class="wb">Dn</span><span class="wn">Donor</span></a><a class="wtile" href="#econ" data-tab="econ"><span class="wb">Ec</span><span class="wn">Econ</span></a><a class="wtile" href="#chigurh" data-tab="chigurh"><span class="wb">Cg</span><span class="wn">Chigurh</span></a><a class="wtile" href="#coen" data-tab="coen"><span class="wb">Co</span><span class="wn">Coen Brothers</span></a><a class="wtile" href="#het" data-tab="het"><span class="wb">HE</span><span class="wn">HET</span></a><a class="wtile" href="#attention" data-tab="attention"><span class="wb">At</span><span class="wn">Attention</span></a><a class="wtile" href="#war" data-tab="war"><span class="wb">Wr</span><span class="wn">War</span></a><a class="wtile" href="#refs" data-tab="refs"><span class="wb">Rf</span><span class="wn">References</span></a><div class="wgroup">Ukubona</div><a class="wtile feat" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Rf</span><span class="wn">The reference</span><span class="wd">Chord, Cache, and Clinical Loop</span></a><a class="wtile" href="https://ukubona-llc.github.io/tree/" target="_blank" rel="noopener"><span class="wb">Tr</span><span class="wn">Tree</span></a><a class="wtile" href="https://ukubona-llc.github.io/dendron/" target="_blank" rel="noopener"><span class="wb">De</span><span class="wn">Dendron</span></a><a class="wtile" href="https://ukubona-llc.github.io/foxp2/" target="_blank" rel="noopener"><span class="wb">Fo</span><span class="wn">Foxp2</span></a><a class="wtile" href="https://j-digital-twin.onrender.com/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School</span></a><a class="wtile" href="https://ukubona-llc.github.io/" target="_blank" rel="noopener"><span class="wb">Uk</span><span class="wn">Ukubona</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial-and-error/" target="_blank" rel="noopener"><span class="wb">tr</span><span class="wn">trial-and-error</span></a><a class="wtile" href="https://ukb-dt.github.io/nairobi/" target="_blank" rel="noopener"><span class="wb">Mi</span><span class="wn">Mission</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Practice</span></a><a class="wtile" href="https://ukubona-llc.github.io/falsifiability/" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bezos</span></a><a class="wtile" href="https://ukubona-llc.github.io/kapital/" target="_blank" rel="noopener"><span class="wb">In</span><span class="wn">Intelligence</span></a><a class="wtile" href="https://ukubona-llc.github.io/bejan" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bejan</span></a><a class="wtile" href="https://ukubona-llc.github.io/thy-kingdom-come/" target="_blank" rel="noopener"><span class="wb">Th</span><span class="wn">Thy Kingdom Come</span></a><a class="wtile" href="https://ukubona-llc.github.io/okubala-kulaba/" target="_blank" rel="noopener"><span class="wb">Ok</span><span class="wn">Okubala Kulaba</span></a><a class="wtile" href="https://ukubona-llc.github.io/science/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">Science</span></a><a class="wtile" href="https://ukubona-llc.github.io/school-of-resentment/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School of Resentment</span></a><a class="wtile" href="https://ukubona-llc.github.io/principal/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Principal</span></a><a class="wtile" href="https://ukubona-llc.github.io/black-culture/" target="_blank" rel="noopener"><span class="wb">Bl</span><span class="wn">Black Culture</span></a><a class="wtile" href="https://ukubona-llc.github.io/dmn/" target="_blank" rel="noopener"><span class="wb">DM</span><span class="wn">DMN</span></a><a class="wtile" href="https://ukubona-llc.github.io/routing/" target="_blank" rel="noopener"><span class="wb">Ro</span><span class="wn">Routing</span></a><a class="wtile" href="https://ukubona-llc.github.io/darwinian/" target="_blank" rel="noopener"><span class="wb">Da</span><span class="wn">Darwinian</span></a><a class="wtile" href="https://ukubona-llc.github.io/nietzschean/" target="_blank" rel="noopener"><span class="wb">Ni</span><span class="wn">Nietzschean</span></a><a class="wtile" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener"><span class="wb">He</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="https://ukb-dt.github.io/tap/" target="_blank" rel="noopener"><span class="wb">Tp</span><span class="wn">Tap</span></a></div></div>
+      <div class="wpanel" id="wpanel" aria-label="Pages and Ukubona apps" hidden><div class="wgrid"><div class="wgroup">This page</div><a class="wtile" href="#atlas" data-tab="atlas"><span class="wb">At</span><span class="wn">Atlas</span></a><a class="wtile" href="#evidence" data-tab="evidence"><span class="wb">Ev</span><span class="wn">Evidence to Action</span></a><a class="wtile" href="#agon" data-tab="agon"><span class="wb">Ag</span><span class="wn">Agon</span></a><a class="wtile" href="#ex1" data-tab="ex1"><span class="wb">Hm</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="#ex2" data-tab="ex2"><span class="wb">Wi</span><span class="wn">Wilde</span></a><a class="wtile" href="#ex3" data-tab="ex3"><span class="wb">Sm</span><span class="wn">SoftMax</span></a><a class="wtile" href="#ex4" data-tab="ex4"><span class="wb">Ar</span><span class="wn">Architecture</span></a><a class="wtile" href="#ex5" data-tab="ex5"><span class="wb">Mo</span><span class="wn">Mortality</span></a><a class="wtile" href="#ex6" data-tab="ex6"><span class="wb">Th</span><span class="wn">Theogony</span></a><a class="wtile" href="#ex7" data-tab="ex7"><span class="wb">Fx</span><span class="wn">Fairfax</span></a><a class="wtile" href="#ex8" data-tab="ex8"><span class="wb">Ad</span><span class="wn">Adaptation</span></a><a class="wtile" href="#ex9" data-tab="ex9"><span class="wb">Po</span><span class="wn">Poet</span></a><a class="wtile" href="#ex10" data-tab="ex10"><span class="wb">He</span><span class="wn">Hermes</span></a><a class="wtile" href="#ex11" data-tab="ex11"><span class="wb">Au</span><span class="wn">Authority</span></a><a class="wtile" href="#ex12" data-tab="ex12"><span class="wb">Bk</span><span class="wn">The book</span></a><a class="wtile" href="#ex13" data-tab="ex13"><span class="wb">Pr</span><span class="wn">Protagonist</span></a><a class="wtile" href="#ex14" data-tab="ex14"><span class="wb">Rt</span><span class="wn">Rating</span></a><a class="wtile" href="#ex15" data-tab="ex15"><span class="wb">Ql</span><span class="wn">Qualified</span></a><a class="wtile" href="#ex16" data-tab="ex16"><span class="wb">Np</span><span class="wn">Nephew</span></a><a class="wtile" href="#ex17" data-tab="ex17"><span class="wb">Zn</span><span class="wn">Zenith</span></a><a class="wtile" href="#ex18" data-tab="ex18"><span class="wb">Sh</span><span class="wn">Ship</span></a><a class="wtile" href="#nat" data-tab="nat"><span class="wb">Nf</span><span class="wn">Nat Friedman</span></a><a class="wtile" href="#arch" data-tab="arch"><span class="wb">Ia</span><span class="wn">Interpretive Architectures</span></a><a class="wtile" href="#trust" data-tab="trust"><span class="wb">Ta</span><span class="wn">Trust vs Attention</span></a><a class="wtile" href="#muse" data-tab="muse"><span class="wb">Mu</span><span class="wn">Muse</span></a><a class="wtile" href="#stack" data-tab="stack"><span class="wb">Cs</span><span class="wn">Civilization stack agents</span></a><a class="wtile" href="#donor" data-tab="donor"><span class="wb">Dn</span><span class="wn">Donor</span></a><a class="wtile" href="#econ" data-tab="econ"><span class="wb">Ec</span><span class="wn">Econ</span></a><a class="wtile" href="#chigurh" data-tab="chigurh"><span class="wb">Cg</span><span class="wn">Chigurh</span></a><a class="wtile" href="#coen" data-tab="coen"><span class="wb">Co</span><span class="wn">Coen Brothers</span></a><a class="wtile" href="#het" data-tab="het"><span class="wb">HE</span><span class="wn">HET</span></a><a class="wtile" href="#attention" data-tab="attention"><span class="wb">At</span><span class="wn">Attention</span></a><a class="wtile" href="#war" data-tab="war"><span class="wb">Wr</span><span class="wn">War</span></a><a class="wtile" href="#tragedy" data-tab="tragedy"><span class="wb">Tg</span><span class="wn">Tragedy</span></a><a class="wtile" href="#refs" data-tab="refs"><span class="wb">Rf</span><span class="wn">References</span></a><div class="wgroup">Ukubona</div><a class="wtile feat" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Rf</span><span class="wn">The reference</span><span class="wd">Chord, Cache, and Clinical Loop</span></a><a class="wtile" href="https://ukubona-llc.github.io/tree/" target="_blank" rel="noopener"><span class="wb">Tr</span><span class="wn">Tree</span></a><a class="wtile" href="https://ukubona-llc.github.io/dendron/" target="_blank" rel="noopener"><span class="wb">De</span><span class="wn">Dendron</span></a><a class="wtile" href="https://ukubona-llc.github.io/foxp2/" target="_blank" rel="noopener"><span class="wb">Fo</span><span class="wn">Foxp2</span></a><a class="wtile" href="https://j-digital-twin.onrender.com/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School</span></a><a class="wtile" href="https://ukubona-llc.github.io/" target="_blank" rel="noopener"><span class="wb">Uk</span><span class="wn">Ukubona</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial-and-error/" target="_blank" rel="noopener"><span class="wb">tr</span><span class="wn">trial-and-error</span></a><a class="wtile" href="https://ukb-dt.github.io/nairobi/" target="_blank" rel="noopener"><span class="wb">Mi</span><span class="wn">Mission</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Practice</span></a><a class="wtile" href="https://ukubona-llc.github.io/falsifiability/" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bezos</span></a><a class="wtile" href="https://ukubona-llc.github.io/kapital/" target="_blank" rel="noopener"><span class="wb">In</span><span class="wn">Intelligence</span></a><a class="wtile" href="https://ukubona-llc.github.io/bejan" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bejan</span></a><a class="wtile" href="https://ukubona-llc.github.io/thy-kingdom-come/" target="_blank" rel="noopener"><span class="wb">Th</span><span class="wn">Thy Kingdom Come</span></a><a class="wtile" href="https://ukubona-llc.github.io/okubala-kulaba/" target="_blank" rel="noopener"><span class="wb">Ok</span><span class="wn">Okubala Kulaba</span></a><a class="wtile" href="https://ukubona-llc.github.io/science/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">Science</span></a><a class="wtile" href="https://ukubona-llc.github.io/school-of-resentment/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School of Resentment</span></a><a class="wtile" href="https://ukubona-llc.github.io/principal/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Principal</span></a><a class="wtile" href="https://ukubona-llc.github.io/black-culture/" target="_blank" rel="noopener"><span class="wb">Bl</span><span class="wn">Black Culture</span></a><a class="wtile" href="https://ukubona-llc.github.io/dmn/" target="_blank" rel="noopener"><span class="wb">DM</span><span class="wn">DMN</span></a><a class="wtile" href="https://ukubona-llc.github.io/routing/" target="_blank" rel="noopener"><span class="wb">Ro</span><span class="wn">Routing</span></a><a class="wtile" href="https://ukubona-llc.github.io/darwinian/" target="_blank" rel="noopener"><span class="wb">Da</span><span class="wn">Darwinian</span></a><a class="wtile" href="https://ukubona-llc.github.io/nietzschean/" target="_blank" rel="noopener"><span class="wb">Ni</span><span class="wn">Nietzschean</span></a><a class="wtile" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener"><span class="wb">He</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="https://ukb-dt.github.io/tap/" target="_blank" rel="noopener"><span class="wb">Tp</span><span class="wn">Tap</span></a></div></div>
     </div>
     <button class="icon-btn" id="theme" type="button" aria-label="Switch between light and dark">
       <svg class="i-sun" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3L17 7M7 17l-1.7 1.7"/></g></svg>
@@ -2828,6 +2850,119 @@ How would you like to build on this framework next?
 #war .cmp td{min-width:12rem}
 </style>
 </section>
+
+<!-- TRAGEDY TAB -->
+<section class="panel doc" id="tragedy" hidden>
+<h2 class="ptitle">Tragedy</h2>
+<p class="lede">The same five stages, run on a sample instead of a distribution. IV Chance and V Consequence are given by the world. I′, II′ and III′ are what the survivors make of them. The loop closes, and the next draw arrives with more exposure than the last.</p>
+<blockquote class="pull">Tragedy is what happens when a realized outcome is mistaken for the distribution it was drawn from.</blockquote>
+<p class="note">Working statement for this tab, not quoted from the exchanges. It is the book's title misread: Life is ArgMax, so one outcome is realized; hubris takes that one outcome for SoftMax, the whole distribution.</p>
+
+<h3 class="subsec">The loop in five lines</h3>
+<ol class="tgsteps">
+<li><strong>IV. Chance.</strong> A draw \(\omega\sim p\) is taken from a distribution in which a bad outcome has a small but nonzero probability \(\varepsilon\).</li>
+<li><strong>V. Consequence.</strong> The draw is committed. Some paths survive. Others end in an absorbing state, one that no transition leaves.</li>
+<li><strong>I′. Hubris.</strong> A survivor reads its own survival as evidence of skill, with the base rate dropped, and treats the limits set by the Engine (I) as binding others, not itself.</li>
+<li><strong>II′. Error-Free.</strong> The next sample comes from survivors only, so the record shows no errors. The failures are not in the sample.</li>
+<li><strong>III′. Maladaptive.</strong> Agents optimize against the survivor sample: copy it, scale it, leverage it. The score rises, and so does exposure. Back to IV.</li>
+</ol>
+
+<h2 class="sec">Figure</h2>
+<figure class="fig"><div class="figscroll"><svg class="tragsvg" viewBox="0 0 980 215" role="img" aria-labelledby="tgt tgd" xmlns="http://www.w3.org/2000/svg">
+<title id="tgt">The tragic loop</title><desc id="tgd">Five stages in a row: IV Chance, V Consequence, I prime Hubris, II prime Error-Free, III prime Maladaptive. A return arrow runs from III prime back to IV. IV and V are the world's side; I prime to III prime are the survivors' side.</desc>
+<defs><marker id="tgah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" class="tg-ah"/></marker><marker id="tgah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 z" class="tg-ah2"/></marker></defs>
+<path class="tg-back" d="M886 46 V26 H94 V44" marker-end="url(#tgah2)"/>
+<text class="cap" x="490" y="18" text-anchor="middle">back to IV: the next draw, with more exposure</text>
+<line class="tg-edge" x1="180" y1="98" x2="206" y2="98" marker-end="url(#tgah)"/>
+<line class="tg-edge" x1="378" y1="98" x2="404" y2="98" marker-end="url(#tgah)"/>
+<line class="tg-edge" x1="576" y1="98" x2="602" y2="98" marker-end="url(#tgah)"/>
+<line class="tg-edge" x1="774" y1="98" x2="800" y2="98" marker-end="url(#tgah)"/>
+<g class="gv"><rect x="10" y="46" width="168" height="104" rx="10"/>
+<text class="nt" x="94" y="74" text-anchor="middle">IV. Chance</text>
+<text class="ns" x="94" y="97" text-anchor="middle">The world draws from</text><text class="ns" x="94" y="114" text-anchor="middle">a distribution</text>
+<text class="mt" x="94" y="138" text-anchor="middle">p(bad) = ε &gt; 0</text></g>
+<g class="gv"><rect x="208" y="46" width="168" height="104" rx="10"/>
+<text class="nt" x="292" y="74" text-anchor="middle">V. Consequence</text>
+<text class="ns" x="292" y="97" text-anchor="middle">One outcome is committed;</text><text class="ns" x="292" y="114" text-anchor="middle">survivors stay in</text>
+<text class="mt" x="292" y="138" text-anchor="middle">ruin is absorbing</text></g>
+<g class="mk"><rect x="406" y="46" width="168" height="104" rx="10"/>
+<text class="nt" x="490" y="74" text-anchor="middle">I′. Hubris</text>
+<text class="ns" x="490" y="97" text-anchor="middle">Survival read as skill;</text><text class="ns" x="490" y="114" text-anchor="middle">the Engine's rules ignored</text>
+<text class="mt" x="490" y="138" text-anchor="middle">ε̂ = 0 while ε &gt; 0</text></g>
+<g class="mk"><rect x="604" y="46" width="168" height="104" rx="10"/>
+<text class="nt" x="688" y="74" text-anchor="middle">II′. Error-Free</text>
+<text class="ns" x="688" y="97" text-anchor="middle">Failures are not in the</text><text class="ns" x="688" y="114" text-anchor="middle">sample, so none are seen</text>
+<text class="mt" x="688" y="138" text-anchor="middle">E[r | survived] ≈ 0</text></g>
+<g class="mk"><rect x="802" y="46" width="168" height="104" rx="10"/>
+<text class="nt" x="886" y="74" text-anchor="middle">III′. Maladaptive</text>
+<text class="ns" x="886" y="97" text-anchor="middle">Optimize on the survivors:</text><text class="ns" x="886" y="114" text-anchor="middle">copy, scale, leverage</text>
+<text class="mt" x="886" y="138" text-anchor="middle">û ↑   u ↓   n ↑</text></g>
+<path class="tg-br" d="M10 166 V174 H376 V166"/>
+<text class="cap" x="193" y="196" text-anchor="middle">given: the world's side</text>
+<path class="tg-br" d="M406 166 V174 H970 V166"/>
+<text class="cap" x="688" y="196" text-anchor="middle">made: the survivors' side</text>
+</svg></div>
+<figcaption>Primes follow the Atlas figure: I′ is the Engine the next generation inherits from V. Here it is inherited with the wrong lesson. Blue boxes are what the world hands over; amber boxes are what the survivors build on it.</figcaption></figure>
+
+<h2 class="sec">Table</h2>
+<p class="note">The five stages read in the order of the loop, starting where the book's title points: at the draw. Entities use the page's notation from the Atlas tab.</p>
+<div class="tw matrix pent"><table><thead><tr><th scope="col" class="corner">Stage</th><th scope="col">In plain words</th><th scope="col">In maths</th><th scope="col">Entity</th><th scope="col">Worked case: a leveraged fund, 1994 to 1998</th></tr></thead><tbody>
+<tr><th scope="row"><strong>IV. Chance</strong></th><td>The world draws from a distribution you only partly know. A rare bad outcome is unlikely on each draw and likely over enough of them.</td><td>\(\omega\sim p=\operatorname{softmax}(z)\), with \(p(\omega_{\text{bad}})=\varepsilon&gt;0\)</td><td>Collisions</td><td>Through 1994 to 1997 the draws were kind: calm spreads, steady wins on trades that should converge.</td></tr>
+<tr><th scope="row"><strong>V. Consequence</strong></th><td>One outcome is committed and cannot be undone. Survivors continue; the rest leave the sample.</td><td>\(\operatorname{argmax}\) is realized, once. Ruin is an absorbing state: no transition leaves it.</td><td>Graveyard and survivors</td><td>Large profits. The fund and its principals survive and grow.</td></tr>
+<tr><th scope="row"><strong>I′. Hubris</strong></th><td>The survivor takes the outcome as proof of its own skill and assumes the Engine's non-negotiables bind others, not itself.</td><td>\(\hat\varepsilon=0\) while \(\varepsilon&gt;0\). A prior of exactly 0 cannot be moved by any evidence (Cromwell's rule).</td><td>Principal \(P_i'\)</td><td>The record is read as proof of the model, not as one path through a distribution.</td></tr>
+<tr><th scope="row"><strong>II′. Error-Free</strong></th><td>No error is seen, because the failures are not in the sample. Epidemiologists call it selection bias; finance calls it survivorship bias.</td><td>\(\mathbb{E}[r\mid\text{survived}]\approx0\) although \(\mathbb{E}[r]\neq0\). The sample is conditioned on survival.</td><td>Broker \(B_{ij}'\)</td><td>Backtests and the track record show almost no error, on a history that did not contain an event like 1998.</td></tr>
+<tr><th scope="row"><strong>III′. Maladaptive</strong></th><td>Agents optimize on what survived: copy it, scale it, leverage it. The proxy score improves while the real risk grows with it.</td><td>\(\hat u\uparrow\) while \(u\downarrow\). Exposure \(n\) grows, and \(1-(1-\varepsilon)^n\to1\).</td><td>Agent \(A_{ijk}'\) and gametes \(G_{ijk}'\)</td><td>Positions and leverage scale up, and the same kind of trade is repeated across more markets.</td></tr>
+</tbody></table></div>
+<p class="note">Back at IV: in August 1998 Russia defaulted on its domestic debt, positions assumed to be nearly independent lost together, and in September the New York Fed convened the banks that organized a rescue. The case is the standard account in Roger Lowenstein, <em>When Genius Failed</em> (2000), from my recollection of it; I did not re-check it for this tab.</p>
+
+<h2 class="sec">Two things to try</h2>
+<p class="note">Both are one line of arithmetic, run live. The first shows II′: a perfect record with no skill in it. The second shows III′ feeding IV: a small risk, repeated.</p>
+<div class="tg-grid">
+<div class="tg-w"><h4>Error-free by luck</h4><p>\(N\) people each call a fair coin for \(k\) rounds. Anyone who is right every time has a perfect record.</p>
+<div class="tg-row"><label for="tg-n">People \(N\)</label><input id="tg-n" type="range" min="1" max="6" step="0.25" value="3"><output id="tg-nv" for="tg-n">1,000</output></div>
+<div class="tg-row"><label for="tg-k">Rounds \(k\)</label><input id="tg-k" type="range" min="1" max="20" step="1" value="10"><output id="tg-kv" for="tg-k">10</output></div>
+<div class="tg-res">Expected perfect records, \(N\cdot2^{-k}\): <b id="tg-a1">0.98</b><br>Chance at least one exists: <b id="tg-a2">62.4%</b></div></div>
+<div class="tg-w"><h4>Ruin by exposure</h4><p>Each draw carries a small chance \(\varepsilon\) of the bad outcome. The hubristic model says it is 0.</p>
+<div class="tg-row"><label for="tg-e">Per-draw \(\varepsilon\)</label><input id="tg-e" type="range" min="1" max="50" step="1" value="10"><output id="tg-ev" for="tg-e">1.0%</output></div>
+<div class="tg-row"><label for="tg-d">Draws \(n\)</label><input id="tg-d" type="range" min="1" max="500" step="1" value="50"><output id="tg-dv" for="tg-d">50</output></div>
+<div class="tg-res">Chance of at least one bad draw, \(1-(1-\varepsilon)^n\): <b id="tg-b1">39.5%</b><br>What the hubristic model says: <b>0.0%</b><div class="tg-bar"><span id="tg-bar"></span></div></div></div>
+</div>
+
+<h2 class="sec">Where the loop can be broken</h2>
+<div class="tw matrix pent"><table><thead><tr><th scope="col" class="corner">Stage</th><th scope="col">Move</th><th scope="col">Why it works</th></tr></thead><tbody>
+<tr><th scope="row"><strong>II′. Error-Free</strong></th><td>Put the graveyard back in the sample.</td><td>Add the non-survivors, so outcomes are no longer conditioned on survival.</td></tr>
+<tr><th scope="row"><strong>I′. Hubris</strong></th><td>Never give a bad outcome probability exactly 0.</td><td>A prior of 0 cannot be updated. Keep \(\varepsilon&gt;0\) and the evidence can still move it.</td></tr>
+<tr><th scope="row"><strong>III′. Maladaptive</strong></th><td>Cap exposure, and keep a buffer.</td><td>Bound \(n\) so that one bad draw is not absorbing. Ruin stops being a place you cannot leave.</td></tr>
+</tbody></table></div>
+
+<p class="note">Labels: nothing in this tab is quoted from the exchanges. The stage names IV Chance, V Consequence, I′ Hubris, II′ Error-Free and III′ Maladaptive are yours. The loop order, the mathematics, the worked case and the three breaks are my reading, offered as a hypothesis in the page's own sense. Whether III′ should be called Maladaptive or something like Overfit is open.</p>
+<script>
+(function(){
+  function g(id){return document.getElementById(id)}
+  function fmt(x){return Math.round(x).toLocaleString('en-US')}
+  var N=g('tg-n'),K=g('tg-k'),E=g('tg-e'),D=g('tg-d');
+  if(!(N&&K&&E&&D))return;
+  function a(){
+    var n=Math.round(Math.pow(10,+N.value)),k=+K.value,p=Math.pow(2,-k);
+    var ex=n*p,any=1-Math.exp(n*Math.log1p(-p));
+    g('tg-nv').textContent=fmt(n);g('tg-kv').textContent=k;
+    g('tg-a1').textContent=ex<10?ex.toFixed(2):fmt(ex);
+    g('tg-a2').textContent=(any*100).toFixed(1)+'%';
+  }
+  function b(){
+    var e=(+E.value)/1000,n=+D.value,r=1-Math.exp(n*Math.log1p(-e));
+    g('tg-ev').textContent=(e*100).toFixed(1)+'%';g('tg-dv').textContent=n;
+    g('tg-b1').textContent=(r*100).toFixed(1)+'%';
+    g('tg-bar').style.width=(r*100).toFixed(1)+'%';
+  }
+  [N,K].forEach(function(x){x.addEventListener('input',a)});
+  [E,D].forEach(function(x){x.addEventListener('input',b)});
+  a();b();
+})();
+</script>
+</section>
+
+
 
 </main>
 <footer class="foot"><span>Okubala si Kulaba — counting is not seeing.</span> <span>Verbatim and non-lossy.</span> <a href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener">The reference</a></footer>
