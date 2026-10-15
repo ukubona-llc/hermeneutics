@@ -360,6 +360,8 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 #yesminister .voice figure.fig img{display:block;border:1px solid var(--rule);border-radius:10px}
 #yesminister .voice img.fav{display:inline;vertical-align:middle;margin:0 4px 0 0;border:0;border-radius:3px}
 #yesminister .voice hr{border:0;border-top:1px solid var(--rule);margin:1.2em 0}
+#yesminister ol.fn{list-style:none;padding-left:0;margin:8px 0 0}
+#yesminister ol.fn li{margin:0 0 .75em;font-size:.93rem;line-height:1.55;max-width:70ch}
 </style>
 </head>
 <body>
@@ -4086,7 +4088,7 @@ How would you like to build on this framework next?
 
 <section class="panel doc" id="yesminister" hidden>
 <h2 class="ptitle">Yes, Minister!</h2>
-<p class="lede">Party Games, Series 3 Episode 8: Sir Arnold on his succession as Cabinet Secretary, read through the pentad. The clip is embedded first. Every prompt and response from the file o.md follows, unchanged, and my critique, with its erratum, closes the tab under Anthropic.</p>
+<p class="lede">Party Games, Series 3 Episode 8: Sir Arnold on his succession as Cabinet Secretary, read through the pentad. The clip is embedded first. Every prompt and response from the file o.md follows, unchanged, and my critique, with its erratum, follows under Anthropic. A final section records the current equilibrium configuration (adversarial, transactional, cooperative, regulatory, symbiotic) with its open points as footnotes.</p>
 <p class="note">Verbatim: the prompts and the Gemma, MetaAI, xAI, Google and OpenAI replies, with math delimiters and the export’s favicon markers rendered as markup. In the last OpenAI reply the five stages use the Top 10 layout, each with its local <code>ukhona/flow-1.jpeg</code> to <code>flow-5.jpeg</code> thumbnail, as you asked. Framework: <a href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener">ukubona-llc.github.io/hermeneutics</a>. See also <a href="#ex3" data-tab="ex3">SoftMax and ArgMax</a> and <a href="#ledger" data-tab="ledger">Ledger</a>.</p>
 <div class="vid"><iframe src="https://www.youtube.com/embed/Qa2DW4aXVaw?rel=0" title="Yes Minister - Sir Arnold's Life after Cabinet Secretary" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 <p class="note">Yes Minister - Sir Arnold’s Life after Cabinet Secretary (BBC, “Party Games”). If the frame does not load, <a href="https://www.youtube.com/watch?v=Qa2DW4aXVaw" target="_blank" rel="noopener">watch it on YouTube</a>.</p>
@@ -4756,6 +4758,71 @@ We'll use <code>ukhona/flow-*.jpeg</code> where <code>* = 1, 2, 3, 4, 5</code></
 </tr>
 </tbody>
 </table></div>
+</article>
+<article class="voice prompt"><div class="vlabel">Prompt (Ukubona)</div>
+<p class="t">Lets add a section to "Yes, Minister". In our schema, IV = Payoff-Rank(Collisions, P_i, B_ij, A_ijk, B_ikj). Equilibria Ive been considering as "emergent" are adversarial, transactional, cooperative, regulatory, and symbiotic. Formation of a cabinet is much more transactional in British than American politics. And I was thinking that The Permanent Secretary was adversarial against the Minister (Firm), but tactful (apparent cooperation); however, the civil servants amongst each other are Symbiotic (Sound), because their long-term hoirzon demands that the contain the objects of the principal (voter), broker (cabinet minister), and perhaps rogue agents. no? leave whatevef remains open as a footnote or discussion point. but capture my current configuation...</p>
+<p class="t">From “Yes, Minister” analysts — Firm: This is the Protective quality. The Agent must be firm enough to stop a Political Master (Broker) from doing something that would damage the Civil Service (the "permanent government").<br />
+Tactful: This is the Lubricant. Firmness without tact is rebellion; tact without firmness is weakness. The "swerve" and the "emollient" approach ensure the Broker feels they are in charge while being led in the desired direction.<br />
+Sound: This is the Validation. "Soundness" refers to alignment with the established orthodoxy. A "sound" official is one who will not introduce unpredictable variables or genuinely disruptive innovations. So I’m thinking “firm” = adversarial, but “tactful” = giving impression of “cooperative”, and above all “sound” = symbiotic (civil servants have longer-horizon. In fact, from the Nash program, if one follows a long repeated game , won’t cooperation tend to symbiosis ?</p>
+<p class="note">Two earlier replies pasted with this prompt (cooperative versus symbiotic equilibrium, and the Firm / Tactful / Sound mapping) are not reproduced here. Their working parts are used below.</p>
+</article>
+<article class="voice resp"><div class="vlabel">Response (Anthropic)</div>
+<p class="t">Your configuration, as I read it, with what it rests on and what stays open. Open points are numbered as footnotes at the end.</p>
+<h3 class="l2">The schema</h3>
+<p class="t">\[\text{IV}=\text{Payoff-Rank}\big(\text{Collisions},\,P_i,\,B_{ij},\,A_{ijk},\,B_{ikj}\big)\]</p>
+<p class="t">IV is not one equilibrium. The five emergent orders (adversarial, transactional, cooperative, regulatory, symbiotic) are different ways the payoff ranking over collisions can settle, and different dyads can settle differently within the same episode.</p>
+<h3 class="l2">The configuration</h3>
+<div class="tw pent"><table>
+<thead><tr>
+<th scope="col"><span class="t">Dyad</span></th>
+<th scope="col"><span class="t">Order</span></th>
+<th scope="col"><span class="t">Quality</span></th>
+<th scope="col"><span class="t">What it does</span></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><span class="t">Cabinet formation (Prime Minister, party, ministers)</span></td>
+<td><span class="t">Transactional</span></td>
+<td><span class="t">–</span></td>
+<td><span class="t">Posts, access and protection are exchanged for support. Much more so in the British system than the American<sup>1</sup></span></td>
+</tr>
+<tr>
+<td><span class="t">Permanent Secretary against Minister (\(A_{ijk}\) against \(B_{ij}\)), underlying</span></td>
+<td><span class="t">Adversarial</span></td>
+<td><span class="t">Firm: the Protective quality</span></td>
+<td><span class="t">Stops the Broker from doing what would damage the permanent government. Refusal is the optimal move when the instruction collides with an institutional constraint</span></td>
+</tr>
+<tr>
+<td><span class="t">Permanent Secretary to Minister, as presented</span></td>
+<td><span class="t">Apparent cooperation</span></td>
+<td><span class="t">Tactful: the Lubricant</span></td>
+<td><span class="t">The Minister keeps the experience of directing events while being steered. Firmness without tact is rebellion; tact without firmness is weakness<sup>2</sup></span></td>
+</tr>
+<tr>
+<td><span class="t">Civil servants among themselves (\(A_{ijk}\) with \(A_{ijk'}\))</span></td>
+<td><span class="t">Symbiotic</span></td>
+<td><span class="t">Sound: the Validation</span></td>
+<td><span class="t">Alignment with the established orthodoxy. The long-horizon order contains the objects of the voter (\(P_i\)), the Minister (\(B_{ij}\)) and, perhaps, rogue agents<sup>3</sup></span></td>
+</tr>
+</tbody>
+</table></div>
+<p class="t">Firm, Tactful and Sound are not sequential stages. They run at the same time. The Permanent Secretary–Minister dyad carries two layers at once: adversarial in the payoff ranking, cooperative in what the Broker sees. Sound is a different dyad altogether, and the one with the longest horizon.</p>
+<h3 class="l2">Why symbiosis lands on the civil servants</h3>
+<p class="t">Your Nash-program question is whether a long repeated game tends toward symbiosis. The sharpened answer is conditional: repetition makes cooperation sustainable, and it yields symbiosis only when it also builds relational capital that changes each party's options.</p>
+<p class="t">\[\delta\ \ge\ \frac{T-R}{T-P}\qquad\qquad R_{t+1}=g\big(R_t,\,a_t,\,b_t\big)\]</p>
+<p class="t">The first condition says patient players can find cooperation rational. It does not say they have become dependent on one another. The second says the relationship itself is a state that accumulates, and symbiosis needs that accumulation to make each party's functioning depend on the other.</p>
+<p class="t">Civil servants among themselves meet that test: shared careers, mutual promotion and reference, institutional memory, procedures valuable only inside the relationship, and a horizon that outlasts every Broker. The Minister–Permanent Secretary dyad, in this reading, mostly does not. Ministers turn over too quickly for that much relational capital to accumulate, so the dyad stays adversarial underneath and cooperative on the surface. That last step is my inference from your horizon argument rather than something the episode shows directly.</p>
+<h3 class="l2">What stays open</h3>
+<ol class="fn">
+<li id="ym-fn1"><strong>1. American cabinets.</strong> You said British formation is much more transactional. I have not assigned the American case. A separately elected executive and Senate confirmation suggest the regulatory order weighs more there, but that is a hypothesis for the schema to test, not a finding.</li>
+<li id="ym-fn2"><strong>2. Is Tactful an equilibrium or a signal?</strong> Apparent cooperation is a managed appearance: one party influences the other while preserving the other's belief that it is in control. That differs from genuine or strategic cooperation, where both parties know the game. If it is a signal laid over an adversarial ranking, it may belong to the information structure (what \(B_{ikj}\) is shown) and not in the list of five. Where it falls decides whether cooperative is a live order in this case.</li>
+<li id="ym-fn3"><strong>3. Rogue agents.</strong> You wrote "perhaps". The configuration lets the symbiotic order contain them, but does not say how. Absorbed, expelled, or used as the deniable instrument of the others are three different dynamics, and the episode may not settle which.</li>
+<li id="ym-fn4"><strong>4. Sound for whom.</strong> A long horizon preserves competence and continuity, which are real public goods. It can also preserve the civil service's own position. Public-interest, institutional and bureaucratic soundness overlap but are not the same, and a symbiotic order can be stable, internally cooperative and unresponsive to \(P_i\). Persistence does not establish legitimacy.</li>
+<li id="ym-fn5"><strong>5. Symbiosis is not mutualism.</strong> Biological symbiosis covers mutualism, commensalism and parasitism. Tight coupling alone does not say which one the civil service has with the Minister, or with the voter.</li>
+<li id="ym-fn6"><strong>6. Does the Minister dyad move?</strong> If the civil service helps select the Prime Minister it can supervise (the Hacker compromise in the episode), the Permanent Secretary is shaping the Broker's strategy space, not just responding to it. That may be the dyad drifting from adversarial toward symbiotic over a long horizon, or it may be the civil servants' own symbiosis extending its reach. The configuration above does not choose.</li>
+<li id="ym-fn7"><strong>7. Regulatory.</strong> The configuration assigns no dyad to the regulatory order. Formal procedure binds both Minister and civil servants in the show, but I have left it unplaced because you did not place it.</li>
+<li id="ym-fn8"><strong>8. Evidence.</strong> One satirical episode is a worked model, not data. The configuration is a reading to test against other cases.</li>
+</ol>
 </article>
 </section>
 
