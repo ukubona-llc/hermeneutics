@@ -2929,6 +2929,7 @@ Would you like to examine how this scene contrasts with **Sheriff Bell’s** rel
 <li><strong><span class="m">P<sub>i</sub></span>:</strong> principal — the source of interests, identity, and authority.</li>
 <li><strong><span class="m">B<sub>ij</sub></span>:</strong> broker — the relation or interface connecting principals, agents, and resources.</li>
 <li><strong><span class="m">A<sub>ijk</sub></span>:</strong> agent — an actor whose identity is indexed by its principal and its relational context.</li>
+<li><strong><span class="m">G<sub>ijk</sub></span> (Gamet<sub>ijk</sub>):</strong> a transferable, recombinable unit emitted or carried by an agent—capability, strategy, memory, code, preference, or other material that can enter a new lineage.</li>
 </ul>
 <p class="t">The subscripts aren't decoration. They preserve provenance.</p>
 <p class="t">An agent is not simply <em>an agent</em>. It is an agent <strong>of whom, operating through which relationship, in what context?</strong></p>
@@ -2942,7 +2943,14 @@ Would you like to examine how this scene contrasts with **Sheriff Bell’s** rel
 </ol>
 <p class="t">The notation makes those questions part of the architecture rather than an afterthought.</p>
 
-<h3 class="sec">2. Why the double helix is necessary — and insufficient</h3>
+<h3 class="sec">2. Gamet<sub>ijk</sub> is the crux of the crisis</h3>
+<p class="t">The missing term is <strong><span class="m">Gamet<sub>ijk</sub></span></strong>. An agent is not only an executor: it can produce, carry, exchange, or recombine gametes. These are the units through which agency propagates beyond the identity and authority of the agent that first generated them.</p>
+<p class="t">The crisis appears when gametes from agents associated with different principals meet. Their recombination can produce a descendant capability or agent that neither principal designed, neither broker fully represents, and neither lineage can claim cleanly. The question is no longer merely “Who performed this action?” It becomes “Whose lineages, permissions, and contributions produced this new actor—and who, if anyone, is its principal?”</p>
+<p class="t">The double helix is invited by the first mating: two strands, two lineages, a shared offspring. But <strong>two is not a law of agentic recombination</strong>. A digital gamete can be copied, split, merged, composed, or jointly conditioned by three or more parents. We can therefore speak of triple or higher-order mating as a conceptual model: multi-parent recombination rather than a literal claim that software reproduces biologically.</p>
+<p class="t">The biological and thermodynamic constraints that govern living reproduction do not transfer unchanged to digital systems. Digital recombination can bypass the need for two biological gametes and a womb; it does not escape constraints altogether. Compute, energy, memory, network access, compatibility, security boundaries, and institutional permissions still shape what can survive and propagate.</p>
+<p class="t">The notation must therefore track not only agents but gametic provenance: which source agents contributed which units, under what permissions, through which brokers, and into which descendant. A single pair of strands is too simple for that history.</p>
+
+<h3 class="sec">3. Why the double helix is necessary — and insufficient</h3>
 <div class="attrib-images" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px;align-items:start">
 <figure class="fig"><div class="figscroll"><img src="ukhona/attribution-1.jpeg" alt="Double helix: two complementary strands" loading="lazy" style="display:block;width:100%;height:auto"></div><figcaption>Two complementary strands preserve distinction while maintaining a shared structure.</figcaption></figure>
 <figure class="fig"><div class="figscroll"><img src="ukhona/attribution-2.jpeg" alt="Multiple molecular strands" loading="lazy" style="display:block;width:100%;height:auto"></div><figcaption>Multiple strands complicate the simple two-line model.</figcaption></figure>
@@ -2955,12 +2963,12 @@ Would you like to examine how this scene contrasts with **Sheriff Bell’s** rel
 <p class="t">In an agentic system, the problem compounds much faster. One principal can delegate to many agents; agents can use other agents; several principals can jointly authorize an operation; and one agent can act across multiple contexts. Brokers, tools, institutions, and intermediate agents introduce further relationships.</p>
 <p class="t">You don't have two strands. You have a potentially branching, recombining network of lineages.</p>
 
-<h3 class="sec">3. Replace the double helix with a <em>provenance-preserving braid</em></h3>
+<h3 class="sec">4. Replace the double helix with a <em>provenance-preserving braid</em></h3>
 <p class="t">The key conceptual shift is from a <strong>double helix of two entities</strong> to a <strong>braid of attributable relationships</strong>.</p>
 <p class="t">A braid allows strands to split, cross, join, and continue while retaining their identities. That makes it a stronger metaphor for multi-agent systems, nested delegation, and institutional evolution.</p>
 <p class="t">The mathematical object need not literally be a braid. Depending on the application, a directed multigraph, a provenance graph, or a typed hypergraph may be more precise. A hypergraph, for example, can represent one action jointly authorized by several principals without pretending that it belongs to only one dyadic relationship.</p>
 
-<h3 class="sec">4. The important distinction: identity is not attribution</h3>
+<h3 class="sec">5. The important distinction: identity is not attribution</h3>
 <p class="t">The notation <span class="m">A<sub>ijk</sub></span> is a useful indexing scheme, but the indices alone cannot guarantee accountability. A production system must preserve explicit relationships between the indices and the underlying records.</p>
 <p class="t">For example, suppose a purchasing agent operates for a company, delegates price discovery to another agent, and uses an external broker to execute a purchase.</p>
 <p class="t">A meaningful record would preserve:</p>
@@ -2975,13 +2983,14 @@ Would you like to examine how this scene contrasts with **Sheriff Bell’s** rel
 </ul>
 <p class="t">A further complication: attribution is not identical to blame. A principal may authorize an objective without authorizing every means used to achieve it. An agent may execute an instruction while a broker introduces a consequential error. Responsibility therefore requires evidence about authority, control, foreseeability, and the actual causal chain—not merely a name attached to an event.</p>
 
-<h3 class="sec">5. What this means for Ukubona LLC</h3>
+<h3 class="sec">6. What this means for Ukubona LLC</h3>
 <div class="tw pent"><table><thead><tr><th>Concept</th><th>Function</th></tr></thead><tbody>
 <tr><th>Subscripts</th><td>Preserve relational identity: who, through what relationship, in which context.</td></tr>
+<tr><th>Gamet<sub>ijk</sub></th><td>Make recombinable contributions explicit, including multi-parent origins and descendants whose allegiance is ambiguous.</td></tr>
 <tr><th>Braid</th><td>Represent branching, recombination, and nested delegation without collapsing distinct lineages.</td></tr>
 <tr><th>Attribution</th><td>Preserve the authority, action, evidence, and consequences needed for audit and remediation.</td></tr>
 </tbody></table></div>
-<p class="t">The braid is the visual language; the notation is the compact language; attribution is the operational requirement.</p>
+<p class="t">The braid is the visual language; <span class="m">P<sub>i</sub>, B<sub>ij</sub>, A<sub>ijk</sub>, G<sub>ijk</sub></span> are the compact vocabulary; attribution is the operational requirement. The crisis lives at the transition from gametes to descendants: recombination can create agency faster than inherited authority can explain it.</p>
 <p class="t">That distinction also fits the governing proposition in your document: <em>agency may emerge; authority must remain attributable.</em></p>
 <p class="t">A system can acquire new capabilities, spawn agents, and adapt its behavior. None of that should silently dissolve the chain connecting its actions to the people or institutions entitled to authorize them.</p>
 <blockquote class="pull">Ukubona is not merely describing a world populated by intelligent agents. It is describing how agency can proliferate without making authority and accountability disappear.</blockquote>
