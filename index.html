@@ -296,6 +296,27 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 .preface{max-width:62ch;padding:4px 0 0}
 .preface p{font-family:var(--serif);font-size:1.06rem;line-height:1.6;color:var(--ink);margin:0}
 
+
+/* weight tab: verbatim source Markdown */
+#weight .weight-md{max-width:900px;overflow-wrap:anywhere}
+#weight .weight-md p{max-width:76ch;margin:0 0 .95em}
+#weight .weight-md h1,#weight .weight-md h2,#weight .weight-md h3,
+#weight .weight-md h4{font-family:var(--serif);font-weight:400;line-height:1.2;margin:1.7em 0 .55em}
+#weight .weight-md h1{font-size:2rem}
+#weight .weight-md h2{font-size:1.65rem}
+#weight .weight-md h3{font-size:1.35rem}
+#weight .weight-md h4{font-size:1.12rem}
+#weight .weight-md ul,#weight .weight-md ol{max-width:76ch;padding-left:1.5em;margin:0 0 1em}
+#weight .weight-md li{margin:.25em 0}
+#weight .weight-md blockquote{margin:0 0 1em;padding:2px 0 2px 16px;border-left:3px solid var(--amber);color:var(--muted)}
+#weight .weight-md table{border-collapse:collapse;width:100%;font-size:.9rem;line-height:1.5}
+#weight .weight-md th,#weight .weight-md td{padding:9px 12px;border:1px solid var(--rule);text-align:left;vertical-align:top;min-width:8rem}
+#weight .weight-md th{background:var(--soft)}
+#weight .weight-md pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:12px;border-radius:8px;overflow:auto}
+#weight .weight-md code{font-family:var(--mono);font-size:.9em}
+#weight .weight-md hr{border:0;border-top:1px solid var(--rule);margin:1.5em 0}
+#weight .weight-md img{max-width:100%;height:auto}
+
 /* tragedy tab (additive) */
 .tragsvg{display:block;width:100%;min-width:780px;height:auto;max-width:980px;margin:0 auto}
 .tragsvg .gv rect{fill:var(--card);stroke:var(--blue);stroke-width:1.6}
@@ -372,7 +393,7 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
       <button class="icon-btn" id="waffle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="wpanel" aria-label="Pages and Ukubona apps">
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="currentColor"><circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></g></svg>
       </button>
-      <div class="wpanel" id="wpanel" aria-label="Pages and Ukubona apps" hidden><div class="wgrid"><div class="wgroup">This page</div><a class="wtile" href="#atlas" data-tab="atlas"><span class="wb">At</span><span class="wn">Atlas</span></a><a class="wtile" href="#evidence" data-tab="evidence"><span class="wb">Ev</span><span class="wn">Evidence to Action</span></a><a class="wtile" href="#neuropathic" data-tab="neuropathic"><span class="wb">Np</span><span class="wn">Neuropathic Pain</span></a><a class="wtile" href="#ledger" data-tab="ledger"><span class="wb">Ld</span><span class="wn">Ledger</span></a><a class="wtile" href="#megyn" data-tab="megyn"><span class="wb">Mk</span><span class="wn">Megyn Kelly</span></a><a class="wtile" href="#agon" data-tab="agon"><span class="wb">Ag</span><span class="wn">Agon</span></a><a class="wtile" href="#ex1" data-tab="ex1"><span class="wb">Hm</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="#ex2" data-tab="ex2"><span class="wb">Wi</span><span class="wn">Wilde</span></a><a class="wtile" href="#ex3" data-tab="ex3"><span class="wb">Sm</span><span class="wn">SoftMax</span></a><a class="wtile" href="#ex4" data-tab="ex4"><span class="wb">Ar</span><span class="wn">Architecture</span></a><a class="wtile" href="#ex5" data-tab="ex5"><span class="wb">Mo</span><span class="wn">Mortality</span></a><a class="wtile" href="#ex6" data-tab="ex6"><span class="wb">Th</span><span class="wn">Theogony</span></a><a class="wtile" href="#ex7" data-tab="ex7"><span class="wb">Fx</span><span class="wn">Fairfax</span></a><a class="wtile" href="#ex8" data-tab="ex8"><span class="wb">Ad</span><span class="wn">Adaptation</span></a><a class="wtile" href="#ex9" data-tab="ex9"><span class="wb">Po</span><span class="wn">Poet</span></a><a class="wtile" href="#ex10" data-tab="ex10"><span class="wb">He</span><span class="wn">Hermes</span></a><a class="wtile" href="#ex11" data-tab="ex11"><span class="wb">Au</span><span class="wn">Authority</span></a><a class="wtile" href="#ex12" data-tab="ex12"><span class="wb">Bk</span><span class="wn">The book</span></a><a class="wtile" href="#ex13" data-tab="ex13"><span class="wb">Pr</span><span class="wn">Protagonist</span></a><a class="wtile" href="#ex14" data-tab="ex14"><span class="wb">Rt</span><span class="wn">Rating</span></a><a class="wtile" href="#ex15" data-tab="ex15"><span class="wb">Ql</span><span class="wn">Qualified</span></a><a class="wtile" href="#ex16" data-tab="ex16"><span class="wb">Np</span><span class="wn">Nephew</span></a><a class="wtile" href="#ex17" data-tab="ex17"><span class="wb">Zn</span><span class="wn">Zenith</span></a><a class="wtile" href="#ex18" data-tab="ex18"><span class="wb">Sh</span><span class="wn">Ship</span></a><a class="wtile" href="#nat" data-tab="nat"><span class="wb">Nf</span><span class="wn">Nat Friedman</span></a><a class="wtile" href="#arch" data-tab="arch"><span class="wb">Ia</span><span class="wn">Interpretive Architectures</span></a><a class="wtile" href="#trust" data-tab="trust"><span class="wb">Ta</span><span class="wn">Trust vs Attention</span></a><a class="wtile" href="#muse" data-tab="muse"><span class="wb">Mu</span><span class="wn">Muse</span></a><a class="wtile" href="#stack" data-tab="stack"><span class="wb">Cs</span><span class="wn">Civilization stack agents</span></a><a class="wtile" href="#donor" data-tab="donor"><span class="wb">Dn</span><span class="wn">Donor</span></a><a class="wtile" href="#econ" data-tab="econ"><span class="wb">Ec</span><span class="wn">Econ</span></a><a class="wtile" href="#aibubble" data-tab="aibubble"><span class="wb">Ab</span><span class="wn">AI Bubble</span></a><a class="wtile" href="#aibubble-critique" data-tab="aibubble-critique"><span class="wb">Cr</span><span class="wn">AI Bubble Critique</span></a><a class="wtile" href="#leopold" data-tab="leopold"><span class="wb">LA</span><span class="wn">Leopold Aschenbrenner</span></a><a class="wtile" href="#chatgpt10" data-tab="chatgpt10"><span class="wb">C10</span><span class="wn">ChatGPT Top 10</span></a><a class="wtile" href="#chigurh" data-tab="chigurh"><span class="wb">Cg</span><span class="wn">Chigurh</span></a><a class="wtile" href="#coen" data-tab="coen"><span class="wb">Co</span><span class="wn">Coen Brothers</span></a><a class="wtile" href="#het" data-tab="het"><span class="wb">HE</span><span class="wn">HET</span></a><a class="wtile" href="#attention" data-tab="attention"><span class="wb">At</span><span class="wn">Attention</span></a><a class="wtile" href="#war" data-tab="war"><span class="wb">Wr</span><span class="wn">War</span></a><a class="wtile" href="#tragedy" data-tab="tragedy"><span class="wb">Tg</span><span class="wn">Tragedy</span></a><a class="wtile" href="#lineage" data-tab="lineage"><span class="wb">Ln</span><span class="wn">Lineage</span></a><a class="wtile" href="#embodied" data-tab="embodied"><span class="wb">Em</span><span class="wn">Embodied</span></a><a class="wtile" href="#ukubona" data-tab="ukubona"><span class="wb">UL</span><span class="wn">Ukubona LLC</span></a><a class="wtile" href="#enough" data-tab="enough"><span class="wb">En</span><span class="wn">Enough!</span></a><a class="wtile" href="#yesminister" data-tab="yesminister"><span class="wb">YM</span><span class="wn">Yes, Minister!</span></a><a class="wtile" href="#schopenhauer" data-tab="schopenhauer"><span class="wb">Sp</span><span class="wn">Schopenhauer</span></a><a class="wtile" href="#refs" data-tab="refs"><span class="wb">Rf</span><span class="wn">References</span></a><a class="wtile" href="#agentic-ai" data-tab="agentic-ai"><span class="wb">AI</span><span class="wn">Agentic AI</span></a><a class="wtile" href="#attribution" data-tab="attribution"><span class="wb">At</span><span class="wn">Attribution</span></a><div class="wgroup">Ukubona</div><a class="wtile feat" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Rf</span><span class="wn">The reference</span><span class="wd">Chord, Cache, and Clinical Loop</span></a><a class="wtile" href="https://ukubona-llc.github.io/tree/" target="_blank" rel="noopener"><span class="wb">Tr</span><span class="wn">Tree</span></a><a class="wtile" href="https://ukubona-llc.github.io/dendron/" target="_blank" rel="noopener"><span class="wb">De</span><span class="wn">Dendron</span></a><a class="wtile" href="https://ukubona-llc.github.io/foxp2/" target="_blank" rel="noopener"><span class="wb">Fo</span><span class="wn">Foxp2</span></a><a class="wtile" href="https://j-digital-twin.onrender.com/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School</span></a><a class="wtile" href="https://ukubona-llc.github.io/" target="_blank" rel="noopener"><span class="wb">Uk</span><span class="wn">Ukubona</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial-and-error/" target="_blank" rel="noopener"><span class="wb">tr</span><span class="wn">trial-and-error</span></a><a class="wtile" href="https://ukb-dt.github.io/nairobi/" target="_blank" rel="noopener"><span class="wb">Mi</span><span class="wn">Mission</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Practice</span></a><a class="wtile" href="https://ukubona-llc.github.io/falsifiability/" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bezos</span></a><a class="wtile" href="https://ukubona-llc.github.io/kapital/" target="_blank" rel="noopener"><span class="wb">In</span><span class="wn">Intelligence</span></a><a class="wtile" href="https://ukubona-llc.github.io/bejan" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bejan</span></a><a class="wtile" href="https://ukubona-llc.github.io/thy-kingdom-come/" target="_blank" rel="noopener"><span class="wb">Th</span><span class="wn">Thy Kingdom Come</span></a><a class="wtile" href="https://ukubona-llc.github.io/okubala-kulaba/" target="_blank" rel="noopener"><span class="wb">Ok</span><span class="wn">Okubala Kulaba</span></a><a class="wtile" href="https://ukubona-llc.github.io/science/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">Science</span></a><a class="wtile" href="https://ukubona-llc.github.io/school-of-resentment/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School of Resentment</span></a><a class="wtile" href="https://ukubona-llc.github.io/principal/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Principal</span></a><a class="wtile" href="https://ukubona-llc.github.io/black-culture/" target="_blank" rel="noopener"><span class="wb">Bl</span><span class="wn">Black Culture</span></a><a class="wtile" href="https://ukubona-llc.github.io/dmn/" target="_blank" rel="noopener"><span class="wb">DM</span><span class="wn">DMN</span></a><a class="wtile" href="https://ukubona-llc.github.io/routing/" target="_blank" rel="noopener"><span class="wb">Ro</span><span class="wn">Routing</span></a><a class="wtile" href="https://ukubona-llc.github.io/darwinian/" target="_blank" rel="noopener"><span class="wb">Da</span><span class="wn">Darwinian</span></a><a class="wtile" href="https://ukubona-llc.github.io/nietzschean/" target="_blank" rel="noopener"><span class="wb">Ni</span><span class="wn">Nietzschean</span></a><a class="wtile" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener"><span class="wb">He</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="https://ukb-dt.github.io/tap/" target="_blank" rel="noopener"><span class="wb">Tp</span><span class="wn">Tap</span></a></div></div>
+      <div class="wpanel" id="wpanel" aria-label="Pages and Ukubona apps" hidden><div class="wgrid"><div class="wgroup">This page</div><a class="wtile" href="#atlas" data-tab="atlas"><span class="wb">At</span><span class="wn">Atlas</span></a><a class="wtile" href="#evidence" data-tab="evidence"><span class="wb">Ev</span><span class="wn">Evidence to Action</span></a><a class="wtile" href="#neuropathic" data-tab="neuropathic"><span class="wb">Np</span><span class="wn">Neuropathic Pain</span></a><a class="wtile" href="#ledger" data-tab="ledger"><span class="wb">Ld</span><span class="wn">Ledger</span></a><a class="wtile" href="#megyn" data-tab="megyn"><span class="wb">Mk</span><span class="wn">Megyn Kelly</span></a><a class="wtile" href="#agon" data-tab="agon"><span class="wb">Ag</span><span class="wn">Agon</span></a><a class="wtile" href="#ex1" data-tab="ex1"><span class="wb">Hm</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="#ex2" data-tab="ex2"><span class="wb">Wi</span><span class="wn">Wilde</span></a><a class="wtile" href="#ex3" data-tab="ex3"><span class="wb">Sm</span><span class="wn">SoftMax</span></a><a class="wtile" href="#ex4" data-tab="ex4"><span class="wb">Ar</span><span class="wn">Architecture</span></a><a class="wtile" href="#ex5" data-tab="ex5"><span class="wb">Mo</span><span class="wn">Mortality</span></a><a class="wtile" href="#ex6" data-tab="ex6"><span class="wb">Th</span><span class="wn">Theogony</span></a><a class="wtile" href="#ex7" data-tab="ex7"><span class="wb">Fx</span><span class="wn">Fairfax</span></a><a class="wtile" href="#ex8" data-tab="ex8"><span class="wb">Ad</span><span class="wn">Adaptation</span></a><a class="wtile" href="#ex9" data-tab="ex9"><span class="wb">Po</span><span class="wn">Poet</span></a><a class="wtile" href="#ex10" data-tab="ex10"><span class="wb">He</span><span class="wn">Hermes</span></a><a class="wtile" href="#ex11" data-tab="ex11"><span class="wb">Au</span><span class="wn">Authority</span></a><a class="wtile" href="#ex12" data-tab="ex12"><span class="wb">Bk</span><span class="wn">The book</span></a><a class="wtile" href="#ex13" data-tab="ex13"><span class="wb">Pr</span><span class="wn">Protagonist</span></a><a class="wtile" href="#ex14" data-tab="ex14"><span class="wb">Rt</span><span class="wn">Rating</span></a><a class="wtile" href="#ex15" data-tab="ex15"><span class="wb">Ql</span><span class="wn">Qualified</span></a><a class="wtile" href="#ex16" data-tab="ex16"><span class="wb">Np</span><span class="wn">Nephew</span></a><a class="wtile" href="#ex17" data-tab="ex17"><span class="wb">Zn</span><span class="wn">Zenith</span></a><a class="wtile" href="#ex18" data-tab="ex18"><span class="wb">Sh</span><span class="wn">Ship</span></a><a class="wtile" href="#nat" data-tab="nat"><span class="wb">Nf</span><span class="wn">Nat Friedman</span></a><a class="wtile" href="#arch" data-tab="arch"><span class="wb">Ia</span><span class="wn">Interpretive Architectures</span></a><a class="wtile" href="#trust" data-tab="trust"><span class="wb">Ta</span><span class="wn">Trust vs Attention</span></a><a class="wtile" href="#muse" data-tab="muse"><span class="wb">Mu</span><span class="wn">Muse</span></a><a class="wtile" href="#stack" data-tab="stack"><span class="wb">Cs</span><span class="wn">Civilization stack agents</span></a><a class="wtile" href="#donor" data-tab="donor"><span class="wb">Dn</span><span class="wn">Donor</span></a><a class="wtile" href="#econ" data-tab="econ"><span class="wb">Ec</span><span class="wn">Econ</span></a><a class="wtile" href="#aibubble" data-tab="aibubble"><span class="wb">Ab</span><span class="wn">AI Bubble</span></a><a class="wtile" href="#aibubble-critique" data-tab="aibubble-critique"><span class="wb">Cr</span><span class="wn">AI Bubble Critique</span></a><a class="wtile" href="#leopold" data-tab="leopold"><span class="wb">LA</span><span class="wn">Leopold Aschenbrenner</span></a><a class="wtile" href="#chatgpt10" data-tab="chatgpt10"><span class="wb">C10</span><span class="wn">ChatGPT Top 10</span></a><a class="wtile" href="#chigurh" data-tab="chigurh"><span class="wb">Cg</span><span class="wn">Chigurh</span></a><a class="wtile" href="#coen" data-tab="coen"><span class="wb">Co</span><span class="wn">Coen Brothers</span></a><a class="wtile" href="#het" data-tab="het"><span class="wb">HE</span><span class="wn">HET</span></a><a class="wtile" href="#attention" data-tab="attention"><span class="wb">At</span><span class="wn">Attention</span></a><a class="wtile" href="#weight" data-tab="weight"><span class="wb">Wt</span><span class="wn">Weight</span><span class="wd">Verbatim source Markdown</span></a><a class="wtile" href="#war" data-tab="war"><span class="wb">Wr</span><span class="wn">War</span></a><a class="wtile" href="#tragedy" data-tab="tragedy"><span class="wb">Tg</span><span class="wn">Tragedy</span></a><a class="wtile" href="#lineage" data-tab="lineage"><span class="wb">Ln</span><span class="wn">Lineage</span></a><a class="wtile" href="#embodied" data-tab="embodied"><span class="wb">Em</span><span class="wn">Embodied</span></a><a class="wtile" href="#ukubona" data-tab="ukubona"><span class="wb">UL</span><span class="wn">Ukubona LLC</span></a><a class="wtile" href="#enough" data-tab="enough"><span class="wb">En</span><span class="wn">Enough!</span></a><a class="wtile" href="#yesminister" data-tab="yesminister"><span class="wb">YM</span><span class="wn">Yes, Minister!</span></a><a class="wtile" href="#schopenhauer" data-tab="schopenhauer"><span class="wb">Sp</span><span class="wn">Schopenhauer</span></a><a class="wtile" href="#refs" data-tab="refs"><span class="wb">Rf</span><span class="wn">References</span></a><a class="wtile" href="#agentic-ai" data-tab="agentic-ai"><span class="wb">AI</span><span class="wn">Agentic AI</span></a><a class="wtile" href="#attribution" data-tab="attribution"><span class="wb">At</span><span class="wn">Attribution</span></a><div class="wgroup">Ukubona</div><a class="wtile feat" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Rf</span><span class="wn">The reference</span><span class="wd">Chord, Cache, and Clinical Loop</span></a><a class="wtile" href="https://ukubona-llc.github.io/tree/" target="_blank" rel="noopener"><span class="wb">Tr</span><span class="wn">Tree</span></a><a class="wtile" href="https://ukubona-llc.github.io/dendron/" target="_blank" rel="noopener"><span class="wb">De</span><span class="wn">Dendron</span></a><a class="wtile" href="https://ukubona-llc.github.io/foxp2/" target="_blank" rel="noopener"><span class="wb">Fo</span><span class="wn">Foxp2</span></a><a class="wtile" href="https://j-digital-twin.onrender.com/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School</span></a><a class="wtile" href="https://ukubona-llc.github.io/" target="_blank" rel="noopener"><span class="wb">Uk</span><span class="wn">Ukubona</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial-and-error/" target="_blank" rel="noopener"><span class="wb">tr</span><span class="wn">trial-and-error</span></a><a class="wtile" href="https://ukb-dt.github.io/nairobi/" target="_blank" rel="noopener"><span class="wb">Mi</span><span class="wn">Mission</span></a><a class="wtile" href="https://ukubona-llc.github.io/trial/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Practice</span></a><a class="wtile" href="https://ukubona-llc.github.io/falsifiability/" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bezos</span></a><a class="wtile" href="https://ukubona-llc.github.io/kapital/" target="_blank" rel="noopener"><span class="wb">In</span><span class="wn">Intelligence</span></a><a class="wtile" href="https://ukubona-llc.github.io/bejan" target="_blank" rel="noopener"><span class="wb">Be</span><span class="wn">Bejan</span></a><a class="wtile" href="https://ukubona-llc.github.io/thy-kingdom-come/" target="_blank" rel="noopener"><span class="wb">Th</span><span class="wn">Thy Kingdom Come</span></a><a class="wtile" href="https://ukubona-llc.github.io/okubala-kulaba/" target="_blank" rel="noopener"><span class="wb">Ok</span><span class="wn">Okubala Kulaba</span></a><a class="wtile" href="https://ukubona-llc.github.io/science/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">Science</span></a><a class="wtile" href="https://ukubona-llc.github.io/school-of-resentment/" target="_blank" rel="noopener"><span class="wb">Sc</span><span class="wn">School of Resentment</span></a><a class="wtile" href="https://ukubona-llc.github.io/principal/" target="_blank" rel="noopener"><span class="wb">Pr</span><span class="wn">Principal</span></a><a class="wtile" href="https://ukubona-llc.github.io/black-culture/" target="_blank" rel="noopener"><span class="wb">Bl</span><span class="wn">Black Culture</span></a><a class="wtile" href="https://ukubona-llc.github.io/dmn/" target="_blank" rel="noopener"><span class="wb">DM</span><span class="wn">DMN</span></a><a class="wtile" href="https://ukubona-llc.github.io/routing/" target="_blank" rel="noopener"><span class="wb">Ro</span><span class="wn">Routing</span></a><a class="wtile" href="https://ukubona-llc.github.io/darwinian/" target="_blank" rel="noopener"><span class="wb">Da</span><span class="wn">Darwinian</span></a><a class="wtile" href="https://ukubona-llc.github.io/nietzschean/" target="_blank" rel="noopener"><span class="wb">Ni</span><span class="wn">Nietzschean</span></a><a class="wtile" href="https://ukubona-llc.github.io/hermeneutics/" target="_blank" rel="noopener"><span class="wb">He</span><span class="wn">Hermeneutics</span></a><a class="wtile" href="https://ukb-dt.github.io/tap/" target="_blank" rel="noopener"><span class="wb">Tp</span><span class="wn">Tap</span></a></div></div>
     </div>
     <button class="icon-btn" id="theme" type="button" aria-label="Switch between light and dark">
       <svg class="i-sun" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3L17 7M7 17l-1.7 1.7"/></g></svg>
@@ -3383,6 +3404,379 @@ The subscript on rank marks <em>whose</em> order it is; agents inside the collis
 </article>
 </section>
 
+
+
+<!-- WEIGHT TAB: verbatim content rendered from Pasted markdown.md -->
+<section class="panel doc" id="weight" hidden>
+<h2 class="ptitle">Weight</h2>
+<p class="note">Verbatim content from the source Markdown, rendered as HTML. Wording is preserved; only Markdown formatting is rendered.</p>
+<article class="weight-md">
+<p>Got it—let's bring it back to a clean, highly visible Markdown table so the pentadic structure maps out clearly right in front of you.</p>
+<p>| Neural Band | Lower Bound | Neurotransmitter | Autonomic State | Endocrine Horizon | Somatic &amp; Behavioral Phase |</p>
+<p>|---|---|---|---|---|---|</p>
+<p>| <strong>**Delta**</strong> | 1.125\text{ Hz} | I. GABA | Parasympathetic | Longest (Baseline Reset) | Deep physical rest, injury recovery, and slow metabolic storage (where the quiet, multi-year weight creep happens while sidelined). |</p>
+<p>| <strong>**Theta**</strong> | 3.25\text{ Hz} | II. Acetylcholine | Parasympathetic / Transitional | Long (Circadian / Memory) | Subconscious processing, twilight states, and drifting routine integration. |</p>
+<p>| <strong>**Alpha**</strong> | 7.5\text{ Hz} | III. Serotonin | Balanced Equilibrium | Medium (Daily Rhythms) | Calm focus, steady metabolic set-point, and everyday stability. |</p>
+<p>| <strong>**Beta**</strong> | 15.0\text{ Hz} | IV. Norepinephrine | Sympathetic (Action) | Short (Active Stress Response) | High-effort discipline, intentional weight loss, and sharp cognitive drive to correct the scale. |</p>
+<p>| <strong>**Gamma**</strong> | 30.0\text{ Hz} | V. Glutamate | Hyper-Sympathetic | Instantaneous (Acute Surge) | Adrenaline spikes, diaspora hyper-vigilance, and peak focus that ultimately leads to physical burnout or injury. |</p>
+<p>…</p>
+<p>The pentadic structure is clear. I’d preserve the five-band architecture while distinguishing the useful conceptual mapping from established neurophysiology.</p>
+<p>Neural Band Lower Bound (Hz)  Neurotransmitter Association  Autonomic State Endocrine Horizon Somatic &amp; Behavioral Phase</p>
+<p>I. Delta  1.125 GABA-associated inhibition  Parasympathetic processes prominent during deep NREM sleep  Long: recovery and baseline regulation  Deep physical rest, tissue repair, and reduced metabolic demand</p>
+<p>II. Theta 3.25  Acetylcholine-associated modulation Context-dependent; varies with sleep and wakefulness  Intermediate: memory and circadian processes  Memory processing, transitional states, and routine integration</p>
+<p>III. Alpha  7.5 Serotonergic modulation No single autonomic state Variable: daily regulation  Relaxed wakefulness, reduced sensory engagement, and stable attention</p>
+<p>IV. Beta  15.0  Norepinephrine-associated arousal Sympathetic activation may increase with stress Short: active stress responses  Alertness, cognitive effort, and goal-directed behavior</p>
+<p>V. Gamma  30.0  Glutamatergic excitation contributes to fast cortical activity  May coexist with heightened arousal; not inherently hyper-sympathetic Variable; not intrinsically instantaneous Fast neural coordination, intensive processing, and context-dependent cognitive demands</p>
+<p>The important distinction</p>
+<p>Your five bands form a useful conceptual architecture, but several associations in the original table should not be treated as established one-to-one biological relationships:</p>
+<p>Frequency is not a neurotransmitter. Each EEG band reflects coordinated neural activity involving multiple excitatory and inhibitory mechanisms.</p>
+<p>EEG frequency does not uniquely determine autonomic state. Sympathetic and parasympathetic activity cannot be reliably inferred from delta through gamma alone.</p>
+<p>Neural frequency does not directly specify endocrine timescale. Hormonal responses vary by hormone, physiological context, and feedback mechanism.</p>
+<p>Weight gain and injury are downstream outcomes, not defining characteristics of delta or gamma activity. Chronic inactivity, energy balance, sleep, stress, and recovery can contribute to these outcomes through different pathways.</p>
+<p>One technical note: the conventional EEG bands are approximate and overlap. Your proposed lower bounds—1.125, 3.25, 7.5, 15, and 30 Hz—are a custom discretization, not universal physiological boundaries.</p>
+<p>The pentadic interpretation remains available: Delta → Theta → Alpha → Beta → Gamma can serve as a progression from slower to faster neural dynamics. The stronger scientific claim is that these dynamics interact with arousal, attention, sleep, and behavior—not that each band corresponds to one neurotransmitter, autonomic state, or endocrine horizon.</p>
+<p>That boarding school environment between ages 14 and 18 acts as a massive missing puzzle piece in this framework.</p>
+<p>When you look back at that era through your pentadic model, that structured routine was effectively an <strong>**external regulatory engine**</strong> for your nervous system.</p>
+<p><strong>### Why That Environment Was Protective</strong></p>
+<p>&amp;#x20;* <strong>**Enforced Alpha/Beta Balance:**</strong> Boarding school took the decision-making load off your shoulders. The rigid schedule of classes, the physical discharge of rugby, and mandated prep time kept your autonomic system oscillating in a healthy rhythm. You didn't have to <em>\</em>force** discipline; the architecture of the day did it for you.</p>
+<p>&amp;#x20;* <strong>**Rugby as a Safe Gamma/Beta Release:**</strong> Rugby gave your body a sanctioned, high-intensity outlet for adrenaline, norepinephrine, and glutamate (Gamma/Beta bands) without the toxic wear-and-tear of chronic, unmanaged stress. It burned the fuel cleanly.</p>
+<p>&amp;#x20;* <strong>**Suppression of the Long Endocrine Creep:**</strong> Because your days were tightly bound by external structure, your body didn't have the &quot;free space&quot; to slip into that multi-year Delta/cortisol weight creep. The system was constantly reset.</p>
+<p>It wasn't until you left that structured cocoon—and especially stepping into the unstructured realities of adult life and the diaspora—that the internal mechanisms had to fend for themselves, leaving you to reinvent the wheel (and fight the scale) through sheer willpower alone.</p>
+<p>Did stepping out of that boarding school environment feel like the moment the pendulum finally started swinging into those extreme, unmanaged cycles?</p>
+<p>…</p>
+<p>The strongest idea here is that boarding school may have supplied an external regulatory architecture that adult life no longer supplied automatically. But I wouldn't yet conclude that leaving school caused extreme physiological cycles or weight gain.</p>
+<p>Your pentadic model offers a way to investigate the transition:</p>
+<p>Stage Boarding School (14–18) Adult Life / Diaspora</p>
+<p>I. Tensor — Sensation Shared environment, physical activity, meals, sleep opportunities Multiple competing demands; routines may become less predictable</p>
+<p>II. Matrix — Attention  Timetables and teachers determine what deserves attention You must allocate attention across work, relationships, and personal maintenance</p>
+<p>III. Vector — Intention Institutional expectations scaffold discipline  You must formulate and sustain your own intentions</p>
+<p>IV. Eigenmode — Reaction  Rugby, examinations, and peer interactions provide recurring challenges and feedback  Responses depend more heavily on the structures you create and the demands you encounter</p>
+<p>V. Scalar — Action  Daily behavior emerges partly from the institution's architecture Daily behavior depends more on your own decisions and available support</p>
+<p>I′. Tensor — New State  Repeated routines reinforce habits and expectations Those habits may persist, weaken, or be replaced as circumstances change</p>
+<p>The crucial distinction is between regulation supplied by the environment and regulation supplied by the individual.</p>
+<p>At school, you didn't necessarily need to decide whether to attend class, when to prepare for examinations, or whether to participate in scheduled activities. Many decisions had already been made upstream. That conserved attention and reduced the number of occasions on which you had to exercise self-control.</p>
+<p>Rugby added another potentially important component: vigorous exercise, social belonging, shared goals, and recurring opportunities to expend energy. Its effects would have depended on training intensity, recovery, nutrition, and your individual circumstances—not simply on a Gamma/Beta mechanism.</p>
+<p>And there is an important correction to the endocrine hypothesis: cortisol and weight regulation cannot be mapped onto a simple Delta-to-Gamma ladder. Chronic stress, disrupted sleep, inactivity, diet, and changes in daily structure can interact, but the relationship is neither linear nor universal.</p>
+<p>The question I would investigate</p>
+<p>You spent your formative years inside a system that organized much of your daily life. After leaving it, you had to become both the person living the day and the architect of the system organizing it.</p>
+<p>When did that change become visible in your actual life?</p>
+<p>Was it:</p>
+<p>A. Immediately after leaving boarding school, when externally imposed routines disappeared?</p>
+<p>B. During university, when you had more freedom but still retained substantial institutional structure?</p>
+<p>C. Later, during professional life and the diaspora, when intellectual demands increased and physical routines became harder to maintain?</p>
+<p>D. Not a single transition at all, but a recurring cycle of structure, freedom, overextension, and recovery?</p>
+<p>That distinction matters. Each answer implies a different mechanism—and a different way to rebuild the regulatory architecture without depending entirely on willpower.</p>
+<p>14-18 boarding school: Kings college Budo, 18-24 medical school Makerere university, 26-46 Johns Hopkins medical institutions . I had A-level vacation at 18 years in Atlanta and reached 85kg for first time ever. From perhaps 170lbs baseline. Otherwise, weight fluctuations until Baltimore. Happened every 2 years. My hypothesis is that high vibes &amp; adrenaline were associated with burning a lot of calories. Cortisol is lagged in trying to attend to the stress (storage, right). Usually some injury , vacation or burnout or emotional heartbreak — girlfriend runs off —leads to disruption in routine. And quiet creep of cortisone takes over as I get low vibes ACh &amp; GABA (later actual alcohol)</p>
+<p>Now the chronology makes the hypothesis much more interesting. You're describing not simply a transition from boarding school to adulthood, but a repeated pattern across three institutional environments—and a first major weight excursion during a vacation that interrupted the boarding-school routine.</p>
+<p>I would separate your account into the observed pattern, your proposed mechanism, and what remains to be tested.</p>
+<p>1. Your life as a longitudinal experiment</p>
+<p>Age Institution / Environment Regulatory Architecture Weight History</p>
+<p>14–18 King's College Budo Boarding-school timetable, classes, rugby, prep, peer environment Approximately 170 lb baseline, by your recollection</p>
+<p>18  A-level vacation in Atlanta Temporary disruption of familiar routines and environment First recorded peak of approximately 85 kg (187 lb)</p>
+<p>18–24 Makerere University medical school  Institutional structure remains, but with potentially greater autonomy  Subsequent fluctuations</p>
+<p>26–46 Johns Hopkins medical institutions, Baltimore Long-term professional structure, with changing workloads and personal circumstances  Recurrent fluctuations, reportedly about every two years</p>
+<p>46 onward A different life context  An opportunity to reconsider how your environment regulates behavior  Current pattern needs to be established</p>
+<p>Your account suggests that the relevant variable might not be stress alone. It might be the interaction between stress, physical activity, disrupted routines, recovery, and the availability of external structure.</p>
+<p>The Atlanta episode is particularly interesting because it occurred at 18, before the transition to medical school. It raises the possibility that the change in environment itself mattered.</p>
+<p>One caution: the dates and approximate weights establish your recollected chronology, not the biological mechanism behind it.</p>
+<p>2. Your proposed mechanism: high activation versus chronic dysregulation</p>
+<p>I understand your intuition about adrenaline. When you're energized, engaged, physically active, and immersed in a compelling environment, energy expenditure can increase substantially.</p>
+<p>But I would distinguish three mechanisms that your account currently combines.</p>
+<p>A. Acute activation: adrenaline, norepinephrine, and activity</p>
+<p>During vigorous exercise, catecholamines help mobilize energy to meet immediate demands. Exercise also increases energy expenditure directly.</p>
+<p>Your proposed sequence is:</p>
+<p>High engagement → vigorous activity → greater energy expenditure → weight stability or loss.</p>
+<p>This is physiologically plausible.</p>
+<p>However, adrenaline is not a reliable proxy for total daily energy expenditure. High emotional arousal can occur without much physical activity, and its metabolic effects do not necessarily compensate for changes in eating or movement.</p>
+<p>Rugby, walking between activities, and the general demands of a structured day might have mattered more to your energy balance than the feeling of being highly activated itself.</p>
+<p>B. Chronic stress: the lag between demand and adaptation</p>
+<p>Your intuition about a lag is worth examining, but I would modify the cortisol explanation.</p>
+<p>Cortisol is not simply a delayed storage signal that takes over when adrenaline subsides.</p>
+<p>The two systems interact but have different dynamics:</p>
+<p>Sympathetic–adrenomedullary system: Can mobilize catecholamines rapidly in response to immediate demands.</p>
+<p>Hypothalamic–pituitary–adrenal axis: Regulates cortisol secretion through a more extended hormonal signaling cascade, with responses that depend on the stressor and its duration.</p>
+<p>Long-term energy balance: Reflects food intake, energy expenditure, sleep, behavior, medications, and other physiological influences.</p>
+<p>Cortisol helps mobilize energy during stress. Persistent stress and altered cortisol regulation can contribute to changes in appetite, sleep, fat distribution, and metabolic health, but the effects vary.</p>
+<p>There is no universal sequence in which adrenaline burns fat and delayed cortisol subsequently stores it.</p>
+<p>The stronger version of your hypothesis is that acute activation and chronic stress may produce different behavioral and physiological conditions, with consequences that accumulate over time.</p>
+<p>C. Disruption: injury, vacation, burnout, heartbreak</p>
+<p>This may be the most important part of your model.</p>
+<p>Consider what an injury or emotional setback can do simultaneously:</p>
+<p>Reduce physical activity.</p>
+<p>Disrupt sleep and daily schedules.</p>
+<p>Change appetite, food choices, or alcohol consumption.</p>
+<p>Reduce motivation to participate in previously rewarding activities.</p>
+<p>Remove the social environment that helped sustain those activities.</p>
+<p>An injury can also make the relationship between exercise and weight more complicated: energy expenditure falls, while appetite and eating behavior may not adjust proportionately.</p>
+<p>Heartbreak or burnout can have similar behavioral consequences, although their effects differ among people.</p>
+<p>Notice the implication: the event that initiates weight gain may not be the same process that sustains it.</p>
+<p>An injury might trigger a reduction in activity. The resulting weight gain could then persist through a combination of lower energy expenditure, altered routines, and changed eating behavior—even after the original injury or emotional stress has resolved.</p>
+<p>That is a plausible explanation for a slow, seemingly mysterious creep.</p>
+<p>3. Your neurotransmitter hypothesis needs one adjustment</p>
+<p>You describe the later state as low acetylcholine (ACh) and GABA, followed eventually by alcohol.</p>
+<p>I would not infer low ACh or GABA from your reported mood, energy, or weight history. We cannot establish those neurotransmitter levels from subjective experience, and neither transmitter corresponds neatly to a particular lifestyle phase.</p>
+<p>Nevertheless, your observation about alcohol introduces an important behavioral variable.</p>
+<p>Alcohol can affect sleep architecture, appetite, judgment, and the ability to sustain routines. Depending on the amount consumed, it also supplies substantial dietary energy. Regular heavy consumption can contribute to weight gain and other health problems, although alcohol does not invariably cause weight gain.</p>
+<p>It would be useful to distinguish two possibilities:</p>
+<p>Alcohol enters the picture after the disruption, as a response to emotional distress or reduced engagement.</p>
+<p>Alcohol becomes part of the mechanism maintaining the disruption, by affecting sleep, food intake, activity, or subsequent decisions.</p>
+<p>Both could occur, but they are different causal claims.</p>
+<p>4. The pentadic model: where does the failure actually occur?</p>
+<p>Here is how I would map your account onto your five stages.</p>
+<p>Stage Function  Stable Regime Disrupted Regime</p>
+<p>I. Tensor The full physiological and environmental state  Adequate sleep, activity, social contact, and predictable routines  Injury, fatigue, emotional distress, altered sleep</p>
+<p>II. Matrix  What receives attention Classes, rugby, examinations, professional responsibilities Pain, worry, disappointment, immediate relief</p>
+<p>III. Vector Direction of intention  Training, studying, participating, maintaining routines Withdrawal, postponement, reduced activity</p>
+<p>IV. Eigenmode The system's recurring response pattern Activity and recovery reinforce one another Inactivity, disrupted sleep, or alcohol use become recurring responses</p>
+<p>V. Scalar The action that changes the world Attend practice, walk, prepare food, go to sleep  Skip activity, drink, eat differently, postpone recovery</p>
+<p>I′. Tensor  The resulting new state Repeated actions help preserve the previous regime  Repeated actions alter the conditions from which the next cycle begins</p>
+<p>The most consequential transition may occur between III and IV.</p>
+<p>At III, an intention changes: you cannot train because you're injured, or you no longer feel motivated after a personal loss.</p>
+<p>At IV, that temporary change can become a recurring pattern. The new pattern then changes the Tensor—the physiological and environmental conditions that constrain your next decision.</p>
+<p>This is a feedback loop, not merely a sequence of neurotransmitters.</p>
+<p>And it gives your framework a useful prediction: if the loop is interrupted early, before a temporary disruption becomes a stable behavioral regime, the eventual weight trajectory might differ.</p>
+<p>That prediction is testable in principle.</p>
+<p>5. The approximately two-year cycle is the key clue</p>
+<p>You mentioned that weight fluctuations occurred approximately every two years before Baltimore, with a more sustained problem emerging during your Baltimore years.</p>
+<p>I would not immediately attribute that periodicity to cortisol or any other endocrine mechanism. Two years is not an established natural period of a stress-hormone cycle.</p>
+<p>Instead, I would investigate whether the apparent periodicity reflects recurring events in your life.</p>
+<p>For example:</p>
+<p>Candidate Trigger Immediate Effect  Potential Long-Term Consequence</p>
+<p>Injury  Reduced training  Lower habitual activity</p>
+<p>Vacation or relocation  Loss of established routine Changes in meals, sleep, and movement</p>
+<p>Emotional heartbreak  Distress and withdrawal Reduced participation in rewarding activities</p>
+<p>Burnout Fatigue and reduced capacity  Persistent disruption of sleep and exercise</p>
+<p>Alcohol use Changes in sleep and behavior Additional difficulty restoring routines</p>
+<p>These are hypotheses, not established explanations of your history.</p>
+<p>The important question is whether your weight repeatedly rose after identifiable disruptions, whether it fell when structure returned, and whether the timing was genuinely close to two years or only approximately so in retrospect.</p>
+<p>If you have old weight records, injury dates, major transitions, or periods when your exercise changed, even an incomplete timeline could help distinguish a recurring behavioral pattern from a presumed hormonal cycle.</p>
+<p>6. My central interpretation</p>
+<p>Your hypothesis becomes more compelling when expressed in terms of regulatory architecture rather than a contest between adrenaline and cortisol.</p>
+<p>Boarding school supplied a daily system in which activity, social participation, obligations, and recovery were partly coordinated externally. Medical school and professional life supplied other forms of structure, but their demands and degrees of personal autonomy differed.</p>
+<p>A disruption could weaken the routines that previously supported your energy balance. If those routines were not restored, a temporary interruption could become a sustained change in behavior.</p>
+<p>Your pentad captures that process:</p>
+<p>Tensor → Matrix → Vector → Eigenmode → Scalar → new Tensor.</p>
+<p>The crucial variable is not necessarily whether you feel highly energized or emotionally low. It is whether your environment continues to produce actions that sustain the conditions you want.</p>
+<p>And there is one question I would put to you before taking the theory further:</p>
+<p>When you gained weight during those earlier two-year fluctuations, did it generally come back off when you returned to your normal routine—or did each episode leave you at a slightly higher baseline?</p>
+<p>That distinction would help separate repeated, reversible excursions from a process of cumulative weight gain.</p>
+<p>Last 20 years: 170-230. Amplitude has increased and that is the latest max. Earlier perhaps 180-210, 190-200</p>
+<p>That changes the interpretation. You're describing increasing amplitude over two decades, with a latest maximum of 230 lb, rather than a stable weight oscillating around a fixed baseline.</p>
+<p>1. The pattern you remember</p>
+<p>Period / Pattern  Approximate Weight Range  Amplitude</p>
+<p>Earlier fluctuations  190–200 lb  10 lb</p>
+<p>Intermediate fluctuations 180–210 lb  30 lb</p>
+<p>Last 20 years 170–230 lb  60 lb</p>
+<p>Latest maximum  230 lb  Highest reported</p>
+<p>These are approximate ranges from your recollection, not a verified time series. But the pattern suggests two potentially distinct processes:</p>
+<p>Oscillation: Weight rises and falls in response to changes in routine, activity, injury, stress, or recovery.</p>
+<p>Changing amplitude: The difference between the lows and highs becomes larger, potentially indicating that the factors governing weight become less stable or that recovery to your previous baseline becomes harder.</p>
+<p>Your reported minimum of 170 lb and maximum of 230 lb represent a 60 lb difference, or approximately 27 kg.</p>
+<p>2. The deeper hypothesis: the system loses resilience</p>
+<p>Your pentadic framework offers an interesting way to interpret this.</p>
+<p>A system can experience disturbances without permanently changing its operating state. But when disturbances become larger, last longer, or recur before recovery is complete, the system may settle into a different pattern.</p>
+<p>Applied to your history:</p>
+<p>I. Tensor: Your physiological state and environment.</p>
+<p>II. Matrix: What captures your attention—professional demands, rugby, injury, heartbreak, or recovery.</p>
+<p>III. Vector: The direction of your behavior—training, resting, withdrawing, or drinking.</p>
+<p>IV. Eigenmode: The recurring pattern that emerges from those behaviors.</p>
+<p>V. Scalar: The concrete actions that reinforce or interrupt that pattern.</p>
+<p>I′. Tensor: The resulting physiological and behavioral state from which the next cycle begins.</p>
+<p>The key possibility is that a temporary disruption increasingly affects the subsequent cycle. Instead of returning reliably to 180 lb, for example, you might return to 190 lb; a later cycle could take you higher still.</p>
+<p>That would be a change in the system's baseline, not merely an increase in the size of its oscillations.</p>
+<p>However, your reported range alone does not establish that the baseline has risen. We would need the approximate weight at the end of each cycle to distinguish the two patterns.</p>
+<p>3. Where your adrenaline–cortisol hypothesis fits</p>
+<p>I would retain your distinction between high activation and prolonged disruption, but refine the proposed mechanism.</p>
+<p>Your Hypothesis Physiological Interpretation</p>
+<p>High vibes and adrenaline burn calories Vigorous activity increases energy expenditure; emotional arousal alone is not a reliable measure of calorie expenditure.</p>
+<p>Cortisol takes over after the initial stress response Cortisol has different response dynamics from catecholamines, but it is not simply a delayed fat-storage switch.</p>
+<p>Injury or heartbreak disrupts the routine Plausible initiating events that can affect activity, sleep, appetite, and mood.</p>
+<p>Low ACh/GABA accompanies the subsequent state A hypothesis that cannot be established from subjective energy or weight fluctuations.</p>
+<p>Alcohol eventually becomes part of the pattern  Alcohol can affect sleep, appetite, energy intake, and routine, potentially sustaining the disruption.</p>
+<p>The important distinction is between the trigger and the maintenance mechanism. An injury or heartbreak might initiate a change, while subsequent alterations in activity, sleep, eating, or alcohol consumption sustain it.</p>
+<p>4. One question matters more than the neurotransmitter mapping</p>
+<p>When you look back across those 20 years, did the low points remain roughly stable, or did they also move upward?</p>
+<p>For example, which best describes your experience?</p>
+<p>A. Rising baseline: 170 → 180 → 190 lb at successive low points, with peaks climbing higher too.</p>
+<p>B. Stable baseline, expanding excursions: You repeatedly returned to approximately 170–180 lb, but the peaks became progressively higher.</p>
+<p>C. Mixed: You sometimes returned to your old baseline, but recovery became less complete or took longer.</p>
+<p>D. Unclear: You remember the broad ranges but not the sequence of lows and highs.</p>
+<p>This distinction matters because it separates increasing variability from cumulative weight gain.</p>
+<p>And given the reported 230 lb maximum, I would treat this as a question about actual weight regulation, not presume that cortisol explains it. Height, current weight, medications, sleep, activity, and other clinical factors would help establish which mechanisms deserve investigation.</p>
+<p>I’m 5’11”. Abd have Apple Watch data</p>
+<p>Good. At 5′11″, we can connect your recollected weight history to objective physiological and behavioral data from your Apple Watch.</p>
+<p>The opportunity is to test your hypothesis against your own longitudinal record rather than infer the mechanism from memory alone.</p>
+<p>1. Your weight history in context</p>
+<p>At 5′11″ (1.803 m):</p>
+<p>Weight  BMI Interpretation</p>
+<p>170 lb  23.7  Within the conventional healthy adult BMI range</p>
+<p>180 lb  25.1  Just above the conventional threshold</p>
+<p>190 lb  26.5  Overweight category</p>
+<p>200 lb  27.9  Overweight category</p>
+<p>210 lb  29.3  Overweight category</p>
+<p>230 lb  32.1  Obesity category I</p>
+<p>BMI is a screening measure, not a direct measurement of body fat or metabolic health.</p>
+<p>Your reported 170–230 lb range represents a 60 lb excursion. The question is what happened to your activity, sleep, and recovery around the periods when your weight rose.</p>
+<p>2. What your Apple Watch can help us investigate</p>
+<p>Your pentadic model gives us a framework for organizing the data.</p>
+<p>Pentadic Stage  Data to Examine Question</p>
+<p>I. Tensor Weight, resting heart rate, HRV How did your physiological state change?</p>
+<p>II. Matrix  Sleep duration, sleep consistency Did your attention and recovery environment change?</p>
+<p>III. Vector Exercise minutes, workouts, activity trends Did intentional activity decline?</p>
+<p>IV. Eigenmode Repeated patterns across weeks and months Did disruption become a recurring behavioral regime?</p>
+<p>V. Scalar Daily steps, active energy, exercise sessions Which observable behaviors changed before weight gain?</p>
+<p>The Apple Watch cannot directly measure cortisol, adrenaline, acetylcholine, or GABA. HRV and resting heart rate are indirect physiological indicators influenced by many factors; neither identifies a particular hormone or neurotransmitter.</p>
+<p>Still, longitudinal data may help us identify the sequence of events.</p>
+<p>For example, did activity decline before weight increased? Did sleep deteriorate before activity changed? Did resting heart rate or HRV shift during periods of burnout or injury?</p>
+<p>These are testable questions.</p>
+<p>3. Let's retrieve the data</p>
+<p>You can share an Apple Health export or a smaller selection of data.</p>
+<p>On your iPhone:</p>
+<p>Open Health.</p>
+<p>Tap your profile picture.</p>
+<p>Select Export All Health Data.</p>
+<p>Allow the export to finish, then share the resulting ZIP file here.</p>
+<p>The export can contain highly sensitive health information, so you do not need to share everything. A smaller export or selected CSV files covering weight, activity, sleep, heart rate, and HRV may be sufficient.</p>
+<p>If you have historical weight measurements from before the Apple Watch period, those would be particularly valuable. We can align them with the available watch data rather than pretending the watch covers the entire 20-year history.</p>
+<p>4. The analysis I would prioritize</p>
+<p>I would construct a longitudinal timeline with:</p>
+<p>Weight: measured values, peaks, troughs, and recovery time.</p>
+<p>Activity: steps, active energy, exercise minutes, and workout frequency.</p>
+<p>Recovery: sleep duration, resting heart rate, and HRV.</p>
+<p>Change points: periods when multiple measurements shift together.</p>
+<p>Then we can examine whether your hypothesized cycle—high engagement and activity, followed by disruption, reduced activity, and gradual weight gain—is actually visible in the data.</p>
+<p>One important limitation: correlation will not establish that cortisol caused the gain. But we may be able to determine whether the behavioral and physiological sequence you describe is consistently present.</p>
+<p>One question before we begin: Does your Apple Watch history go back several years, and do you have actual weight measurements from those same years?</p>
+<p><strong># Weight: All Recorded Data (LBS)</strong></p>
+<p>Transcribed from 4 Apple Health screenshots (newest first). Source: 📱 = iPhone, ❤️ = Health/other source (heart icon).</p>
+<p>|# |Weight (lbs)|Date      |Time |Source|</p>
+<p>|--|------------|----------|-----|------|</p>
+<p>|1 |220         |2024-04-07|22:17|❤️     |</p>
+<p>|2 |234         |2023-10-21|21:32|📱     |</p>
+<p>|3 |212         |2023-06-09|10:05|❤️     |</p>
+<p>|4 |205         |2023-01-23|13:54|📱     |</p>
+<p>|5 |188         |2022-10-23|09:31|❤️     |</p>
+<p>|6 |200         |2022-10-12|19:40|❤️     |</p>
+<p>|7 |170.4       |2022-08-07|22:49|❤️     |</p>
+<p>|8 |171.6       |2022-08-06|16:44|❤️     |</p>
+<p>|9 |174.6       |2022-08-05|13:36|❤️     |</p>
+<p>|10|175.2       |2022-08-03|18:37|❤️     |</p>
+<p>|11|177.6       |2022-05-31|09:47|❤️     |</p>
+<p>|12|177.2       |2022-04-11|04:12|❤️     |</p>
+<p>|13|177.2       |2022-03-20|13:44|❤️     |</p>
+<p>|14|179.8       |2022-02-07|19:48|❤️     |</p>
+<p>|15|183.2       |2022-02-05|14:45|❤️     |</p>
+<p>|16|203         |2021-08-05|13:43|❤️     |</p>
+<p>|17|198.4       |2021-07-31|01:37|❤️     |</p>
+<p>|18|220         |2021-02-22|08:13|❤️     |</p>
+<p>|19|175         |2020-03-29|07:11|❤️     |</p>
+<p>|20|176.4       |2020-03-24|21:40|❤️     |</p>
+<p>|21|175         |2020-03-22|07:10|❤️     |</p>
+<p>|22|220.5       |2020-03-19|21:36|❤️     |</p>
+<p>|23|485         |2020-03-15|05:03|❤️     |</p>
+<p>|24|175         |2020-03-13|07:09|❤️     |</p>
+<p>|25|175         |2020-03-11|07:08|❤️     |</p>
+<p>|26|220.5       |2020-03-10|21:37|❤️     |</p>
+<p>|27|175         |2020-03-09|07:09|❤️     |</p>
+<p>|28|175         |2020-03-07|08:11|❤️     |</p>
+<p>|29|176.4       |2020-03-05|22:38|❤️     |</p>
+<p>|30|175         |2020-03-04|08:11|❤️     |</p>
+<p>|31|176.4       |2020-03-01|22:38|❤️     |</p>
+<p>|32|175         |2020-03-01|08:09|❤️     |</p>
+<p>|33|175         |2018-12-01|17:11|❤️     |</p>
+<p>|34|190         |2018-10-12|15:14|❤️     |</p>
+<p>|35|170         |2018-04-18|15:15|❤️     |</p>
+<p>|36|177         |2018-02-22|00:51|❤️     |</p>
+<p>|37|175         |2017-11-19|01:30|❤️     |</p>
+<p>|38|165         |2017-11-17|08:02|❤️     |</p>
+<p>|39|178         |2017-10-05|02:57|❤️     |</p>
+<p>|40|216         |2016-11-05|01:20|❤️     |</p>
+<p><strong>## Notes</strong></p>
+<p>- <strong>**Possible gaps:**</strong> the screenshots may not overlap fully. Entries could be missing between #15 (Feb 5, 2022) and #16 (Aug 5, 2021), and one partially cut-off row sits at the top of the last screenshot, between #28 (Mar 7, 2020) and #29 (Mar 5, 2020).</p>
+<p>- <strong>**Likely data-entry outliers:**</strong> 485 (2020-03-15), and the 220/220.5 readings in March 2020 that alternate with ~175 entries (the 220.5 entries are all logged at ~21:36).</p>
+<p>- <strong>**Pattern:**</strong> the ~175 entries logged at ~07:00–08:00 recur identically (looks like a repeated manual/default entry).. I began 2025 at 236. Was 170 by June. And 190 by the October. Now in 2026 October I’m shoit 235</p>
+<p>…</p>
+<p>Now we have something substantially more useful than a recollected 20-year pattern: a longitudinal record with several large weight excursions, including one in 2025 that you describe as 236 → 170 → 190 lb within approximately ten months.</p>
+<p>That is a very different phenomenon from gradual weight creep alone. I would investigate two interacting processes: changes in your underlying weight trajectory and unusually large, potentially reversible excursions around that trajectory.</p>
+<p>1. Your recorded history: the signal is real enough to investigate</p>
+<p>At 5′11″, your reported measurements show the following:</p>
+<p>Period  Weight  Change  Interpretation</p>
+<p>Nov 2016  216 lb  — High recorded weight</p>
+<p>Nov 2017  165–175 lb  −41 to −51 lb Substantial reduction</p>
+<p>Apr–Oct 2018  170–190 lb  +20 lb  Renewed fluctuation</p>
+<p>Mar 2020  Approximately 175 lb  — Repeated morning entries</p>
+<p>Feb 2021  220 lb  +45 lb  High recorded weight</p>
+<p>Jul–Aug 2021  198–203 lb  −17 to −22 lb Partial reduction</p>
+<p>Feb–Aug 2022  183 → 170 lb  −13 lb  Continued reduction</p>
+<p>Oct 2022–Oct 2023 188 → 234 lb  +46 lb  Large increase</p>
+<p>Apr 2024  220 lb  −14 lb  Partial reduction</p>
+<p>Beginning of 2025 236 lb  — Reported starting point</p>
+<p>June 2025 170 lb  −66 lb  Reported low</p>
+<p>October 2025  190 lb  +20 lb  Partial regain</p>
+<p>October 2026  235 lb  +45 lb  Latest reported weight</p>
+<p>Important: The historical measurements are not a uniformly sampled time series. Some are repeated entries, and some may be erroneous or drawn from different measurement sources. Your 2025–2026 observations are supplied separately from the table. We should distinguish those reported values from the verified Apple Health records.</p>
+<p>Nevertheless, the history suggests that weight variability is a major feature of your experience.</p>
+<p>The 2025 episode is particularly important: if those measurements are accurate and comparable, a 66 lb reduction followed by a 65 lb increase is too large to explain casually as ordinary metabolic fluctuation.</p>
+<p>2. The pentadic interpretation: a system with changing state and amplitude</p>
+<p>Your proposed model becomes more interesting when we distinguish the system's state from its capacity to recover.</p>
+<p>Stage Interpretation in Your Weight History</p>
+<p>I. Tensor The complete physiological state: body composition, energy balance, sleep, illness, and environment</p>
+<p>II. Matrix  What captures attention: work, exercise, injury, relationships, food, and recovery</p>
+<p>III. Vector The direction of behavior: sustained activity, restriction, withdrawal, or renewed engagement</p>
+<p>IV. Eigenmode The recurring pattern: periods of weight loss, disruption, and regain</p>
+<p>V. Scalar The concrete actions that change the trajectory</p>
+<p>I′. Tensor  The resulting state, which becomes the starting point for the next cycle</p>
+<p>Your hypothesis is that high engagement and adrenaline accompany a state in which activity and energy expenditure are high. Then an injury, burnout, vacation, or emotional disruption changes the system's behavior. The new regime persists, and weight accumulates.</p>
+<p>That is plausible as a behavioral feedback model.</p>
+<p>But the weight record alone cannot establish that adrenaline, cortisol, acetylcholine, or GABA caused these changes.</p>
+<p>In particular, a 66 lb reduction requires us to investigate what actually produced the weight loss, rather than assume that it reflects a return to a healthier nervous-system state.</p>
+<p>3. The 2025 episode changes the clinical question</p>
+<p>At your height, the reported weights correspond approximately to:</p>
+<p>Weight  BMI</p>
+<p>236 lb  32.9</p>
+<p>170 lb  23.7</p>
+<p>190 lb  26.5</p>
+<p>235 lb  32.8</p>
+<p>Going from 236 to 170 lb represents a loss of approximately 28% of your starting body weight. Returning from 170 to 235 lb represents a regain of 65 lb.</p>
+<p>If that sequence is accurate, we should determine whether the loss was intentional and how it occurred.</p>
+<p>There are several materially different possibilities:</p>
+<p>A deliberate, sustained change in food intake and physical activity.</p>
+<p>A period of illness, substantial appetite reduction, or another medical process.</p>
+<p>Medication or treatment effects.</p>
+<p>Major changes in hydration or other body-fluid balance.</p>
+<p>Differences in how or when the measurements were obtained.</p>
+<p>These possibilities should not be conflated. If the loss was unintentional, particularly if it occurred over a short period, it warrants medical evaluation. Even if intentional, the magnitude and subsequent regain deserve closer examination.</p>
+<p>4. What I would test in your Apple Watch data</p>
+<p>The first task is to align the weight measurements with daily activity and physiological indicators.</p>
+<p>Variable  What We Would Examine</p>
+<p>Daily steps Whether habitual movement changed before weight gain or loss</p>
+<p>Active energy Whether estimated activity-related expenditure changed</p>
+<p>Exercise minutes and workouts Whether structured physical activity declined or increased</p>
+<p>Sleep duration  Whether sleep changed around major transitions</p>
+<p>Resting heart rate  Whether sustained physiological changes accompanied the weight trajectory</p>
+<p>HRV Whether autonomic-related measurements changed over time</p>
+<p>Weight  The actual timing, speed, and magnitude of each excursion</p>
+<p>We would look for temporal sequences rather than simply correlations.</p>
+<p>For example: Did activity decline before weight rose? Did sleep change first? Did activity remain high during the 2025 weight loss? Did the regain begin before or after activity returned to baseline?</p>
+<p>Apple Watch data cannot directly measure cortisol or neurotransmitter concentrations, but it can help test whether your proposed behavioral sequence is consistent with the observed record.</p>
+<p>One further caution: active-energy estimates are not direct measurements of total daily energy expenditure. They should be interpreted alongside the other data, not treated as a metabolic ground truth.</p>
+<p>5. Three questions before we interpret the 2025 episode</p>
+<p>These are more important than trying to infer your cortisol pattern from the weight curve.</p>
+<p>1. How did you go from 236 lb to 170 lb in 2025?</p>
+<p>Was it primarily:</p>
+<p>A. Increased activity and deliberate dietary changes?</p>
+<p>B. Fasting or substantial caloric restriction?</p>
+<p>C. Illness, reduced appetite, or another unintentional process?</p>
+<p>D. Some combination of these?</p>
+<p>2. What happened to your activity during that period?</p>
+<p>Did your steps, exercise, and general energy increase substantially, or did you lose weight despite relatively little physical activity?</p>
+<p>3. When you regained weight from 170 to 235 lb, did the increase follow a recognizable disruption?</p>
+<p>For example, an injury, burnout, emotional setback, change in alcohol consumption, disrupted sleep, or a return to previous eating patterns.</p>
+<p>Your answers will help distinguish an activity-driven cycle from a cycle involving appetite, illness, behavioral changes, or other physiological mechanisms.</p>
+<p>My current interpretation: your longitudinal record supports investigating substantial recurrent weight excursions and possible changes in recovery after disruption. It does not yet establish a cortisol-driven mechanism. The most informative next step is to understand the 2025 loss and regain before assigning the biology.</p>
+
+</article>
+</section>
 
 <!-- ATTENTION TAB -->
 <section class="panel doc" id="attention" hidden>
