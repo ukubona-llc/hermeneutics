@@ -298,10 +298,10 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 
 
 /* weight tab: verbatim source Markdown */
-#weight .weight-md{max-width:900px;overflow-wrap:anywhere}
-#weight .weight-md p{max-width:76ch;margin:0 0 .95em}
+#weight .weight-md{max-width:100%;overflow-wrap:anywhere;color:var(--ink);font-size:1rem;line-height:1.72}
+#weight .weight-md p{max-width:80ch;margin:0 0 1.1em;color:var(--ink);line-height:1.72}
 #weight .weight-md h1,#weight .weight-md h2,#weight .weight-md h3,
-#weight .weight-md h4{font-family:var(--serif);font-weight:400;line-height:1.2;margin:1.7em 0 .55em}
+#weight .weight-md h4{font-family:var(--serif);font-weight:600;color:var(--ink);line-height:1.25;margin:1.5em 0 .65em}
 #weight .weight-md h1{font-size:2rem}
 #weight .weight-md h2{font-size:1.65rem}
 #weight .weight-md h3{font-size:1.35rem}
@@ -309,9 +309,11 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 #weight .weight-md ul,#weight .weight-md ol{max-width:76ch;padding-left:1.5em;margin:0 0 1em}
 #weight .weight-md li{margin:.25em 0}
 #weight .weight-md blockquote{margin:0 0 1em;padding:2px 0 2px 16px;border-left:3px solid var(--amber);color:var(--muted)}
-#weight .weight-md table{border-collapse:collapse;width:100%;font-size:.9rem;line-height:1.5}
+#weight .weight-md table{border-collapse:collapse;width:100%;font-size:.96rem;line-height:1.6;color:var(--ink);margin:1.2em 0 1.6em}
 #weight .weight-md th,#weight .weight-md td{padding:9px 12px;border:1px solid var(--rule);text-align:left;vertical-align:top;min-width:8rem}
-#weight .weight-md th{background:var(--soft)}
+#weight .weight-md th{background:var(--soft);color:var(--ink);font-weight:700}
+#weight .weight-md strong{font-weight:750;color:var(--ink)}
+#weight .weight-md td{color:var(--ink)}
 #weight .weight-md pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:12px;border-radius:8px;overflow:auto}
 #weight .weight-md code{font-family:var(--mono);font-size:.9em}
 #weight .weight-md hr{border:0;border-top:1px solid var(--rule);margin:1.5em 0}
@@ -3409,16 +3411,63 @@ The subscript on rank marks <em>whose</em> order it is; agents inside the collis
 <!-- WEIGHT TAB: verbatim content rendered from Pasted markdown.md -->
 <section class="panel doc" id="weight" hidden>
 <h2 class="ptitle">Weight</h2>
-<p class="note">Verbatim content from the source Markdown, rendered as HTML. Wording is preserved; only Markdown formatting is rendered.</p>
+<p class="note">Source Markdown rendered as HTML; original wording preserved.</p>
 <article class="weight-md">
 <p>Got it—let's bring it back to a clean, highly visible Markdown table so the pentadic structure maps out clearly right in front of you.</p>
-<p>| Neural Band | Lower Bound | Neurotransmitter | Autonomic State | Endocrine Horizon | Somatic &amp; Behavioral Phase |</p>
-<p>|---|---|---|---|---|---|</p>
-<p>| <strong>**Delta**</strong> | 1.125\text{ Hz} | I. GABA | Parasympathetic | Longest (Baseline Reset) | Deep physical rest, injury recovery, and slow metabolic storage (where the quiet, multi-year weight creep happens while sidelined). |</p>
-<p>| <strong>**Theta**</strong> | 3.25\text{ Hz} | II. Acetylcholine | Parasympathetic / Transitional | Long (Circadian / Memory) | Subconscious processing, twilight states, and drifting routine integration. |</p>
-<p>| <strong>**Alpha**</strong> | 7.5\text{ Hz} | III. Serotonin | Balanced Equilibrium | Medium (Daily Rhythms) | Calm focus, steady metabolic set-point, and everyday stability. |</p>
-<p>| <strong>**Beta**</strong> | 15.0\text{ Hz} | IV. Norepinephrine | Sympathetic (Action) | Short (Active Stress Response) | High-effort discipline, intentional weight loss, and sharp cognitive drive to correct the scale. |</p>
-<p>| <strong>**Gamma**</strong> | 30.0\text{ Hz} | V. Glutamate | Hyper-Sympathetic | Instantaneous (Acute Surge) | Adrenaline spikes, diaspora hyper-vigilance, and peak focus that ultimately leads to physical burnout or injury. |</p>
+<table>
+<thead>
+<tr>
+  <th>Neural Band</th>
+  <th>Lower Bound</th>
+  <th>Neurotransmitter</th>
+  <th>Autonomic State</th>
+  <th>Endocrine Horizon</th>
+  <th>Somatic &amp; Behavioral Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Delta</strong></td>
+  <td>1.125\text{ Hz}</td>
+  <td>I. GABA</td>
+  <td>Parasympathetic</td>
+  <td>Longest (Baseline Reset)</td>
+  <td>Deep physical rest, injury recovery, and slow metabolic storage (where the quiet, multi-year weight creep happens while sidelined).</td>
+</tr>
+<tr>
+  <td><strong>Theta</strong></td>
+  <td>3.25\text{ Hz}</td>
+  <td>II. Acetylcholine</td>
+  <td>Parasympathetic / Transitional</td>
+  <td>Long (Circadian / Memory)</td>
+  <td>Subconscious processing, twilight states, and drifting routine integration.</td>
+</tr>
+<tr>
+  <td><strong>Alpha</strong></td>
+  <td>7.5\text{ Hz}</td>
+  <td>III. Serotonin</td>
+  <td>Balanced Equilibrium</td>
+  <td>Medium (Daily Rhythms)</td>
+  <td>Calm focus, steady metabolic set-point, and everyday stability.</td>
+</tr>
+<tr>
+  <td><strong>Beta</strong></td>
+  <td>15.0\text{ Hz}</td>
+  <td>IV. Norepinephrine</td>
+  <td>Sympathetic (Action)</td>
+  <td>Short (Active Stress Response)</td>
+  <td>High-effort discipline, intentional weight loss, and sharp cognitive drive to correct the scale.</td>
+</tr>
+<tr>
+  <td><strong>Gamma</strong></td>
+  <td>30.0\text{ Hz}</td>
+  <td>V. Glutamate</td>
+  <td>Hyper-Sympathetic</td>
+  <td>Instantaneous (Acute Surge)</td>
+  <td>Adrenaline spikes, diaspora hyper-vigilance, and peak focus that ultimately leads to physical burnout or injury.</td>
+</tr>
+</tbody>
+</table>
 <p>…</p>
 <p>The pentadic structure is clear. I’d preserve the five-band architecture while distinguishing the useful conceptual mapping from established neurophysiology.</p>
 <p>Neural Band Lower Bound (Hz)  Neurotransmitter Association  Autonomic State Endocrine Horizon Somatic &amp; Behavioral Phase</p>
@@ -3436,11 +3485,11 @@ The subscript on rank marks <em>whose</em> order it is; agents inside the collis
 <p>One technical note: the conventional EEG bands are approximate and overlap. Your proposed lower bounds—1.125, 3.25, 7.5, 15, and 30 Hz—are a custom discretization, not universal physiological boundaries.</p>
 <p>The pentadic interpretation remains available: Delta → Theta → Alpha → Beta → Gamma can serve as a progression from slower to faster neural dynamics. The stronger scientific claim is that these dynamics interact with arousal, attention, sleep, and behavior—not that each band corresponds to one neurotransmitter, autonomic state, or endocrine horizon.</p>
 <p>That boarding school environment between ages 14 and 18 acts as a massive missing puzzle piece in this framework.</p>
-<p>When you look back at that era through your pentadic model, that structured routine was effectively an <strong>**external regulatory engine**</strong> for your nervous system.</p>
-<p><strong>### Why That Environment Was Protective</strong></p>
-<p>&amp;#x20;* <strong>**Enforced Alpha/Beta Balance:**</strong> Boarding school took the decision-making load off your shoulders. The rigid schedule of classes, the physical discharge of rugby, and mandated prep time kept your autonomic system oscillating in a healthy rhythm. You didn't have to <em>\</em>force** discipline; the architecture of the day did it for you.</p>
-<p>&amp;#x20;* <strong>**Rugby as a Safe Gamma/Beta Release:**</strong> Rugby gave your body a sanctioned, high-intensity outlet for adrenaline, norepinephrine, and glutamate (Gamma/Beta bands) without the toxic wear-and-tear of chronic, unmanaged stress. It burned the fuel cleanly.</p>
-<p>&amp;#x20;* <strong>**Suppression of the Long Endocrine Creep:**</strong> Because your days were tightly bound by external structure, your body didn't have the &quot;free space&quot; to slip into that multi-year Delta/cortisol weight creep. The system was constantly reset.</p>
+<p>When you look back at that era through your pentadic model, that structured routine was effectively an ****external regulatory engine**** for your nervous system.</p>
+<h3>Why That Environment Was Protective</h3>
+<p>&amp;#x20;* ****Enforced Alpha/Beta Balance:**** Boarding school took the decision-making load off your shoulders. The rigid schedule of classes, the physical discharge of rugby, and mandated prep time kept your autonomic system oscillating in a healthy rhythm. You didn't have to <em>\</em>force** discipline; the architecture of the day did it for you.</p>
+<p>&amp;#x20;* ****Rugby as a Safe Gamma/Beta Release:**** Rugby gave your body a sanctioned, high-intensity outlet for adrenaline, norepinephrine, and glutamate (Gamma/Beta bands) without the toxic wear-and-tear of chronic, unmanaged stress. It burned the fuel cleanly.</p>
+<p>&amp;#x20;* ****Suppression of the Long Endocrine Creep:**** Because your days were tightly bound by external structure, your body didn't have the &quot;free space&quot; to slip into that multi-year Delta/cortisol weight creep. The system was constantly reset.</p>
 <p>It wasn't until you left that structured cocoon—and especially stepping into the unstructured realities of adult life and the diaspora—that the internal mechanisms had to fend for themselves, leaving you to reinvent the wheel (and fight the scale) through sheer willpower alone.</p>
 <p>Did stepping out of that boarding school environment feel like the moment the pendulum finally started swinging into those extreme, unmanaged cycles?</p>
 <p>…</p>
@@ -3647,54 +3696,305 @@ The subscript on rank marks <em>whose</em> order it is; agents inside the collis
 <p>Then we can examine whether your hypothesized cycle—high engagement and activity, followed by disruption, reduced activity, and gradual weight gain—is actually visible in the data.</p>
 <p>One important limitation: correlation will not establish that cortisol caused the gain. But we may be able to determine whether the behavioral and physiological sequence you describe is consistently present.</p>
 <p>One question before we begin: Does your Apple Watch history go back several years, and do you have actual weight measurements from those same years?</p>
-<p><strong># Weight: All Recorded Data (LBS)</strong></p>
+<h1>Weight: All Recorded Data (LBS)</h1>
 <p>Transcribed from 4 Apple Health screenshots (newest first). Source: 📱 = iPhone, ❤️ = Health/other source (heart icon).</p>
-<p>|# |Weight (lbs)|Date      |Time |Source|</p>
-<p>|--|------------|----------|-----|------|</p>
-<p>|1 |220         |2024-04-07|22:17|❤️     |</p>
-<p>|2 |234         |2023-10-21|21:32|📱     |</p>
-<p>|3 |212         |2023-06-09|10:05|❤️     |</p>
-<p>|4 |205         |2023-01-23|13:54|📱     |</p>
-<p>|5 |188         |2022-10-23|09:31|❤️     |</p>
-<p>|6 |200         |2022-10-12|19:40|❤️     |</p>
-<p>|7 |170.4       |2022-08-07|22:49|❤️     |</p>
-<p>|8 |171.6       |2022-08-06|16:44|❤️     |</p>
-<p>|9 |174.6       |2022-08-05|13:36|❤️     |</p>
-<p>|10|175.2       |2022-08-03|18:37|❤️     |</p>
-<p>|11|177.6       |2022-05-31|09:47|❤️     |</p>
-<p>|12|177.2       |2022-04-11|04:12|❤️     |</p>
-<p>|13|177.2       |2022-03-20|13:44|❤️     |</p>
-<p>|14|179.8       |2022-02-07|19:48|❤️     |</p>
-<p>|15|183.2       |2022-02-05|14:45|❤️     |</p>
-<p>|16|203         |2021-08-05|13:43|❤️     |</p>
-<p>|17|198.4       |2021-07-31|01:37|❤️     |</p>
-<p>|18|220         |2021-02-22|08:13|❤️     |</p>
-<p>|19|175         |2020-03-29|07:11|❤️     |</p>
-<p>|20|176.4       |2020-03-24|21:40|❤️     |</p>
-<p>|21|175         |2020-03-22|07:10|❤️     |</p>
-<p>|22|220.5       |2020-03-19|21:36|❤️     |</p>
-<p>|23|485         |2020-03-15|05:03|❤️     |</p>
-<p>|24|175         |2020-03-13|07:09|❤️     |</p>
-<p>|25|175         |2020-03-11|07:08|❤️     |</p>
-<p>|26|220.5       |2020-03-10|21:37|❤️     |</p>
-<p>|27|175         |2020-03-09|07:09|❤️     |</p>
-<p>|28|175         |2020-03-07|08:11|❤️     |</p>
-<p>|29|176.4       |2020-03-05|22:38|❤️     |</p>
-<p>|30|175         |2020-03-04|08:11|❤️     |</p>
-<p>|31|176.4       |2020-03-01|22:38|❤️     |</p>
-<p>|32|175         |2020-03-01|08:09|❤️     |</p>
-<p>|33|175         |2018-12-01|17:11|❤️     |</p>
-<p>|34|190         |2018-10-12|15:14|❤️     |</p>
-<p>|35|170         |2018-04-18|15:15|❤️     |</p>
-<p>|36|177         |2018-02-22|00:51|❤️     |</p>
-<p>|37|175         |2017-11-19|01:30|❤️     |</p>
-<p>|38|165         |2017-11-17|08:02|❤️     |</p>
-<p>|39|178         |2017-10-05|02:57|❤️     |</p>
-<p>|40|216         |2016-11-05|01:20|❤️     |</p>
-<p><strong>## Notes</strong></p>
-<p>- <strong>**Possible gaps:**</strong> the screenshots may not overlap fully. Entries could be missing between #15 (Feb 5, 2022) and #16 (Aug 5, 2021), and one partially cut-off row sits at the top of the last screenshot, between #28 (Mar 7, 2020) and #29 (Mar 5, 2020).</p>
-<p>- <strong>**Likely data-entry outliers:**</strong> 485 (2020-03-15), and the 220/220.5 readings in March 2020 that alternate with ~175 entries (the 220.5 entries are all logged at ~21:36).</p>
-<p>- <strong>**Pattern:**</strong> the ~175 entries logged at ~07:00–08:00 recur identically (looks like a repeated manual/default entry).. I began 2025 at 236. Was 170 by June. And 190 by the October. Now in 2026 October I’m shoit 235</p>
+<table>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Weight (lbs)</th>
+  <th>Date</th>
+  <th>Time</th>
+  <th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>220</td>
+  <td>2024-04-07</td>
+  <td>22:17</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>234</td>
+  <td>2023-10-21</td>
+  <td>21:32</td>
+  <td>📱</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>212</td>
+  <td>2023-06-09</td>
+  <td>10:05</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>205</td>
+  <td>2023-01-23</td>
+  <td>13:54</td>
+  <td>📱</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>188</td>
+  <td>2022-10-23</td>
+  <td>09:31</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>200</td>
+  <td>2022-10-12</td>
+  <td>19:40</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>170.4</td>
+  <td>2022-08-07</td>
+  <td>22:49</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>171.6</td>
+  <td>2022-08-06</td>
+  <td>16:44</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>174.6</td>
+  <td>2022-08-05</td>
+  <td>13:36</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>175.2</td>
+  <td>2022-08-03</td>
+  <td>18:37</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>177.6</td>
+  <td>2022-05-31</td>
+  <td>09:47</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>177.2</td>
+  <td>2022-04-11</td>
+  <td>04:12</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>177.2</td>
+  <td>2022-03-20</td>
+  <td>13:44</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>179.8</td>
+  <td>2022-02-07</td>
+  <td>19:48</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>183.2</td>
+  <td>2022-02-05</td>
+  <td>14:45</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>203</td>
+  <td>2021-08-05</td>
+  <td>13:43</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>198.4</td>
+  <td>2021-07-31</td>
+  <td>01:37</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>220</td>
+  <td>2021-02-22</td>
+  <td>08:13</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>175</td>
+  <td>2020-03-29</td>
+  <td>07:11</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>176.4</td>
+  <td>2020-03-24</td>
+  <td>21:40</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>175</td>
+  <td>2020-03-22</td>
+  <td>07:10</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>220.5</td>
+  <td>2020-03-19</td>
+  <td>21:36</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>485</td>
+  <td>2020-03-15</td>
+  <td>05:03</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>175</td>
+  <td>2020-03-13</td>
+  <td>07:09</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>175</td>
+  <td>2020-03-11</td>
+  <td>07:08</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>220.5</td>
+  <td>2020-03-10</td>
+  <td>21:37</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>175</td>
+  <td>2020-03-09</td>
+  <td>07:09</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>175</td>
+  <td>2020-03-07</td>
+  <td>08:11</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>176.4</td>
+  <td>2020-03-05</td>
+  <td>22:38</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>175</td>
+  <td>2020-03-04</td>
+  <td>08:11</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>176.4</td>
+  <td>2020-03-01</td>
+  <td>22:38</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>175</td>
+  <td>2020-03-01</td>
+  <td>08:09</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>175</td>
+  <td>2018-12-01</td>
+  <td>17:11</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>190</td>
+  <td>2018-10-12</td>
+  <td>15:14</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>170</td>
+  <td>2018-04-18</td>
+  <td>15:15</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>177</td>
+  <td>2018-02-22</td>
+  <td>00:51</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>175</td>
+  <td>2017-11-19</td>
+  <td>01:30</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>165</td>
+  <td>2017-11-17</td>
+  <td>08:02</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>178</td>
+  <td>2017-10-05</td>
+  <td>02:57</td>
+  <td>❤️</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>216</td>
+  <td>2016-11-05</td>
+  <td>01:20</td>
+  <td>❤️</td>
+</tr>
+</tbody>
+</table>
+<h2>Notes</h2>
+<p>- ****Possible gaps:**** the screenshots may not overlap fully. Entries could be missing between #15 (Feb 5, 2022) and #16 (Aug 5, 2021), and one partially cut-off row sits at the top of the last screenshot, between #28 (Mar 7, 2020) and #29 (Mar 5, 2020).</p>
+<p>- ****Likely data-entry outliers:**** 485 (2020-03-15), and the 220/220.5 readings in March 2020 that alternate with ~175 entries (the 220.5 entries are all logged at ~21:36).</p>
+<p>- ****Pattern:**** the ~175 entries logged at ~07:00–08:00 recur identically (looks like a repeated manual/default entry).. I began 2025 at 236. Was 170 by June. And 190 by the October. Now in 2026 October I’m shoit 235</p>
 <p>…</p>
 <p>Now we have something substantially more useful than a recollected 20-year pattern: a longitudinal record with several large weight excursions, including one in 2025 that you describe as 236 → 170 → 190 lb within approximately ten months.</p>
 <p>That is a very different phenomenon from gradual weight creep alone. I would investigate two interacting processes: changes in your underlying weight trajectory and unusually large, potentially reversible excursions around that trajectory.</p>
