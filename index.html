@@ -319,6 +319,31 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;margin:.6em 0 !i
 #weight .weight-md hr{border:0;border-top:1px solid var(--rule);margin:1.5em 0}
 #weight .weight-md img{max-width:100%;height:auto}
 
+/* Weight: editorial, high-contrast reading treatment (content remains verbatim) */
+#weight .weight-md{font-size:1.045rem;line-height:1.82;letter-spacing:.002em}
+#weight .weight-md>h1:first-child{font-size:clamp(2.35rem,6vw,4rem);line-height:1.02;letter-spacing:-.035em;margin:.15em 0 .55em;padding:0 0 .24em;border-bottom:3px solid var(--amber);max-width:18ch}
+#weight .weight-md h1{letter-spacing:-.025em;color:var(--amber);margin-top:1.7em}
+#weight .weight-md h2{letter-spacing:-.02em;color:var(--blue);padding-left:14px;border-left:4px solid var(--amber);margin-top:2.1em}
+#weight .weight-md h3{color:var(--violet);margin-top:1.7em}
+#weight .weight-md h4{color:var(--amber)}
+#weight .weight-md p{max-width:76ch;margin:0 0 1.25em;line-height:1.82}
+#weight .weight-md p strong{color:var(--amber);font-weight:800}
+#weight .weight-md li::marker{color:var(--amber);font-weight:700}
+#weight .weight-md li{padding-left:.2em;margin:.4em 0}
+#weight .weight-md blockquote{margin:1.4em 0;padding:1em 1.2em;border-left:4px solid var(--amber);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--amber) 8%,var(--card));color:var(--ink);font-family:var(--serif);font-size:1.08em}
+#weight .weight-md .tw{box-shadow:0 8px 24px rgba(15,25,45,.06)}
+#weight .weight-md table{border-collapse:separate;border-spacing:0;border:1px solid var(--rule);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(15,25,45,.06);margin:1.5em 0 2em;font-size:.94rem;line-height:1.65}
+#weight .weight-md th,#weight .weight-md td{padding:12px 14px;min-width:9rem;border-width:0 1px 1px 0;border-color:var(--rule)}
+#weight .weight-md thead th{background:var(--soft);border-top:3px solid var(--amber);font-size:.84rem;text-transform:uppercase;letter-spacing:.055em}
+#weight .weight-md tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--blue) 4%,var(--card))}
+#weight .weight-md tbody tr:last-child td,#weight .weight-md tbody tr:last-child th{border-bottom:0}
+#weight .weight-md tbody td:first-child{font-weight:700;color:var(--blue)}
+#weight .weight-md hr{border:0;height:1px;background:linear-gradient(90deg,var(--amber),var(--violet),transparent);margin:2.4em 0}
+#weight .weight-md code{background:var(--soft);padding:.12em .35em;border-radius:5px;color:var(--violet)}
+#weight .weight-md pre code{background:transparent;padding:0;color:inherit}
+#weight .weight-md a{font-weight:700;text-decoration-thickness:1.5px;text-underline-offset:3px}
+@media(max-width:640px){#weight .weight-md{font-size:1rem;line-height:1.75}#weight .weight-md th,#weight .weight-md td{padding:9px 10px}#weight .weight-md h1{font-size:1.8rem}#weight .weight-md h2{font-size:1.45rem}}
+
 /* tragedy tab (additive) */
 .tragsvg{display:block;width:100%;min-width:780px;height:auto;max-width:980px;margin:0 auto}
 .tragsvg .gv rect{fill:var(--card);stroke:var(--blue);stroke-width:1.6}
