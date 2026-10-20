@@ -3624,7 +3624,12 @@ function draw(){
   // lines: measured series (non-reported) solid thin, reported dashed
   var meas=vis.filter(function(p){return p.k!=='r'&&p.k!=='i'}), rep=vis.filter(function(p){return p.k==='r'});
   var P=function(p){return xs(p.t).toFixed(1)+','+yp(Math.min(p.w,cap)).toFixed(1)};
-  if(meas.length>1)el('polyline',{points:meas.map(P).join(' '),fill:'none',stroke:'var(--muted)','stroke-width':1.2,'stroke-opacity':.55,'stroke-linejoin':'round'},svg);
+  var imp=vis.filter(function(p){return p.k==='i'}),run=[];
+  var flush=function(){if(run.length>1)el('polyline',{points:run.map(P).join(' '),fill:'none',stroke:'var(--muted)','stroke-width':1.2,'stroke-opacity':.55,'stroke-linejoin':'round'},svg);run=[]};
+  meas.forEach(function(p,i){
+    if(i>0){var q=meas[i-1];if(imp.some(function(m){return m.t>q.t&&m.t<p.t}))flush()}
+    run.push(p)});
+  flush();
   if(rep.length){
     var lastM=pts.filter(function(p){return p.k!=='r'&&p.k!=='i'&&p.t<rep[0].t&&on[p.k]}).pop();
     var seq=(lastM&&lastM.t>=view.a?[lastM]:[]).concat(rep);
